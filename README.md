@@ -36,7 +36,7 @@ scripts/retrieval_engine/
 │        ├─ inverted.pkl.zst
 │        ├─ doc_lengths.pkl.zst
 │        ├─ term_stats.pkl.zst
-│        ├─ documents.jsonl
+│        ├─ documents.jsonl.zst
 │        ├─ exact_terms.json
 │        └─ meta.json
 ├─ retrieval/
@@ -79,8 +79,16 @@ Kit 路由、目录 Excel 和覆盖报告是独立的源数据检查产物，默
 
 ## 安装依赖
 
+首次使用先在仓库根目录创建虚拟环境：
+
 ```powershell
-.venv\Scripts\python.exe -m pip install -r scripts/retrieval_engine/requirements.txt
+python -m venv .venv
+```
+
+然后安装依赖：
+
+```powershell
+.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
 ## 完整索引构建命令
@@ -88,15 +96,74 @@ Kit 路由、目录 Excel 和覆盖报告是独立的源数据检查产物，默
 在仓库根目录依次执行：
 
 ```powershell
-.venv\Scripts\python.exe scripts/retrieval_engine/source_preprocessing/build_markdown_corpus.py
-.venv\Scripts\python.exe scripts/retrieval_engine/indexing/build_chunk_frequencies.py
-.venv\Scripts\python.exe scripts/retrieval_engine/indexing/build_inverted_index.py
+.venv\Scripts\python.exe source_preprocessing/build_markdown_corpus.py
+.venv\Scripts\python.exe indexing/build_chunk_frequencies.py
+.venv\Scripts\python.exe indexing/build_inverted_index.py
 ```
 
 ## 源数据检查命令
 
 ```powershell
-.venv\Scripts\python.exe scripts/retrieval_engine/source_preprocessing/build_kit_excel.py
-.venv\Scripts\python.exe scripts/retrieval_engine/source_preprocessing/build_folder_excel.py
-.venv\Scripts\python.exe scripts/retrieval_engine/source_preprocessing/check_kit_coverage.py
+.venv\Scripts\python.exe source_preprocessing/build_kit_excel.py
+.venv\Scripts\python.exe source_preprocessing/build_folder_excel.py
+.venv\Scripts\python.exe source_preprocessing/check_kit_coverage.py
 ```
+
+## 在线检索示例
+
+仓库已包含运行检索所需的压缩索引，无需先重新构建语料。
+
+仅检索 `harmonyos-guides/`：
+
+```powershell
+.venv\Scripts\python.exe retrieval/search.py `
+  "如何使用UIAbility开发应用" `
+  --top-k 10 `
+  --path-prefix "harmonyos-guides/"
+```
+
+输出包含 query 分析、第一类完整词、预处理 token、BM25 分数、路径和命中标题。
+
+如需检索索引中的全部文档，省略 `--path-prefix`：
+
+```powershell
+.venv\Scripts\python.exe retrieval/search.py "如何使用Network Kit发起HTTP请求"
+```
+
+## Evaluation 示例
+
+评测集位于 `evaluate/dataset/dataset.xlsx`，结果写入 `evaluate/data/`。
+
+### 分片级随机 20 条
+
+```powershell
+.venv\Scripts\python.exe evaluate/evaluate_random.py `
+  --sample-size 20 `
+  --seed 2026 `
+  --top-k 10
+```
+
+### 文档级随机 20 条
+
+文档分数取同一路径下的最高分片分数：
+
+```powershell
+.venv\Scripts\python.exe evaluate/evaluate_document.py `
+  --sample-size 20 `
+  --seed 2026 `
+  --top-k 10
+```
+
+### 文档级全量评测
+
+```powershell
+.venv\Scripts\python.exe evaluate/evaluate_document.py `
+  --sample-size 4057 `
+  --top-k 10 `
+  --output evaluate/data/document_full_results.json
+```
+
+评测输出包含 Hit@1/3/5/10、MRR、每条 query 的完整词匹配、Top10 路径和金标排名。
+
+> 重新构建语料需要将 HarmonyOS 原始 `references/` 文档库放在项目预期位置；
+> 只运行检索和已包含数据集的评测不需要原始文档库。
