@@ -1,0 +1,3349 @@
+{
+  "summary": {
+    "dataset": "D:\\JobWorkspace\\Projects\\SkillsRetrieval2026\\hos-skills\\hos_skills\\workspace\\data\\dataset.xlsx",
+    "sample_size": 20,
+    "seed": 2026,
+    "top_k": 10,
+    "path_prefix": "harmonyos-guides/",
+    "hit_at_1": 0.7,
+    "hit_at_3": 0.95,
+    "hit_at_5": 1.0,
+    "hit_at_10": 1.0,
+    "mrr": 0.8266666666666668,
+    "exact_term_queries": 18,
+    "elapsed_seconds": 5.649
+  },
+  "cases": [
+    {
+      "sample_order": 1,
+      "dataset_row": 3506,
+      "query": "在鸿蒙系统中，如何根据不同的内容类型（如动画、UI或自绘制内容）来定制和请求可变帧率以优化绘制性能？",
+      "gold_path": "图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/displaysync.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统中，如何根据不同的内容类型（如动画、UI或自绘制内容）来定制和请求可变帧率以优化绘制性能？",
+        "第一类完整词": {
+          "可变帧率": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "如何",
+          "根据",
+          "不同",
+          "内容",
+          "类型",
+          "如",
+          "动画",
+          "ui",
+          "自",
+          "绘制",
+          "内容",
+          "来",
+          "定制",
+          "请求",
+          "可变",
+          "帧",
+          "率",
+          "以",
+          "优化",
+          "绘制",
+          "性能"
+        ],
+        "BM25查询词频": {
+          "ui": 1,
+          "不同": 1,
+          "以": 1,
+          "优化": 1,
+          "内容": 2,
+          "动画": 1,
+          "可变": 1,
+          "可变帧率": 1,
+          "如": 1,
+          "如何": 1,
+          "定制": 1,
+          "帧": 1,
+          "性能": 1,
+          "来": 1,
+          "根据": 1,
+          "率": 1,
+          "类型": 1,
+          "系统": 1,
+          "绘制": 2,
+          "自": 1,
+          "请求": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 8182,
+          "score": 87.426781,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/displaysync.md",
+          "标题": [
+            "使用可变帧率能力定制不同内容的绘制帧率"
+          ],
+          "raw_length": 62,
+          "weighted_length": 77
+        },
+        {
+          "rank": 2,
+          "doc_id": 8189,
+          "score": 82.044375,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/可变帧率简介/displaysync-overview.md",
+          "标题": [
+            "使用场景"
+          ],
+          "raw_length": 121,
+          "weighted_length": 138
+        },
+        {
+          "rank": 3,
+          "doc_id": 8197,
+          "score": 81.479499,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/请求自绘制内容绘制帧率/displaysync-xcomponent.md",
+          "标题": [
+            "请求自绘制内容绘制帧率"
+          ],
+          "raw_length": 61,
+          "weighted_length": 78
+        },
+        {
+          "rank": 4,
+          "doc_id": 8192,
+          "score": 78.827757,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/请求UI绘制帧率/displaysync-ui.md",
+          "标题": [
+            "请求UI绘制帧率"
+          ],
+          "raw_length": 74,
+          "weighted_length": 91
+        },
+        {
+          "rank": 5,
+          "doc_id": 8194,
+          "score": 73.672121,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/请求动画绘制帧率/displaysync-animation.md",
+          "标题": [
+            "请求动画绘制帧率"
+          ],
+          "raw_length": 56,
+          "weighted_length": 73
+        },
+        {
+          "rank": 6,
+          "doc_id": 8190,
+          "score": 72.680129,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/可变帧率简介/displaysync-overview.md",
+          "标题": [
+            "运作机制"
+          ],
+          "raw_length": 165,
+          "weighted_length": 182
+        },
+        {
+          "rank": 7,
+          "doc_id": 8195,
+          "score": 72.092201,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/请求动画绘制帧率/displaysync-animation.md",
+          "标题": [
+            "请求属性动画的绘制帧率"
+          ],
+          "raw_length": 53,
+          "weighted_length": 70
+        },
+        {
+          "rank": 8,
+          "doc_id": 8196,
+          "score": 72.092201,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/请求动画绘制帧率/displaysync-animation.md",
+          "标题": [
+            "请求显式动画的绘制帧率"
+          ],
+          "raw_length": 53,
+          "weighted_length": 70
+        },
+        {
+          "rank": 9,
+          "doc_id": 8177,
+          "score": 69.702659,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/ArkGraphics 2D简介/arkgraphics2d-introduction.md",
+          "标题": [
+            "亮点特征"
+          ],
+          "raw_length": 115,
+          "weighted_length": 130
+        },
+        {
+          "rank": 10,
+          "doc_id": 8188,
+          "score": 64.705359,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/可变帧率简介/displaysync-overview.md",
+          "标题": [
+            "可变帧率简介"
+          ],
+          "raw_length": 150,
+          "weighted_length": 167
+        }
+      ]
+    },
+    {
+      "sample_order": 2,
+      "dataset_row": 970,
+      "query": "如果用户没有登录华为账号，添加卡券时如何处理？",
+      "gold_path": "应用服务/Wallet Kit（钱包服务）/Wallet Kit常见问题/如果用户没有登录华为账号，添加卡券时如何处理？/wallet-faq-3.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "如果用户没有登录华为账号，添加卡券时如何处理？",
+        "第一类完整词": {
+          "如果用户没有登录华为账号,添加卡券时如何处理?": 1
+        },
+        "预处理tokens": [
+          "用户",
+          "没有",
+          "登录",
+          "华为",
+          "账号",
+          "添加",
+          "卡券时",
+          "如何",
+          "处理"
+        ],
+        "BM25查询词频": {
+          "华为": 1,
+          "卡券时": 1,
+          "处理": 1,
+          "如何": 1,
+          "如果用户没有登录华为账号,添加卡券时如何处理?": 1,
+          "没有": 1,
+          "添加": 1,
+          "用户": 1,
+          "登录": 1,
+          "账号": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 13588,
+          "score": 97.129524,
+          "路径": "harmonyos-guides/应用服务/Wallet Kit（钱包服务）/Wallet Kit常见问题/如果用户没有登录华为账号，添加卡券时如何处理？/wallet-faq-3.md",
+          "标题": [
+            "如果用户没有登录华为账号，添加卡券时如何处理？"
+          ],
+          "raw_length": 56,
+          "weighted_length": 73
+        },
+        {
+          "rank": 2,
+          "doc_id": 13586,
+          "score": 55.899681,
+          "路径": "harmonyos-guides/应用服务/Wallet Kit（钱包服务）/Wallet Kit常见问题/wallet-kit-faq.md",
+          "标题": [
+            "Wallet Kit常见问题"
+          ],
+          "raw_length": 78,
+          "weighted_length": 93
+        },
+        {
+          "rank": 3,
+          "doc_id": 13589,
+          "score": 41.997916,
+          "路径": "harmonyos-guides/应用服务/Wallet Kit（钱包服务）/Wallet Kit常见问题/开发者应用使用Wallet Kit，是否需要集成华为Account Kit？/wallet-faq-2.md",
+          "标题": [
+            "开发者应用使用Wallet Kit，是否需要集成华为Account Kit？"
+          ],
+          "raw_length": 39,
+          "weighted_length": 56
+        },
+        {
+          "rank": 4,
+          "doc_id": 10865,
+          "score": 37.906399,
+          "路径": "harmonyos-guides/应用服务/Account Kit（华为账号服务）/Account Kit常见问题/一键登录场景下，应用已展示一键登录页，此时用户退出、切换或注销华为账号应该如何处理/account-faq-17.md",
+          "标题": [
+            "一键登录场景下，应用已展示一键登录页，此时用户退出、切换或注销华为账号应该如何处理"
+          ],
+          "raw_length": 103,
+          "weighted_length": 120
+        },
+        {
+          "rank": 5,
+          "doc_id": 10844,
+          "score": 35.516841,
+          "路径": "harmonyos-guides/应用服务/Account Kit（华为账号服务）/Account Kit常见问题/account-faq.md",
+          "标题": [
+            "Account Kit常见问题"
+          ],
+          "raw_length": 201,
+          "weighted_length": 216
+        },
+        {
+          "rank": 6,
+          "doc_id": 13590,
+          "score": 32.911284,
+          "路径": "harmonyos-guides/应用服务/Wallet Kit（钱包服务）/Wallet Kit常见问题/添加卡券时商户服务器主要需要执行哪些步骤？/wallet-faq-5.md",
+          "标题": [
+            "添加卡券时商户服务器主要需要执行哪些步骤？"
+          ],
+          "raw_length": 54,
+          "weighted_length": 71
+        },
+        {
+          "rank": 7,
+          "doc_id": 10952,
+          "score": 32.287519,
+          "路径": "harmonyos-guides/应用服务/Account Kit（华为账号服务）/登录/华为账号一键登录（获取手机号和UnionIDOpenID）/account-phone-unionid-login.md",
+          "标题": [
+            "开发后验证",
+            "集成华为账号一键登录能力应用用户体验质量建议"
+          ],
+          "raw_length": 353,
+          "weighted_length": 377
+        },
+        {
+          "rank": 8,
+          "doc_id": 10937,
+          "score": 32.060358,
+          "路径": "harmonyos-guides/应用服务/Account Kit（华为账号服务）/登录/华为账号一键登录（获取手机号和UnionIDOpenID）/account-phone-unionid-login.md",
+          "标题": [
+            "场景介绍"
+          ],
+          "raw_length": 238,
+          "weighted_length": 259
+        },
+        {
+          "rank": 9,
+          "doc_id": 10967,
+          "score": 31.951791,
+          "路径": "harmonyos-guides/应用服务/Account Kit（华为账号服务）/登录/华为账号登录（获取UnionIDOpenID）/使用自定义按钮登录/account-unionid-login-api.md",
+          "标题": [
+            "客户端开发"
+          ],
+          "raw_length": 155,
+          "weighted_length": 176
+        },
+        {
+          "rank": 10,
+          "doc_id": 10946,
+          "score": 31.803499,
+          "路径": "harmonyos-guides/应用服务/Account Kit（华为账号服务）/登录/华为账号一键登录（获取手机号和UnionIDOpenID）/account-phone-unionid-login.md",
+          "标题": [
+            "客户端开发",
+            "用户首次登录应用"
+          ],
+          "raw_length": 390,
+          "weighted_length": 414
+        }
+      ]
+    },
+    {
+      "sample_order": 3,
+      "dataset_row": 1836,
+      "query": "在鸿蒙系统的应用沙箱机制中，应用文件目录下的不同加密级别（如el1、el2、el3等）分别具有什么特点？",
+      "gold_path": "应用框架/Core File Kit（文件基础服务）/应用文件/应用沙箱目录/app-sandbox-directory.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统的应用沙箱机制中，应用文件目录下的不同加密级别（如el1、el2、el3等）分别具有什么特点？",
+        "第一类完整词": {
+          "应用文件": 1,
+          "应用沙箱": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "应用",
+          "沙箱",
+          "机制",
+          "应用",
+          "文件目录",
+          "不同",
+          "加密",
+          "级别",
+          "如",
+          "el1",
+          "el2",
+          "el3",
+          "分别",
+          "具有",
+          "什么",
+          "特点"
+        ],
+        "BM25查询词频": {
+          "el1": 1,
+          "el2": 1,
+          "el3": 1,
+          "不同": 1,
+          "什么": 1,
+          "具有": 1,
+          "分别": 1,
+          "加密": 1,
+          "如": 1,
+          "应用": 2,
+          "应用文件": 1,
+          "应用沙箱": 1,
+          "文件目录": 1,
+          "机制": 1,
+          "沙箱": 1,
+          "特点": 1,
+          "系统": 1,
+          "级别": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 18086,
+          "score": 64.769281,
+          "路径": "harmonyos-guides/应用框架/Core File Kit（文件基础服务）/应用文件/应用沙箱目录/app-sandbox-directory.md",
+          "标题": [
+            "应用沙箱路径和真实物理路径的对应关系"
+          ],
+          "raw_length": 233,
+          "weighted_length": 250
+        },
+        {
+          "rank": 2,
+          "doc_id": 18063,
+          "score": 63.25619,
+          "路径": "harmonyos-guides/应用框架/Core File Kit（文件基础服务）/应用文件/应用文件分享/share-app-file.md",
+          "标题": [
+            "应用可分享目录"
+          ],
+          "raw_length": 60,
+          "weighted_length": 77
+        },
+        {
+          "rank": 3,
+          "doc_id": 18085,
+          "score": 51.590875,
+          "路径": "harmonyos-guides/应用框架/Core File Kit（文件基础服务）/应用文件/应用沙箱目录/app-sandbox-directory.md",
+          "标题": [
+            "应用文件目录与应用文件路径"
+          ],
+          "raw_length": 1000,
+          "weighted_length": 1017
+        },
+        {
+          "rank": 4,
+          "doc_id": 22069,
+          "score": 49.693296,
+          "路径": "harmonyos-guides/系统/安全/程序访问控制/访问控制概述/access-token-overview.md",
+          "标题": [
+            "应用沙箱"
+          ],
+          "raw_length": 64,
+          "weighted_length": 79
+        },
+        {
+          "rank": 5,
+          "doc_id": 13837,
+          "score": 47.219885,
+          "路径": "harmonyos-guides/应用框架/Ability Kit（程序框架服务）/Stage模型开发指导/Stage模型应用组件/应用上下文Context/application-context-stage.md",
+          "标题": [
+            "Context的典型使用场景",
+            "获取和修改加密分区"
+          ],
+          "raw_length": 245,
+          "weighted_length": 267
+        },
+        {
+          "rank": 6,
+          "doc_id": 13836,
+          "score": 46.53932,
+          "路径": "harmonyos-guides/应用框架/Ability Kit（程序框架服务）/Stage模型开发指导/Stage模型应用组件/应用上下文Context/application-context-stage.md",
+          "标题": [
+            "Context的典型使用场景",
+            "获取应用文件路径"
+          ],
+          "raw_length": 443,
+          "weighted_length": 465
+        },
+        {
+          "rank": 7,
+          "doc_id": 18083,
+          "score": 46.518108,
+          "路径": "harmonyos-guides/应用框架/Core File Kit（文件基础服务）/应用文件/应用沙箱目录/app-sandbox-directory.md",
+          "标题": [
+            "应用沙箱目录"
+          ],
+          "raw_length": 162,
+          "weighted_length": 179
+        },
+        {
+          "rank": 8,
+          "doc_id": 18068,
+          "score": 46.415244,
+          "路径": "harmonyos-guides/应用框架/Core File Kit（文件基础服务）/应用文件/应用文件访问与管理/应用及文件系统空间统计/app-fs-space-statistics.md",
+          "标题": [
+            "接口说明"
+          ],
+          "raw_length": 397,
+          "weighted_length": 416
+        },
+        {
+          "rank": 9,
+          "doc_id": 21239,
+          "score": 44.286352,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/Enterprise Data Guard Kit简介/dataguard-introduction.md",
+          "标题": [
+            "约束与限制",
+            "访问限制"
+          ],
+          "raw_length": 139,
+          "weighted_length": 159
+        },
+        {
+          "rank": 10,
+          "doc_id": 18065,
+          "score": 41.873977,
+          "路径": "harmonyos-guides/应用框架/Core File Kit（文件基础服务）/应用文件/应用文件概述/app-file-overview.md",
+          "标题": [
+            "应用文件概述"
+          ],
+          "raw_length": 147,
+          "weighted_length": 164
+        }
+      ]
+    },
+    {
+      "sample_order": 4,
+      "dataset_row": 124,
+      "query": "鸿蒙系统中，Core Speech Kit（基础语音服务）支持哪些语音AI能力？",
+      "gold_path": "AI/Core Speech Kit（基础语音服务）/Core Speech Kit简介/core-speech-introduction.md",
+      "gold_rank": 2,
+      "query_analysis": {
+        "query": "鸿蒙系统中，Core Speech Kit（基础语音服务）支持哪些语音AI能力？",
+        "第一类完整词": {
+          "core": 1,
+          "core speech kit": 1,
+          "core speech kit(基础语音服务)": 1,
+          "kit": 1,
+          "speech kit": 1,
+          "基础语音服务": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "core",
+          "speech",
+          "kit",
+          "基础",
+          "语音",
+          "服务",
+          "支持",
+          "哪些",
+          "语音",
+          "ai",
+          "能力"
+        ],
+        "BM25查询词频": {
+          "ai": 1,
+          "core": 2,
+          "core speech kit": 1,
+          "core speech kit(基础语音服务)": 1,
+          "kit": 2,
+          "speech": 1,
+          "speech kit": 1,
+          "哪些": 1,
+          "基础": 1,
+          "基础语音服务": 1,
+          "支持": 1,
+          "服务": 1,
+          "系统": 1,
+          "能力": 1,
+          "语音": 2,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 6006,
+          "score": 113.245927,
+          "路径": "harmonyos-guides/AI/Core Speech Kit（基础语音服务）/core-speech-kit-guide.md",
+          "标题": [
+            "Core Speech Kit（基础语音服务）"
+          ],
+          "raw_length": 34,
+          "weighted_length": 49
+        },
+        {
+          "rank": 2,
+          "doc_id": 6007,
+          "score": 88.651484,
+          "路径": "harmonyos-guides/AI/Core Speech Kit（基础语音服务）/Core Speech Kit简介/core-speech-introduction.md",
+          "标题": [
+            "Core Speech Kit简介"
+          ],
+          "raw_length": 63,
+          "weighted_length": 78
+        },
+        {
+          "rank": 3,
+          "doc_id": 6009,
+          "score": 80.573348,
+          "路径": "harmonyos-guides/AI/Core Speech Kit（基础语音服务）/Core Speech Kit简介/core-speech-introduction.md",
+          "标题": [
+            "约束与限制",
+            "支持的设备"
+          ],
+          "raw_length": 26,
+          "weighted_length": 44
+        },
+        {
+          "rank": 4,
+          "doc_id": 6028,
+          "score": 79.551891,
+          "路径": "harmonyos-guides/AI/Core Speech Kit（基础语音服务）/语音识别/speechrecognizer-guide.md",
+          "标题": [
+            "约束与限制"
+          ],
+          "raw_length": 46,
+          "weighted_length": 61
+        },
+        {
+          "rank": 5,
+          "doc_id": 6016,
+          "score": 79.550956,
+          "路径": "harmonyos-guides/AI/Core Speech Kit（基础语音服务）/文本转语音/texttospeech-guide.md",
+          "标题": [
+            "文本转语音"
+          ],
+          "raw_length": 56,
+          "weighted_length": 71
+        },
+        {
+          "rank": 6,
+          "doc_id": 6011,
+          "score": 79.323443,
+          "路径": "harmonyos-guides/AI/Core Speech Kit（基础语音服务）/Core Speech Kit简介/core-speech-introduction.md",
+          "标题": [
+            "约束与限制",
+            "能力限制"
+          ],
+          "raw_length": 84,
+          "weighted_length": 102
+        },
+        {
+          "rank": 7,
+          "doc_id": 6012,
+          "score": 78.835669,
+          "路径": "harmonyos-guides/AI/Core Speech Kit（基础语音服务）/Core Speech Kit简介/core-speech-introduction.md",
+          "标题": [
+            "模拟器支持情况"
+          ],
+          "raw_length": 38,
+          "weighted_length": 53
+        },
+        {
+          "rank": 8,
+          "doc_id": 6010,
+          "score": 78.756648,
+          "路径": "harmonyos-guides/AI/Core Speech Kit（基础语音服务）/Core Speech Kit简介/core-speech-introduction.md",
+          "标题": [
+            "约束与限制",
+            "支持的国家/地区"
+          ],
+          "raw_length": 32,
+          "weighted_length": 50
+        },
+        {
+          "rank": 9,
+          "doc_id": 6008,
+          "score": 78.705409,
+          "路径": "harmonyos-guides/AI/Core Speech Kit（基础语音服务）/Core Speech Kit简介/core-speech-introduction.md",
+          "标题": [
+            "场景介绍"
+          ],
+          "raw_length": 71,
+          "weighted_length": 86
+        },
+        {
+          "rank": 10,
+          "doc_id": 6025,
+          "score": 78.048188,
+          "路径": "harmonyos-guides/AI/Core Speech Kit（基础语音服务）/文本转语音/texttospeech-guide.md",
+          "标题": [
+            "开发实例"
+          ],
+          "raw_length": 23,
+          "weighted_length": 38
+        }
+      ]
+    },
+    {
+      "sample_order": 5,
+      "dataset_row": 1733,
+      "query": "在鸿蒙系统的ArkWeb组件中，如何实现应用侧与前端页面JavaScript的双向调用以及数据通道？",
+      "gold_path": "应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/web-use-frontend-page-js.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统的ArkWeb组件中，如何实现应用侧与前端页面JavaScript的双向调用以及数据通道？",
+        "第一类完整词": {
+          "arkweb": 1,
+          "web": 1,
+          "web组件": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "arkweb",
+          "ark",
+          "web",
+          "组件",
+          "如何",
+          "实现",
+          "应用",
+          "侧",
+          "前端",
+          "页面",
+          "javascript",
+          "java",
+          "script",
+          "双向",
+          "调用",
+          "数据通道"
+        ],
+        "BM25查询词频": {
+          "ark": 1,
+          "arkweb": 2,
+          "java": 1,
+          "javascript": 1,
+          "script": 1,
+          "web": 2,
+          "web组件": 1,
+          "侧": 1,
+          "前端": 1,
+          "双向": 1,
+          "如何": 1,
+          "实现": 1,
+          "应用": 1,
+          "数据通道": 1,
+          "系统": 1,
+          "组件": 1,
+          "调用": 1,
+          "页面": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 17696,
+          "score": 95.4325,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/web-use-frontend-page-js.md",
+          "标题": [
+            "在应用中使用前端页面JavaScript"
+          ],
+          "raw_length": 59,
+          "weighted_length": 74
+        },
+        {
+          "rank": 2,
+          "doc_id": 17725,
+          "score": 84.404201,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/建立应用侧与前端页面数据通道/web-app-page-data-channel.md",
+          "标题": [
+            "常见问题",
+            "onControllerAttached与javaScriptOnDocumentStart的执行顺序是什么？"
+          ],
+          "raw_length": 50,
+          "weighted_length": 70
+        },
+        {
+          "rank": 3,
+          "doc_id": 17726,
+          "score": 83.765237,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/建立应用侧与前端页面数据通道(CC++)/arkweb-ndk-page-data-channel.md",
+          "标题": [
+            "建立应用侧与前端页面数据通道(C/C++)"
+          ],
+          "raw_length": 78,
+          "weighted_length": 99
+        },
+        {
+          "rank": 4,
+          "doc_id": 17720,
+          "score": 83.717242,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/应用侧与前端页面的相互调用(CC++)/arkweb-ndk-jsbridge.md",
+          "标题": [
+            "使用Native接口实现JSBridge通信",
+            "应用侧调用前端页面函数"
+          ],
+          "raw_length": 48,
+          "weighted_length": 72
+        },
+        {
+          "rank": 5,
+          "doc_id": 17714,
+          "score": 83.467966,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/应用侧与前端页面的相互调用(CC++)/arkweb-ndk-jsbridge.md",
+          "标题": [
+            "使用Native接口实现JSBridge通信（推荐）",
+            "应用侧调用前端页面函数"
+          ],
+          "raw_length": 49,
+          "weighted_length": 73
+        },
+        {
+          "rank": 6,
+          "doc_id": 17728,
+          "score": 83.212673,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/建立应用侧与前端页面数据通道(CC++)/arkweb-ndk-page-data-channel.md",
+          "标题": [
+            "使用Native接口实现PostWebMessage通信",
+            "使用Native接口绑定ArkWeb"
+          ],
+          "raw_length": 92,
+          "weighted_length": 116
+        },
+        {
+          "rank": 7,
+          "doc_id": 17723,
+          "score": 82.208423,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/建立应用侧与前端页面数据通道/web-app-page-data-channel.md",
+          "标题": [
+            "建立应用侧与前端页面数据通道"
+          ],
+          "raw_length": 102,
+          "weighted_length": 119
+        },
+        {
+          "rank": 8,
+          "doc_id": 17719,
+          "score": 81.448117,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/应用侧与前端页面的相互调用(CC++)/arkweb-ndk-jsbridge.md",
+          "标题": [
+            "使用Native接口实现JSBridge通信",
+            "前端页面调用应用侧函数"
+          ],
+          "raw_length": 60,
+          "weighted_length": 84
+        },
+        {
+          "rank": 9,
+          "doc_id": 17698,
+          "score": 80.584326,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/前端页面调用应用侧函数/web-in-page-app-function-invoking.md",
+          "标题": [
+            "如何建立应用侧与H5侧的交互通道"
+          ],
+          "raw_length": 161,
+          "weighted_length": 178
+        },
+        {
+          "rank": 10,
+          "doc_id": 17722,
+          "score": 80.346158,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/应用侧调用前端页面函数/web-in-app-frontend-page-function-invoking.md",
+          "标题": [
+            "应用侧调用前端页面函数"
+          ],
+          "raw_length": 118,
+          "weighted_length": 135
+        }
+      ]
+    },
+    {
+      "sample_order": 6,
+      "dataset_row": 2959,
+      "query": "在鸿蒙系统中，HiAppEvent的事件订阅支持哪三种方式？",
+      "gold_path": "系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/事件订阅简介/event-subscription-overview.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统中，HiAppEvent的事件订阅支持哪三种方式？",
+        "第一类完整词": {
+          "app": 1,
+          "event": 1,
+          "hiappevent": 1,
+          "iap": 1,
+          "事件订阅": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "hiappevent",
+          "hi",
+          "app",
+          "event",
+          "事件",
+          "订阅",
+          "支持",
+          "哪",
+          "三种",
+          "方式"
+        ],
+        "BM25查询词频": {
+          "app": 2,
+          "event": 2,
+          "hi": 1,
+          "hiappevent": 2,
+          "iap": 1,
+          "三种": 1,
+          "事件": 1,
+          "事件订阅": 1,
+          "哪": 1,
+          "支持": 1,
+          "方式": 1,
+          "系统": 1,
+          "订阅": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 23095,
+          "score": 76.355821,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/事件订阅简介/event-subscription-overview.md",
+          "标题": [
+            "事件订阅的三种方式"
+          ],
+          "raw_length": 155,
+          "weighted_length": 176
+        },
+        {
+          "rank": 2,
+          "doc_id": 23072,
+          "score": 74.275784,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/hiappevent.md",
+          "标题": [
+            "事件订阅"
+          ],
+          "raw_length": 41,
+          "weighted_length": 58
+        },
+        {
+          "rank": 3,
+          "doc_id": 23101,
+          "score": 71.611891,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/事件订阅（CC++）/hiappevent-watcher-app-events-ndk.md",
+          "标题": [
+            "接口说明"
+          ],
+          "raw_length": 130,
+          "weighted_length": 155
+        },
+        {
+          "rank": 4,
+          "doc_id": 23100,
+          "score": 71.086003,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/事件订阅（CC++）/hiappevent-watcher-app-events-ndk.md",
+          "标题": [
+            "事件订阅（C/C++）"
+          ],
+          "raw_length": 47,
+          "weighted_length": 72
+        },
+        {
+          "rank": 5,
+          "doc_id": 23096,
+          "score": 70.756116,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/事件订阅（ArkTS）/hiappevent-watcher-app-events-arkts.md",
+          "标题": [
+            "事件订阅（ArkTS）"
+          ],
+          "raw_length": 48,
+          "weighted_length": 73
+        },
+        {
+          "rank": 6,
+          "doc_id": 23192,
+          "score": 70.642986,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/系统事件/崩溃事件/订阅崩溃事件（CC++）/hiappevent-watcher-crash-events-ndk.md",
+          "标题": [
+            "接口说明"
+          ],
+          "raw_length": 91,
+          "weighted_length": 120
+        },
+        {
+          "rank": 7,
+          "doc_id": 23205,
+          "score": 70.54806,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/系统事件/应用终止事件/订阅应用终止事件（CC++）/hiappevent-watcher-app-killed-events-ndk.md",
+          "标题": [
+            "接口说明"
+          ],
+          "raw_length": 113,
+          "weighted_length": 142
+        },
+        {
+          "rank": 8,
+          "doc_id": 23141,
+          "score": 70.20297,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/系统事件/任务执行超时事件/订阅任务执行超时事件（CC++）/hiappevent-watcher-apphicollie-events-ndk.md",
+          "标题": [
+            "接口说明"
+          ],
+          "raw_length": 95,
+          "weighted_length": 124
+        },
+        {
+          "rank": 9,
+          "doc_id": 23224,
+          "score": 69.732896,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/系统事件/资源泄漏事件/订阅资源泄漏事件（CC++）/hiappevent-watcher-resourceleak-events-ndk.md",
+          "标题": [
+            "接口说明"
+          ],
+          "raw_length": 126,
+          "weighted_length": 155
+        },
+        {
+          "rank": 10,
+          "doc_id": 23208,
+          "score": 69.586005,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/系统事件/滑动丢帧事件/滑动丢帧事件介绍/hiappevent-watcher-scroll-jank-event.md",
+          "标题": [
+            "简介"
+          ],
+          "raw_length": 121,
+          "weighted_length": 146
+        }
+      ]
+    },
+    {
+      "sample_order": 7,
+      "dataset_row": 2680,
+      "query": "在鸿蒙系统中，应用如何向用户动态申请位置权限等user_grant权限？",
+      "gold_path": "系统/安全/程序访问控制/应用权限管控/申请应用权限/向用户申请授权/request-user-authorization.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统中，应用如何向用户动态申请位置权限等user_grant权限？",
+        "第一类完整词": {
+          "user": 1,
+          "申请位置权限": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "应用",
+          "如何",
+          "向",
+          "用户",
+          "动态",
+          "申请",
+          "位置",
+          "权限",
+          "user_grant",
+          "user",
+          "grant",
+          "权限"
+        ],
+        "BM25查询词频": {
+          "grant": 1,
+          "user": 2,
+          "user_grant": 1,
+          "位置": 1,
+          "动态": 1,
+          "向": 1,
+          "如何": 1,
+          "应用": 1,
+          "权限": 2,
+          "用户": 1,
+          "申请": 1,
+          "申请位置权限": 1,
+          "系统": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 22048,
+          "score": 71.665291,
+          "路径": "harmonyos-guides/系统/安全/程序访问控制/应用权限管控/申请应用权限/向用户申请授权/request-user-authorization.md",
+          "标题": [
+            "向用户申请授权"
+          ],
+          "raw_length": 153,
+          "weighted_length": 172
+        },
+        {
+          "rank": 2,
+          "doc_id": 22062,
+          "score": 67.160251,
+          "路径": "harmonyos-guides/系统/安全/程序访问控制/应用权限管控/申请应用权限/选择申请权限的方式/determine-application-mode.md",
+          "标题": [
+            "应用申请权限的方式"
+          ],
+          "raw_length": 93,
+          "weighted_length": 112
+        },
+        {
+          "rank": 3,
+          "doc_id": 22054,
+          "score": 65.723267,
+          "路径": "harmonyos-guides/系统/安全/程序访问控制/应用权限管控/申请应用权限/声明权限/declare-permissions.md",
+          "标题": [
+            "权限使用理由的文案内容规范"
+          ],
+          "raw_length": 76,
+          "weighted_length": 95
+        },
+        {
+          "rank": 4,
+          "doc_id": 21943,
+          "score": 62.868986,
+          "路径": "harmonyos-guides/系统/安全/程序访问控制/应用权限管控/应用权限列表/开放权限（用户授权）/permissions-for-all-user.md",
+          "标题": [
+            "申请方式"
+          ],
+          "raw_length": 45,
+          "weighted_length": 68
+        },
+        {
+          "rank": 5,
+          "doc_id": 10589,
+          "score": 61.122368,
+          "路径": "harmonyos-guides/媒体/Media Library Kit（媒体文件管理服务）/受限开放能力/开发准备/photoaccesshelper-preparation.md",
+          "标题": [
+            "申请相册管理模块功能相关权限"
+          ],
+          "raw_length": 242,
+          "weighted_length": 259
+        },
+        {
+          "rank": 6,
+          "doc_id": 21951,
+          "score": 59.781341,
+          "路径": "harmonyos-guides/系统/安全/程序访问控制/应用权限管控/应用权限列表/开放权限（用户授权）/permissions-for-all-user.md",
+          "标题": [
+            "ohos.permission.LOCATION"
+          ],
+          "raw_length": 59,
+          "weighted_length": 82
+        },
+        {
+          "rank": 7,
+          "doc_id": 22023,
+          "score": 56.973592,
+          "路径": "harmonyos-guides/系统/安全/程序访问控制/应用权限管控/应用权限管控概述/app-permission-mgmt-overview.md",
+          "标题": [
+            "授权方式",
+            "user_grant（用户授权）"
+          ],
+          "raw_length": 73,
+          "weighted_length": 93
+        },
+        {
+          "rank": 8,
+          "doc_id": 22526,
+          "score": 56.89276,
+          "路径": "harmonyos-guides/系统/网络/Distributed Service Kit（分布式管理服务）/分布式设备管理开发指南/devicemanager-guidelines.md",
+          "标题": [
+            "申请分布式数据同步权限开发指导",
+            "开发步骤"
+          ],
+          "raw_length": 84,
+          "weighted_length": 104
+        },
+        {
+          "rank": 9,
+          "doc_id": 21950,
+          "score": 55.580049,
+          "路径": "harmonyos-guides/系统/安全/程序访问控制/应用权限管控/应用权限列表/开放权限（用户授权）/permissions-for-all-user.md",
+          "标题": [
+            "ohos.permission.LOCATION_IN_BACKGROUND"
+          ],
+          "raw_length": 222,
+          "weighted_length": 245
+        },
+        {
+          "rank": 10,
+          "doc_id": 21942,
+          "score": 55.246357,
+          "路径": "harmonyos-guides/系统/安全/程序访问控制/应用权限管控/应用权限列表/开放权限（用户授权）/permissions-for-all-user.md",
+          "标题": [
+            "开放权限（用户授权）"
+          ],
+          "raw_length": 79,
+          "weighted_length": 102
+        }
+      ]
+    },
+    {
+      "sample_order": 8,
+      "dataset_row": 1910,
+      "query": "如何在Stage模型下开发鸿蒙系统JS卡片，并实现卡片的生命周期管理、数据更新及事件交互？",
+      "gold_path": "应用框架/Form Kit（卡片开发服务）/JS卡片开发/JS卡片开发指导（Stage模型）/js-ui-widget-development.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "如何在Stage模型下开发鸿蒙系统JS卡片，并实现卡片的生命周期管理、数据更新及事件交互？",
+        "第一类完整词": {
+          "stage模型": 1,
+          "tag": 1,
+          "事件交互": 1,
+          "数据更新": 1,
+          "生命周期": 1,
+          "生命周期管理": 1
+        },
+        "预处理tokens": [
+          "如何",
+          "stage",
+          "模型",
+          "开发",
+          "鸿蒙",
+          "系统",
+          "js",
+          "卡片",
+          "并",
+          "实现",
+          "卡片",
+          "生命周期",
+          "管理",
+          "数据",
+          "更新",
+          "事件",
+          "交互"
+        ],
+        "BM25查询词频": {
+          "js": 1,
+          "stage": 1,
+          "stage模型": 1,
+          "tag": 1,
+          "事件": 1,
+          "事件交互": 1,
+          "交互": 1,
+          "卡片": 2,
+          "如何": 1,
+          "实现": 1,
+          "并": 1,
+          "开发": 1,
+          "数据": 1,
+          "数据更新": 1,
+          "更新": 1,
+          "模型": 1,
+          "生命周期": 2,
+          "生命周期管理": 1,
+          "管理": 1,
+          "系统": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 18376,
+          "score": 69.310537,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/JS卡片开发/JS卡片开发指导（Stage模型）/js-ui-widget-development.md",
+          "标题": [
+            "开发步骤"
+          ],
+          "raw_length": 105,
+          "weighted_length": 126
+        },
+        {
+          "rank": 2,
+          "doc_id": 18377,
+          "score": 60.337037,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/JS卡片开发/JS卡片开发指导（Stage模型）/js-ui-widget-development.md",
+          "标题": [
+            "开发步骤",
+            "创建卡片FormExtensionAbility"
+          ],
+          "raw_length": 112,
+          "weighted_length": 136
+        },
+        {
+          "rank": 3,
+          "doc_id": 18380,
+          "score": 60.269679,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/JS卡片开发/JS卡片开发指导（Stage模型）/js-ui-widget-development.md",
+          "标题": [
+            "开发步骤",
+            "卡片数据交互"
+          ],
+          "raw_length": 75,
+          "weighted_length": 99
+        },
+        {
+          "rank": 4,
+          "doc_id": 18382,
+          "score": 59.877878,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/JS卡片开发/JS卡片开发指导（Stage模型）/js-ui-widget-development.md",
+          "标题": [
+            "开发步骤",
+            "开发卡片事件"
+          ],
+          "raw_length": 288,
+          "weighted_length": 312
+        },
+        {
+          "rank": 5,
+          "doc_id": 18367,
+          "score": 56.269084,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/JS卡片开发/JS卡片开发指导（FA模型）/widget-development-fa.md",
+          "标题": [
+            "开发步骤"
+          ],
+          "raw_length": 98,
+          "weighted_length": 119
+        },
+        {
+          "rank": 6,
+          "doc_id": 18381,
+          "score": 52.884606,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/JS卡片开发/JS卡片开发指导（Stage模型）/js-ui-widget-development.md",
+          "标题": [
+            "开发步骤",
+            "开发卡片页面"
+          ],
+          "raw_length": 71,
+          "weighted_length": 95
+        },
+        {
+          "rank": 7,
+          "doc_id": 18374,
+          "score": 47.030061,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/JS卡片开发/JS卡片开发指导（Stage模型）/js-ui-widget-development.md",
+          "标题": [
+            "JS卡片开发指导（Stage模型）"
+          ],
+          "raw_length": 61,
+          "weighted_length": 82
+        },
+        {
+          "rank": 8,
+          "doc_id": 18384,
+          "score": 46.031221,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/JS卡片开发/JS卡片概述/js-ui-widget-overview.md",
+          "标题": [
+            "实现原理"
+          ],
+          "raw_length": 253,
+          "weighted_length": 270
+        },
+        {
+          "rank": 9,
+          "doc_id": 18379,
+          "score": 45.312982,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/JS卡片开发/JS卡片开发指导（Stage模型）/js-ui-widget-development.md",
+          "标题": [
+            "开发步骤",
+            "卡片信息的持久化"
+          ],
+          "raw_length": 289,
+          "weighted_length": 313
+        },
+        {
+          "rank": 10,
+          "doc_id": 18368,
+          "score": 45.07193,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/JS卡片开发/JS卡片开发指导（FA模型）/widget-development-fa.md",
+          "标题": [
+            "开发步骤",
+            "实现卡片生命周期接口"
+          ],
+          "raw_length": 82,
+          "weighted_length": 106
+        }
+      ]
+    },
+    {
+      "sample_order": 9,
+      "dataset_row": 80,
+      "query": "在开始鸿蒙应用开发前，需要完成哪些准备工作？",
+      "gold_path": "应用开发准备/应用开发准备/application-dev-overview.md",
+      "gold_rank": 5,
+      "query_analysis": {
+        "query": "在开始鸿蒙应用开发前，需要完成哪些准备工作？",
+        "第一类完整词": {
+          "准备工作": 1,
+          "应用开发": 1
+        },
+        "预处理tokens": [
+          "开始",
+          "鸿蒙",
+          "应用",
+          "开发",
+          "完成",
+          "哪些",
+          "准备",
+          "工作"
+        ],
+        "BM25查询词频": {
+          "准备": 1,
+          "准备工作": 1,
+          "哪些": 1,
+          "完成": 1,
+          "工作": 1,
+          "应用": 1,
+          "应用开发": 1,
+          "开发": 1,
+          "开始": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 19046,
+          "score": 31.358442,
+          "路径": "harmonyos-guides/开发环境搭建/工程创建/模块管理/ohpm-repo私仓搭建工具/附录/自定义存储插件/自定义存储插件配置/ide-ohpm-repo-plugin-configuration.md",
+          "标题": [
+            "准备工作"
+          ],
+          "raw_length": 79,
+          "weighted_length": 100
+        },
+        {
+          "rank": 2,
+          "doc_id": 19052,
+          "score": 31.358442,
+          "路径": "harmonyos-guides/开发环境搭建/工程创建/模块管理/ohpm-repo私仓搭建工具/附录/自定义认证插件/自定义认证插件配置/ide-custom-auth-plugin-configuration.md",
+          "标题": [
+            "准备工作"
+          ],
+          "raw_length": 79,
+          "weighted_length": 100
+        },
+        {
+          "rank": 3,
+          "doc_id": 19037,
+          "score": 28.1903,
+          "路径": "harmonyos-guides/开发环境搭建/工程创建/模块管理/ohpm-repo私仓搭建工具/附录/自定义元数据规则校验插件/自定义元数据规则校验插件配置/ide-custom-metadata-rule-validation-config.md",
+          "标题": [
+            "准备工作"
+          ],
+          "raw_length": 116,
+          "weighted_length": 137
+        },
+        {
+          "rank": 4,
+          "doc_id": 11134,
+          "score": 27.105243,
+          "路径": "harmonyos-guides/应用服务/App Linking Kit（应用链接服务）/开发准备/基本准备工作/applinking-basic-preparation.md",
+          "标题": [
+            "基本准备工作"
+          ],
+          "raw_length": 70,
+          "weighted_length": 87
+        },
+        {
+          "rank": 5,
+          "doc_id": 10836,
+          "score": 26.612137,
+          "路径": "harmonyos-guides/应用开发准备/应用开发准备/application-dev-overview.md",
+          "标题": [
+            "应用开发准备"
+          ],
+          "raw_length": 24,
+          "weighted_length": 35
+        },
+        {
+          "rank": 6,
+          "doc_id": 12380,
+          "score": 26.211289,
+          "路径": "harmonyos-guides/应用服务/Live View Kit（实况窗服务）/开发准备/基本准备工作/liveview-base.md",
+          "标题": [
+            "基本准备工作"
+          ],
+          "raw_length": 42,
+          "weighted_length": 59
+        },
+        {
+          "rank": 7,
+          "doc_id": 11609,
+          "score": 25.158641,
+          "路径": "harmonyos-guides/应用服务/Cloud Foundation Kit（云开发服务）/开发准备/基本准备工作/cloudfoundation-basic-preparation.md",
+          "标题": [
+            "基本准备工作"
+          ],
+          "raw_length": 50,
+          "weighted_length": 67
+        },
+        {
+          "rank": 8,
+          "doc_id": 12897,
+          "score": 24.766217,
+          "路径": "harmonyos-guides/应用服务/Payment Kit（鸿蒙支付服务）/开发准备/开通支付服务/payment-config-agc.md",
+          "标题": [
+            "开通支付服务"
+          ],
+          "raw_length": 86,
+          "weighted_length": 103
+        },
+        {
+          "rank": 9,
+          "doc_id": 12310,
+          "score": 23.945067,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/开发准备/基本准备工作/（可选）申请嵌入式收银台开放能力权限/iap-apply-for-open-capabilities.md",
+          "标题": [
+            "开放能力申请准备"
+          ],
+          "raw_length": 50,
+          "weighted_length": 69
+        },
+        {
+          "rank": 10,
+          "doc_id": 8065,
+          "score": 22.964612,
+          "路径": "harmonyos-guides/图形/AR Engine（AR引擎服务）/开发准备/arengine-preparations.md",
+          "标题": [
+            "环境搭建"
+          ],
+          "raw_length": 26,
+          "weighted_length": 41
+        }
+      ]
+    },
+    {
+      "sample_order": 10,
+      "dataset_row": 671,
+      "query": "在鸿蒙系统中，如何将PDF文档的指定页面缩略图转换为JPEG或PNG图片并保存到本地？",
+      "gold_path": "应用服务/PDF Kit（PDF服务）/PdfView预览组件/PDF缩略图转换为图片/pdf-pdfview-page2img.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统中，如何将PDF文档的指定页面缩略图转换为JPEG或PNG图片并保存到本地？",
+        "第一类完整词": {},
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "如何",
+          "将",
+          "pdf",
+          "文档",
+          "指定",
+          "页面",
+          "缩略图",
+          "转换",
+          "jpeg",
+          "png",
+          "图片",
+          "并",
+          "保存",
+          "本地"
+        ],
+        "BM25查询词频": {
+          "jpeg": 1,
+          "pdf": 1,
+          "png": 1,
+          "保存": 1,
+          "图片": 1,
+          "如何": 1,
+          "将": 1,
+          "并": 1,
+          "指定": 1,
+          "文档": 1,
+          "本地": 1,
+          "系统": 1,
+          "缩略图": 1,
+          "转换": 1,
+          "页面": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 12745,
+          "score": 43.52677,
+          "路径": "harmonyos-guides/应用服务/PDF Kit（PDF服务）/PdfView预览组件/PDF缩略图转换为图片/pdf-pdfview-page2img.md",
+          "标题": [
+            "示例代码"
+          ],
+          "raw_length": 57,
+          "weighted_length": 74
+        },
+        {
+          "rank": 2,
+          "doc_id": 12796,
+          "score": 43.312852,
+          "路径": "harmonyos-guides/应用服务/PDF Kit（PDF服务）/pdfService能力/转换PDF文档为图片/转换指定页面或指定区域为图片/pdf-get-img.md",
+          "标题": [
+            "示例代码"
+          ],
+          "raw_length": 99,
+          "weighted_length": 118
+        },
+        {
+          "rank": 3,
+          "doc_id": 12794,
+          "score": 43.305721,
+          "路径": "harmonyos-guides/应用服务/PDF Kit（PDF服务）/pdfService能力/转换PDF文档为图片/转换指定页面或指定区域为图片/pdf-get-img.md",
+          "标题": [
+            "场景介绍"
+          ],
+          "raw_length": 40,
+          "weighted_length": 59
+        },
+        {
+          "rank": 4,
+          "doc_id": 12742,
+          "score": 39.93361,
+          "路径": "harmonyos-guides/应用服务/PDF Kit（PDF服务）/PdfView预览组件/pdf-pdfview-implements.md",
+          "标题": [
+            "PdfView预览组件"
+          ],
+          "raw_length": 50,
+          "weighted_length": 65
+        },
+        {
+          "rank": 5,
+          "doc_id": 12797,
+          "score": 39.506081,
+          "路径": "harmonyos-guides/应用服务/PDF Kit（PDF服务）/pdfService能力/转换PDF文档为图片/转换整个PDF文档为图片/pdf-convert-img.md",
+          "标题": [
+            "场景介绍"
+          ],
+          "raw_length": 52,
+          "weighted_length": 71
+        },
+        {
+          "rank": 6,
+          "doc_id": 12743,
+          "score": 39.33665,
+          "路径": "harmonyos-guides/应用服务/PDF Kit（PDF服务）/PdfView预览组件/PDF缩略图转换为图片/pdf-pdfview-page2img.md",
+          "标题": [
+            "场景介绍"
+          ],
+          "raw_length": 36,
+          "weighted_length": 53
+        },
+        {
+          "rank": 7,
+          "doc_id": 12793,
+          "score": 39.045719,
+          "路径": "harmonyos-guides/应用服务/PDF Kit（PDF服务）/pdfService能力/转换PDF文档为图片/pdf-doc-to-imgs.md",
+          "标题": [
+            "转换PDF文档为图片"
+          ],
+          "raw_length": 35,
+          "weighted_length": 52
+        },
+        {
+          "rank": 8,
+          "doc_id": 12787,
+          "score": 37.175783,
+          "路径": "harmonyos-guides/应用服务/PDF Kit（PDF服务）/pdfService能力/添加、删除背景/pdf-add-background.md",
+          "标题": [
+            "添加、删除背景"
+          ],
+          "raw_length": 40,
+          "weighted_length": 57
+        },
+        {
+          "rank": 9,
+          "doc_id": 10159,
+          "score": 36.309676,
+          "路径": "harmonyos-guides/媒体/Image Kit（图片处理服务）/Image Kit常见问题/如何处理HEIF图片/heif-adapter-faq.md",
+          "标题": [
+            "常见问题",
+            "担心使用HEIF格式图片存在兼容性问题，需使用JPEG或PNG格式的图片，如何操作"
+          ],
+          "raw_length": 122,
+          "weighted_length": 142
+        },
+        {
+          "rank": 10,
+          "doc_id": 12766,
+          "score": 35.40704,
+          "路径": "harmonyos-guides/应用服务/PDF Kit（PDF服务）/pdfService能力/pdf-pdfservice-implements.md",
+          "标题": [
+            "pdfService能力"
+          ],
+          "raw_length": 57,
+          "weighted_length": 72
+        }
+      ]
+    },
+    {
+      "sample_order": 11,
+      "dataset_row": 1183,
+      "query": "在鸿蒙系统中，如何通过向量数据库实现数据持久化？",
+      "gold_path": "应用框架/ArkData（方舟数据管理）/应用数据持久化/通过向量数据库实现数据持久化 (ArkTS)/data-persistence-by-vector-store.md",
+      "gold_rank": 2,
+      "query_analysis": {
+        "query": "在鸿蒙系统中，如何通过向量数据库实现数据持久化？",
+        "第一类完整词": {
+          "通过向量数据库实现数据持久化": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "如何",
+          "向量",
+          "数据库",
+          "实现",
+          "数据",
+          "持久",
+          "化"
+        ],
+        "BM25查询词频": {
+          "化": 1,
+          "向量": 1,
+          "如何": 1,
+          "实现": 1,
+          "持久": 1,
+          "数据": 1,
+          "数据库": 1,
+          "系统": 1,
+          "通过向量数据库实现数据持久化": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 14396,
+          "score": 55.895935,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过向量数据库实现数据持久化 (CC++)/native-vector-store-guidelines.md",
+          "标题": [
+            "场景介绍"
+          ],
+          "raw_length": 69,
+          "weighted_length": 90
+        },
+        {
+          "rank": 2,
+          "doc_id": 14384,
+          "score": 55.681668,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过向量数据库实现数据持久化 (ArkTS)/data-persistence-by-vector-store.md",
+          "标题": [
+            "场景介绍"
+          ],
+          "raw_length": 71,
+          "weighted_length": 92
+        },
+        {
+          "rank": 3,
+          "doc_id": 14399,
+          "score": 50.251755,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过向量数据库实现数据持久化 (CC++)/native-vector-store-guidelines.md",
+          "标题": [
+            "规格限制"
+          ],
+          "raw_length": 33,
+          "weighted_length": 54
+        },
+        {
+          "rank": 4,
+          "doc_id": 14387,
+          "score": 49.849302,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过向量数据库实现数据持久化 (ArkTS)/data-persistence-by-vector-store.md",
+          "标题": [
+            "规格限制",
+            "数据类型"
+          ],
+          "raw_length": 57,
+          "weighted_length": 81
+        },
+        {
+          "rank": 5,
+          "doc_id": 14397,
+          "score": 49.322434,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过向量数据库实现数据持久化 (CC++)/native-vector-store-guidelines.md",
+          "标题": [
+            "基本概念"
+          ],
+          "raw_length": 56,
+          "weighted_length": 77
+        },
+        {
+          "rank": 6,
+          "doc_id": 14385,
+          "score": 49.028686,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过向量数据库实现数据持久化 (ArkTS)/data-persistence-by-vector-store.md",
+          "标题": [
+            "基本概念"
+          ],
+          "raw_length": 58,
+          "weighted_length": 79
+        },
+        {
+          "rank": 7,
+          "doc_id": 14388,
+          "score": 46.72707,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过向量数据库实现数据持久化 (ArkTS)/data-persistence-by-vector-store.md",
+          "标题": [
+            "规格限制",
+            "字段约束"
+          ],
+          "raw_length": 63,
+          "weighted_length": 87
+        },
+        {
+          "rank": 8,
+          "doc_id": 14391,
+          "score": 46.034854,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过向量数据库实现数据持久化 (ArkTS)/data-persistence-by-vector-store.md",
+          "标题": [
+            "规格限制",
+            "运算符"
+          ],
+          "raw_length": 73,
+          "weighted_length": 97
+        },
+        {
+          "rank": 9,
+          "doc_id": 14390,
+          "score": 45.802808,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过向量数据库实现数据持久化 (ArkTS)/data-persistence-by-vector-store.md",
+          "标题": [
+            "规格限制",
+            "集合"
+          ],
+          "raw_length": 59,
+          "weighted_length": 83
+        },
+        {
+          "rank": 10,
+          "doc_id": 14389,
+          "score": 45.753021,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过向量数据库实现数据持久化 (ArkTS)/data-persistence-by-vector-store.md",
+          "标题": [
+            "规格限制",
+            "子句"
+          ],
+          "raw_length": 80,
+          "weighted_length": 104
+        }
+      ]
+    },
+    {
+      "sample_order": 12,
+      "dataset_row": 847,
+      "query": "在鸿蒙系统中，如何使用Reader Kit获取本地书籍的封面、书名和作者信息并展示？",
+      "gold_path": "应用服务/Reader Kit（阅读服务）/书籍内容解析/获取书籍信息/reader-book-info.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统中，如何使用Reader Kit获取本地书籍的封面、书名和作者信息并展示？",
+        "第一类完整词": {
+          "kit": 1,
+          "read": 1,
+          "reader": 1,
+          "reader kit": 1,
+          "作者信息": 1,
+          "如何使用": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "如何",
+          "reader",
+          "kit",
+          "获取",
+          "本地",
+          "书籍",
+          "封面",
+          "书名",
+          "作者",
+          "信息",
+          "并",
+          "展示"
+        ],
+        "BM25查询词频": {
+          "kit": 2,
+          "read": 1,
+          "reader": 2,
+          "reader kit": 1,
+          "书名": 1,
+          "书籍": 1,
+          "作者": 1,
+          "作者信息": 1,
+          "信息": 1,
+          "如何": 1,
+          "如何使用": 1,
+          "封面": 1,
+          "展示": 1,
+          "并": 1,
+          "本地": 1,
+          "系统": 1,
+          "获取": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 13261,
+          "score": 87.658976,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/书籍内容解析/获取书籍信息/reader-book-info.md",
+          "标题": [
+            "开发步骤"
+          ],
+          "raw_length": 40,
+          "weighted_length": 57
+        },
+        {
+          "rank": 2,
+          "doc_id": 13259,
+          "score": 85.125799,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/书籍内容解析/获取书籍信息/reader-book-info.md",
+          "标题": [
+            "获取书籍信息"
+          ],
+          "raw_length": 56,
+          "weighted_length": 73
+        },
+        {
+          "rank": 3,
+          "doc_id": 13218,
+          "score": 78.857242,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/Reader Kit简介/reader-introduction.md",
+          "标题": [
+            "基本概念"
+          ],
+          "raw_length": 110,
+          "weighted_length": 125
+        },
+        {
+          "rank": 4,
+          "doc_id": 13216,
+          "score": 76.750924,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/Reader Kit简介/reader-introduction.md",
+          "标题": [
+            "能力范围"
+          ],
+          "raw_length": 98,
+          "weighted_length": 113
+        },
+        {
+          "rank": 5,
+          "doc_id": 13219,
+          "score": 60.076218,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/Reader Kit简介/reader-introduction.md",
+          "标题": [
+            "约束和限制"
+          ],
+          "raw_length": 92,
+          "weighted_length": 107
+        },
+        {
+          "rank": 6,
+          "doc_id": 13264,
+          "score": 59.805969,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/书籍内容解析/获取目录列表/reader-catalog-list.md",
+          "标题": [
+            "开发步骤"
+          ],
+          "raw_length": 46,
+          "weighted_length": 63
+        },
+        {
+          "rank": 7,
+          "doc_id": 13258,
+          "score": 55.024891,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/书籍内容解析/reader-parser.md",
+          "标题": [
+            "书籍内容解析"
+          ],
+          "raw_length": 23,
+          "weighted_length": 38
+        },
+        {
+          "rank": 8,
+          "doc_id": 13262,
+          "score": 54.279907,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/书籍内容解析/获取目录列表/reader-catalog-list.md",
+          "标题": [
+            "获取目录列表"
+          ],
+          "raw_length": 60,
+          "weighted_length": 77
+        },
+        {
+          "rank": 9,
+          "doc_id": 13255,
+          "score": 53.63839,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/书籍内容排版/构建阅读器/reader-read-page.md",
+          "标题": [
+            "构建阅读器"
+          ],
+          "raw_length": 65,
+          "weighted_length": 82
+        },
+        {
+          "rank": 10,
+          "doc_id": 13214,
+          "score": 53.391906,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/reader-kit-guide.md",
+          "标题": [
+            "Reader Kit（阅读服务）"
+          ],
+          "raw_length": 29,
+          "weighted_length": 44
+        }
+      ]
+    },
+    {
+      "sample_order": 13,
+      "dataset_row": 2476,
+      "query": "如何解决鸿蒙系统中Enterprise Data Guard Kit权限获取失败的问题？",
+      "gold_path": "系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/Enterprise Data Guard Kit常见问题/dataguard-faq.md",
+      "gold_rank": 2,
+      "query_analysis": {
+        "query": "如何解决鸿蒙系统中Enterprise Data Guard Kit权限获取失败的问题？",
+        "第一类完整词": {
+          "data": 1,
+          "enterprise data guard": 1,
+          "enterprise data guard kit": 1,
+          "enterprise data guard kit权限获取失败": 1,
+          "kit": 1
+        },
+        "预处理tokens": [
+          "如何",
+          "解决",
+          "鸿蒙",
+          "系统",
+          "enterprise",
+          "data",
+          "guard",
+          "kit",
+          "权限",
+          "获取",
+          "失败",
+          "问题"
+        ],
+        "BM25查询词频": {
+          "data": 2,
+          "enterprise": 1,
+          "enterprise data guard": 1,
+          "enterprise data guard kit": 1,
+          "enterprise data guard kit权限获取失败": 1,
+          "guard": 1,
+          "kit": 2,
+          "失败": 1,
+          "如何": 1,
+          "权限": 1,
+          "系统": 1,
+          "获取": 1,
+          "解决": 1,
+          "问题": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 21236,
+          "score": 82.491296,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/Enterprise Data Guard Kit常见问题/Enterprise Data Guard Kit权限获取失败/dataguard-faq-1.md",
+          "标题": [
+            "Enterprise Data Guard Kit权限获取失败"
+          ],
+          "raw_length": 75,
+          "weighted_length": 94
+        },
+        {
+          "rank": 2,
+          "doc_id": 21235,
+          "score": 50.706323,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/Enterprise Data Guard Kit常见问题/dataguard-faq.md",
+          "标题": [
+            "Enterprise Data Guard Kit常见问题"
+          ],
+          "raw_length": 33,
+          "weighted_length": 50
+        },
+        {
+          "rank": 3,
+          "doc_id": 21234,
+          "score": 41.772142,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/data-guard-kit-guide.md",
+          "标题": [
+            "Enterprise Data Guard Kit（企业数据保护服务）"
+          ],
+          "raw_length": 44,
+          "weighted_length": 61
+        },
+        {
+          "rank": 4,
+          "doc_id": 21237,
+          "score": 38.708943,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/Enterprise Data Guard Kit简介/dataguard-introduction.md",
+          "标题": [
+            "Enterprise Data Guard Kit简介"
+          ],
+          "raw_length": 85,
+          "weighted_length": 102
+        },
+        {
+          "rank": 5,
+          "doc_id": 21286,
+          "score": 38.317635,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/文件分级管控/获取文件属性标签/fileguard-query-tags.md",
+          "标题": [
+            "场景介绍"
+          ],
+          "raw_length": 49,
+          "weighted_length": 68
+        },
+        {
+          "rank": 6,
+          "doc_id": 21283,
+          "score": 38.316267,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/文件分级管控/获取文件URI/fileguard-get-file-url.md",
+          "标题": [
+            "场景介绍"
+          ],
+          "raw_length": 48,
+          "weighted_length": 67
+        },
+        {
+          "rank": 7,
+          "doc_id": 21270,
+          "score": 38.272859,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/文件分级管控/启动文件扫描任务/fileguard-start-task.md",
+          "标题": [
+            "场景介绍"
+          ],
+          "raw_length": 43,
+          "weighted_length": 62
+        },
+        {
+          "rank": 8,
+          "doc_id": 21273,
+          "score": 38.149093,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/文件分级管控/打开文件/fileguard-openfile.md",
+          "标题": [
+            "场景介绍"
+          ],
+          "raw_length": 44,
+          "weighted_length": 63
+        },
+        {
+          "rank": 9,
+          "doc_id": 21242,
+          "score": 37.050731,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/Enterprise Data Guard Kit简介/dataguard-introduction.md",
+          "标题": [
+            "模拟器支持情况"
+          ],
+          "raw_length": 28,
+          "weighted_length": 45
+        },
+        {
+          "rank": 10,
+          "doc_id": 21267,
+          "score": 36.66482,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/文件分级管控/删除指定路径下的文件/fileguard-delete-file.md",
+          "标题": [
+            "场景介绍"
+          ],
+          "raw_length": 37,
+          "weighted_length": 56
+        }
+      ]
+    },
+    {
+      "sample_order": 14,
+      "dataset_row": 1167,
+      "query": "如何在鸿蒙系统中实现同应用端云数据同步（分布式）？",
+      "gold_path": "应用框架/ArkData（方舟数据管理）/同应用端云数据同步（分布式）/distributed-data-cloud-sync.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "如何在鸿蒙系统中实现同应用端云数据同步（分布式）？",
+        "第一类完整词": {
+          "分布式": 1,
+          "同应用端云数据同步": 1,
+          "同应用端云数据同步(分布式)": 1
+        },
+        "预处理tokens": [
+          "如何",
+          "鸿蒙",
+          "系统",
+          "实现",
+          "同",
+          "应用",
+          "端云",
+          "数据",
+          "同步",
+          "分布式"
+        ],
+        "BM25查询词频": {
+          "分布式": 2,
+          "同": 1,
+          "同应用端云数据同步": 1,
+          "同应用端云数据同步(分布式)": 1,
+          "同步": 1,
+          "如何": 1,
+          "实现": 1,
+          "应用": 1,
+          "数据": 1,
+          "端云": 1,
+          "系统": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 14292,
+          "score": 88.400907,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用端云数据同步（分布式）/distributed-data-cloud-sync.md",
+          "标题": [
+            "同应用端云数据同步（分布式）"
+          ],
+          "raw_length": 53,
+          "weighted_length": 72
+        },
+        {
+          "rank": 2,
+          "doc_id": 14293,
+          "score": 61.874315,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用端云数据同步（分布式）/同应用端云数据同步概述/data-cloud-sync-overview.md",
+          "标题": [
+            "场景介绍"
+          ],
+          "raw_length": 54,
+          "weighted_length": 73
+        },
+        {
+          "rank": 3,
+          "doc_id": 14307,
+          "score": 60.902104,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用端云数据同步（分布式）/端云数据同步云侧环境部署指导/data-sync-with-cloud.md",
+          "标题": [
+            "个人数据处理说明"
+          ],
+          "raw_length": 58,
+          "weighted_length": 77
+        },
+        {
+          "rank": 4,
+          "doc_id": 14313,
+          "score": 60.536731,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用端云数据同步（分布式）/端云数据同步关系型数据库端侧开发指导 (ArkTS)/data-cloud-sync-of-rdb-store.md",
+          "标题": [
+            "场景介绍"
+          ],
+          "raw_length": 75,
+          "weighted_length": 98
+        },
+        {
+          "rank": 5,
+          "doc_id": 14294,
+          "score": 58.582933,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用端云数据同步（分布式）/同应用端云数据同步概述/data-cloud-sync-overview.md",
+          "标题": [
+            "基本概念"
+          ],
+          "raw_length": 67,
+          "weighted_length": 86
+        },
+        {
+          "rank": 6,
+          "doc_id": 14295,
+          "score": 56.528908,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用端云数据同步（分布式）/同应用端云数据同步概述/data-cloud-sync-overview.md",
+          "标题": [
+            "同步方式"
+          ],
+          "raw_length": 131,
+          "weighted_length": 150
+        },
+        {
+          "rank": 7,
+          "doc_id": 14312,
+          "score": 56.184373,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用端云数据同步（分布式）/端云数据同步云侧环境部署指导/data-sync-with-cloud.md",
+          "标题": [
+            "常见问题",
+            "云端修改数据类型的配置后，端侧同步失败"
+          ],
+          "raw_length": 40,
+          "weighted_length": 62
+        },
+        {
+          "rank": 8,
+          "doc_id": 14296,
+          "score": 55.912893,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用端云数据同步（分布式）/同应用端云数据同步概述/data-cloud-sync-overview.md",
+          "标题": [
+            "运作机制",
+            "端云同步机制"
+          ],
+          "raw_length": 121,
+          "weighted_length": 143
+        },
+        {
+          "rank": 9,
+          "doc_id": 14298,
+          "score": 55.76304,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用端云数据同步（分布式）/同应用端云数据同步概述/data-cloud-sync-overview.md",
+          "标题": [
+            "约束限制"
+          ],
+          "raw_length": 85,
+          "weighted_length": 104
+        },
+        {
+          "rank": 10,
+          "doc_id": 14309,
+          "score": 54.137233,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用端云数据同步（分布式）/端云数据同步云侧环境部署指导/data-sync-with-cloud.md",
+          "标题": [
+            "个人数据处理说明",
+            "指导开发者如何帮助用户实现对数据的控制"
+          ],
+          "raw_length": 136,
+          "weighted_length": 158
+        }
+      ]
+    },
+    {
+      "sample_order": 15,
+      "dataset_row": 509,
+      "query": "在鸿蒙系统的IAP Kit中，非游戏类应用的开发者如何审核和处理用户的退款申请？",
+      "gold_path": "应用服务/IAP Kit（应用内支付服务）/售后/退款/iap-refund.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统的IAP Kit中，非游戏类应用的开发者如何审核和处理用户的退款申请？",
+        "第一类完整词": {
+          "iap": 1,
+          "iap kit": 1,
+          "kit": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "iap",
+          "kit",
+          "游戏类",
+          "应用",
+          "开发者",
+          "如何",
+          "审核",
+          "处理",
+          "用户",
+          "退款",
+          "申请"
+        ],
+        "BM25查询词频": {
+          "iap": 2,
+          "iap kit": 1,
+          "kit": 2,
+          "处理": 1,
+          "如何": 1,
+          "审核": 1,
+          "应用": 1,
+          "开发者": 1,
+          "游戏类": 1,
+          "用户": 1,
+          "申请": 1,
+          "系统": 1,
+          "退款": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 12248,
+          "score": 86.18876,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/售后/退款/iap-refund.md",
+          "标题": [
+            "退款"
+          ],
+          "raw_length": 69,
+          "weighted_length": 86
+        },
+        {
+          "rank": 2,
+          "doc_id": 12249,
+          "score": 63.076538,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/售后/退款/iap-refund.md",
+          "标题": [
+            "开发者审核退款订单"
+          ],
+          "raw_length": 242,
+          "weighted_length": 259
+        },
+        {
+          "rank": 3,
+          "doc_id": 12250,
+          "score": 62.132225,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/售后/退款/iap-refund.md",
+          "标题": [
+            "用户申请退款"
+          ],
+          "raw_length": 156,
+          "weighted_length": 173
+        },
+        {
+          "rank": 4,
+          "doc_id": 12251,
+          "score": 61.912857,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/售后/退款/iap-refund.md",
+          "标题": [
+            "应用内接入退款入口"
+          ],
+          "raw_length": 76,
+          "weighted_length": 93
+        },
+        {
+          "rank": 5,
+          "doc_id": 12334,
+          "score": 59.090954,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/沙盒测试/iap-sandbox.md",
+          "标题": [
+            "测试退款请求"
+          ],
+          "raw_length": 205,
+          "weighted_length": 220
+        },
+        {
+          "rank": 6,
+          "doc_id": 12235,
+          "score": 45.981532,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/IAP Kit接入规范/iap-access-specifications.md",
+          "标题": [
+            "IAP Kit接入规范"
+          ],
+          "raw_length": 49,
+          "weighted_length": 64
+        },
+        {
+          "rank": 7,
+          "doc_id": 12245,
+          "score": 45.78274,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/售后/iap-after-sales.md",
+          "标题": [
+            "售后"
+          ],
+          "raw_length": 18,
+          "weighted_length": 33
+        },
+        {
+          "rank": 8,
+          "doc_id": 12236,
+          "score": 45.045576,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/IAP Kit接入规范/iap-access-specifications.md",
+          "标题": [
+            "界面设计规范"
+          ],
+          "raw_length": 95,
+          "weighted_length": 110
+        },
+        {
+          "rank": 9,
+          "doc_id": 12238,
+          "score": 44.984741,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/IAP Kit简介/iap-introduction.md",
+          "标题": [
+            "IAP Kit简介"
+          ],
+          "raw_length": 225,
+          "weighted_length": 240
+        },
+        {
+          "rank": 10,
+          "doc_id": 12244,
+          "score": 42.473038,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/使用入门/iap-dev-guide.md",
+          "标题": [
+            "示例代码"
+          ],
+          "raw_length": 36,
+          "weighted_length": 51
+        }
+      ]
+    },
+    {
+      "sample_order": 16,
+      "dataset_row": 90,
+      "query": "如何在鸿蒙系统中使用Netron工具查看.om模型的拓扑结构和子图信息？",
+      "gold_path": "AI/CANN Kit（CANN异构计算框架服务）/附录/可视化工具/cannkit-visualization-tool-usage.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "如何在鸿蒙系统中使用Netron工具查看.om模型的拓扑结构和子图信息？",
+        "第一类完整词": {},
+        "预处理tokens": [
+          "如何",
+          "鸿蒙",
+          "系统",
+          "netron",
+          "工具",
+          "查看",
+          "om",
+          "模型",
+          "拓扑",
+          "结构",
+          "和子",
+          "图",
+          "信息"
+        ],
+        "BM25查询词频": {
+          "netron": 1,
+          "om": 1,
+          "信息": 1,
+          "和子": 1,
+          "图": 1,
+          "如何": 1,
+          "工具": 1,
+          "拓扑": 1,
+          "查看": 1,
+          "模型": 1,
+          "系统": 1,
+          "结构": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 5999,
+          "score": 72.372537,
+          "路径": "harmonyos-guides/AI/CANN Kit（CANN异构计算框架服务）/附录/可视化工具/cannkit-visualization-tool-usage.md",
+          "标题": [
+            "概述"
+          ],
+          "raw_length": 54,
+          "weighted_length": 71
+        },
+        {
+          "rank": 2,
+          "doc_id": 6000,
+          "score": 51.963461,
+          "路径": "harmonyos-guides/AI/CANN Kit（CANN异构计算框架服务）/附录/可视化工具/cannkit-visualization-tool-usage.md",
+          "标题": [
+            "功能描述"
+          ],
+          "raw_length": 61,
+          "weighted_length": 78
+        },
+        {
+          "rank": 3,
+          "doc_id": 6002,
+          "score": 38.958517,
+          "路径": "harmonyos-guides/AI/CANN Kit（CANN异构计算框架服务）/附录/可视化工具/cannkit-visualization-tool-usage.md",
+          "标题": [
+            "使用可视化工具",
+            "查看子图"
+          ],
+          "raw_length": 64,
+          "weighted_length": 84
+        },
+        {
+          "rank": 4,
+          "doc_id": 5829,
+          "score": 34.231062,
+          "路径": "harmonyos-guides/AI/CANN Kit（CANN异构计算框架服务）/模型优化/Model Zoo/cannkit-model-zoo.md",
+          "标题": [
+            "Model Zoo模型下载"
+          ],
+          "raw_length": 323,
+          "weighted_length": 340
+        },
+        {
+          "rank": 5,
+          "doc_id": 6001,
+          "score": 32.858564,
+          "路径": "harmonyos-guides/AI/CANN Kit（CANN异构计算框架服务）/附录/可视化工具/cannkit-visualization-tool-usage.md",
+          "标题": [
+            "使用可视化工具",
+            "安装工具"
+          ],
+          "raw_length": 92,
+          "weighted_length": 112
+        },
+        {
+          "rank": 6,
+          "doc_id": 5923,
+          "score": 24.893671,
+          "路径": "harmonyos-guides/AI/CANN Kit（CANN异构计算框架服务）/模型优化/模型轻量化/网络结构搜索训练/cannkit-network-structure-search-training.md",
+          "标题": [
+            "搜索训练",
+            "搜索结果展示"
+          ],
+          "raw_length": 135,
+          "weighted_length": 157
+        },
+        {
+          "rank": 7,
+          "doc_id": 5889,
+          "score": 23.630629,
+          "路径": "harmonyos-guides/AI/CANN Kit（CANN异构计算框架服务）/模型优化/模型轻量化/模型收益/cannkit-model-benefits.md",
+          "标题": [
+            "Quant_INT8-8量化收益"
+          ],
+          "raw_length": 69,
+          "weighted_length": 88
+        },
+        {
+          "rank": 8,
+          "doc_id": 12228,
+          "score": 22.230124,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/IAP Kit常见问题/如何解决证书链不完整？/iap-faq-14.md",
+          "标题": [
+            "如何解决证书链不完整？"
+          ],
+          "raw_length": 160,
+          "weighted_length": 177
+        },
+        {
+          "rank": 9,
+          "doc_id": 9167,
+          "score": 22.188582,
+          "路径": "harmonyos-guides/基础入门/开发基础知识/应用程序包基础知识/应用程序包结构/FA模型应用程序包结构/application-package-structure-fa.md",
+          "标题": [
+            "FA模型应用程序包结构"
+          ],
+          "raw_length": 237,
+          "weighted_length": 254
+        },
+        {
+          "rank": 10,
+          "doc_id": 5959,
+          "score": 21.637371,
+          "路径": "harmonyos-guides/AI/CANN Kit（CANN异构计算框架服务）/模型转换/离线模型转换/模型转换示例/cannkit-model-conversion-example.md",
+          "标题": [
+            "模型转换示例"
+          ],
+          "raw_length": 71,
+          "weighted_length": 90
+        }
+      ]
+    },
+    {
+      "sample_order": 17,
+      "dataset_row": 3133,
+      "query": "在鸿蒙应用中使用AVPlayer播放音频时，如何正确监听并处理音频焦点中断事件（如暂停、停止、音量减弱等）以符合Code Linter代码检查规则的示例代码？",
+      "gold_path": "编写与调试应用/代码编辑/代码检查/Code Linter代码检查规则/正确性规则@correctness/@correctnessaudio-interrupt-check/ide-audio-interrupt-check.md",
+      "gold_rank": 2,
+      "query_analysis": {
+        "query": "在鸿蒙应用中使用AVPlayer播放音频时，如何正确监听并处理音频焦点中断事件（如暂停、停止、音量减弱等）以符合Code Linter代码检查规则的示例代码？",
+        "第一类完整词": {
+          "avplayer": 1,
+          "code": 1,
+          "code linter": 1,
+          "code linter代码检查": 1,
+          "code linter代码检查规则": 1,
+          "play": 1,
+          "代码检查": 1,
+          "使用avplayer播放音频": 1,
+          "示例代码": 1,
+          "音频焦点": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "应用",
+          "avplayer",
+          "av",
+          "player",
+          "播放",
+          "音频",
+          "时",
+          "如何",
+          "正确",
+          "监听",
+          "并",
+          "处理",
+          "音频",
+          "焦点",
+          "中断",
+          "事件",
+          "如",
+          "暂停",
+          "停止",
+          "音量",
+          "减弱",
+          "以",
+          "符合",
+          "code",
+          "linter",
+          "代码",
+          "检查",
+          "规则",
+          "示例",
+          "代码"
+        ],
+        "BM25查询词频": {
+          "av": 1,
+          "avplayer": 2,
+          "code": 2,
+          "code linter": 1,
+          "code linter代码检查": 1,
+          "code linter代码检查规则": 1,
+          "linter": 1,
+          "play": 1,
+          "player": 1,
+          "中断": 1,
+          "事件": 1,
+          "代码": 2,
+          "代码检查": 1,
+          "以": 1,
+          "使用avplayer播放音频": 1,
+          "停止": 1,
+          "减弱": 1,
+          "处理": 1,
+          "如": 1,
+          "如何": 1,
+          "并": 1,
+          "应用": 1,
+          "播放": 1,
+          "时": 1,
+          "暂停": 1,
+          "检查": 1,
+          "正确": 1,
+          "焦点": 1,
+          "监听": 1,
+          "示例": 1,
+          "示例代码": 1,
+          "符合": 1,
+          "规则": 1,
+          "音量": 1,
+          "音频": 2,
+          "音频焦点": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 9830,
+          "score": 99.086725,
+          "路径": "harmonyos-guides/媒体/Audio Kit（音频服务）/音频焦点和音频会话管理/音频焦点介绍/audio-playback-concurrency.md",
+          "标题": [
+            "音频焦点",
+            "处理音频焦点变化"
+          ],
+          "raw_length": 532,
+          "weighted_length": 552
+        },
+        {
+          "rank": 2,
+          "doc_id": 24794,
+          "score": 96.735355,
+          "路径": "harmonyos-guides/编写与调试应用/代码编辑/代码检查/Code Linter代码检查规则/正确性规则@correctness/@correctnessaudio-interrupt-check/ide-audio-interrupt-check.md",
+          "标题": [
+            "@correctness/audio-interrupt-check"
+          ],
+          "raw_length": 54,
+          "weighted_length": 73
+        },
+        {
+          "rank": 3,
+          "doc_id": 24800,
+          "score": 86.155007,
+          "路径": "harmonyos-guides/编写与调试应用/代码编辑/代码检查/Code Linter代码检查规则/正确性规则@correctness/@correctnessavsession-buttons-check/ide-avsession-buttons-check.md",
+          "标题": [
+            "@correctness/avsession-buttons-check"
+          ],
+          "raw_length": 58,
+          "weighted_length": 77
+        },
+        {
+          "rank": 4,
+          "doc_id": 10495,
+          "score": 85.333046,
+          "路径": "harmonyos-guides/媒体/Media Kit（媒体服务）/媒体开发指导(CC++)/播放/使用AVPlayer播放音频(CC++)/using-ndk-avplayer-for-playback.md",
+          "标题": [
+            "使用AVPlayer播放音频(C/C++)"
+          ],
+          "raw_length": 210,
+          "weighted_length": 235
+        },
+        {
+          "rank": 5,
+          "doc_id": 9831,
+          "score": 84.402867,
+          "路径": "harmonyos-guides/媒体/Audio Kit（音频服务）/音频焦点和音频会话管理/音频焦点介绍/audio-playback-concurrency.md",
+          "标题": [
+            "音频焦点",
+            "典型场景"
+          ],
+          "raw_length": 393,
+          "weighted_length": 413
+        },
+        {
+          "rank": 6,
+          "doc_id": 10394,
+          "score": 84.358292,
+          "路径": "harmonyos-guides/媒体/Media Kit（媒体服务）/媒体开发指导(ArkTS)/播放/使用AVPlayer播放音频(ArkTS)/using-avplayer-for-playback.md",
+          "标题": [
+            "使用AVPlayer播放音频(ArkTS)"
+          ],
+          "raw_length": 202,
+          "weighted_length": 227
+        },
+        {
+          "rank": 7,
+          "doc_id": 24652,
+          "score": 84.051586,
+          "路径": "harmonyos-guides/编写与调试应用/代码编辑/代码检查/Code Linter代码检查规则/性能规则@performance/@performancehp-arkui-suggest-cache-avplayer/ide-hp-arkui-suggest-cache-avplayer.md",
+          "标题": [
+            "规则集"
+          ],
+          "raw_length": 49,
+          "weighted_length": 68
+        },
+        {
+          "rank": 8,
+          "doc_id": 24650,
+          "score": 83.441729,
+          "路径": "harmonyos-guides/编写与调试应用/代码编辑/代码检查/Code Linter代码检查规则/性能规则@performance/@performancehp-arkui-suggest-cache-avplayer/ide-hp-arkui-suggest-cache-avplayer.md",
+          "标题": [
+            "@performance/hp-arkui-suggest-cache-avplayer"
+          ],
+          "raw_length": 54,
+          "weighted_length": 73
+        },
+        {
+          "rank": 9,
+          "doc_id": 10396,
+          "score": 81.796928,
+          "路径": "harmonyos-guides/媒体/Media Kit（媒体服务）/媒体开发指导(ArkTS)/播放/使用AVPlayer播放音频(ArkTS)/using-avplayer-for-playback.md",
+          "标题": [
+            "开发步骤及注意事项"
+          ],
+          "raw_length": 565,
+          "weighted_length": 590
+        },
+        {
+          "rank": 10,
+          "doc_id": 9546,
+          "score": 81.326035,
+          "路径": "harmonyos-guides/媒体/AVSession Kit（音视频播控服务）/本地媒体会话/后台播放/avsession-background-scene.md",
+          "标题": [
+            "开发步骤",
+            "启动播放器"
+          ],
+          "raw_length": 236,
+          "weighted_length": 256
+        }
+      ]
+    },
+    {
+      "sample_order": 18,
+      "dataset_row": 3326,
+      "query": "在HarmonyOS应用开发中，如何使用DevEco Studio的Database Inspector工具查看和修改应用数据库？",
+      "gold_path": "编写与调试应用/应用调试/数据库调试/ide-database-inspector.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在HarmonyOS应用开发中，如何使用DevEco Studio的Database Inspector工具查看和修改应用数据库？",
+        "第一类完整词": {
+          "data": 1,
+          "dev": 1,
+          "deveco studio": 1,
+          "har": 1,
+          "harmonyos": 1,
+          "tab": 1,
+          "如何使用": 1,
+          "应用开发": 1
+        },
+        "预处理tokens": [
+          "harmonyos",
+          "harmony",
+          "os",
+          "应用",
+          "开发",
+          "如何",
+          "deveco",
+          "dev",
+          "eco",
+          "studio",
+          "database",
+          "inspector",
+          "工具",
+          "查看",
+          "修改",
+          "应用",
+          "数据库"
+        ],
+        "BM25查询词频": {
+          "data": 1,
+          "database": 1,
+          "dev": 2,
+          "deveco": 1,
+          "deveco studio": 1,
+          "eco": 1,
+          "har": 1,
+          "harmony": 1,
+          "harmonyos": 2,
+          "inspector": 1,
+          "os": 1,
+          "studio": 1,
+          "tab": 1,
+          "修改": 1,
+          "如何": 1,
+          "如何使用": 1,
+          "工具": 1,
+          "应用": 2,
+          "应用开发": 1,
+          "开发": 1,
+          "数据库": 1,
+          "查看": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 25521,
+          "score": 76.432877,
+          "路径": "harmonyos-guides/编写与调试应用/应用调试/数据库调试/ide-database-inspector.md",
+          "标题": [
+            "数据库调试"
+          ],
+          "raw_length": 80,
+          "weighted_length": 93
+        },
+        {
+          "rank": 2,
+          "doc_id": 18777,
+          "score": 59.11899,
+          "路径": "harmonyos-guides/开发环境搭建/下载与安装DevEco Studio/ide-software-install.md",
+          "标题": [
+            "macOS环境",
+            "安装DevEco Studio"
+          ],
+          "raw_length": 137,
+          "weighted_length": 151
+        },
+        {
+          "rank": 3,
+          "doc_id": 25524,
+          "score": 56.973679,
+          "路径": "harmonyos-guides/编写与调试应用/应用调试/数据库调试/ide-database-inspector.md",
+          "标题": [
+            "操作步骤"
+          ],
+          "raw_length": 182,
+          "weighted_length": 195
+        },
+        {
+          "rank": 4,
+          "doc_id": 9085,
+          "score": 56.950224,
+          "路径": "harmonyos-guides/基础入门/应用开发导读/application-dev-guide.md",
+          "标题": [
+            "工具"
+          ],
+          "raw_length": 53,
+          "weighted_length": 64
+        },
+        {
+          "rank": 5,
+          "doc_id": 18775,
+          "score": 56.387529,
+          "路径": "harmonyos-guides/开发环境搭建/下载与安装DevEco Studio/ide-software-install.md",
+          "标题": [
+            "Windows环境",
+            "安装DevEco Studio"
+          ],
+          "raw_length": 194,
+          "weighted_length": 208
+        },
+        {
+          "rank": 6,
+          "doc_id": 7400,
+          "score": 54.647618,
+          "路径": "harmonyos-guides/使用AI智能辅助编程/智能执行/代码修改/ide-code-modify.md",
+          "标题": [
+            "代码修改"
+          ],
+          "raw_length": 224,
+          "weighted_length": 237
+        },
+        {
+          "rank": 7,
+          "doc_id": 25885,
+          "score": 53.762447,
+          "路径": "harmonyos-guides/编写与调试应用/界面预览/使用预览器调试应用/ide-previewer-debug.md",
+          "标题": [
+            "普通预览与预览调试能力对比"
+          ],
+          "raw_length": 172,
+          "weighted_length": 185
+        },
+        {
+          "rank": 8,
+          "doc_id": 18044,
+          "score": 52.847846,
+          "路径": "harmonyos-guides/应用框架/Core File Kit（文件基础服务）/应用文件/应用数据备份恢复/设备升级应用数据迁移适配指导/应用数据迁移适配指导/app-data-migration-adaptation.md",
+          "标题": [
+            "环境准备"
+          ],
+          "raw_length": 88,
+          "weighted_length": 109
+        },
+        {
+          "rank": 9,
+          "doc_id": 7203,
+          "score": 52.575736,
+          "路径": "harmonyos-guides/优化应用性能/DevEco Profiler调优工具简介/ide-profiler.md",
+          "标题": [
+            "DevEco Profiler调优工具简介"
+          ],
+          "raw_length": 211,
+          "weighted_length": 222
+        },
+        {
+          "rank": 10,
+          "doc_id": 20237,
+          "score": 51.985507,
+          "路径": "harmonyos-guides/系统/基础功能/Basic Services Kit（基础服务）/电源管理/运行锁使用指南/阻止系统闲时进入睡眠开发指南/runninglock-dev.md",
+          "标题": [
+            "环境准备",
+            "环境要求"
+          ],
+          "raw_length": 122,
+          "weighted_length": 146
+        }
+      ]
+    },
+    {
+      "sample_order": 19,
+      "dataset_row": 1186,
+      "query": "如何在HarmonyOS应用中通过C/C++接口使用用户首选项（Preferences）实现数据持久化？",
+      "gold_path": "应用框架/ArkData（方舟数据管理）/应用数据持久化/通过用户首选项实现数据持久化 (CC++)/preferences-guidelines.md",
+      "gold_rank": 3,
+      "query_analysis": {
+        "query": "如何在HarmonyOS应用中通过C/C++接口使用用户首选项（Preferences）实现数据持久化？",
+        "第一类完整词": {
+          "c++": 1,
+          "har": 1,
+          "harmonyos": 1,
+          "preferences": 1,
+          "references": 1,
+          "用户首选项": 1
+        },
+        "预处理tokens": [
+          "如何",
+          "harmonyos",
+          "harmony",
+          "os",
+          "应用",
+          "c++",
+          "接口",
+          "用户",
+          "首选项",
+          "preferences",
+          "实现",
+          "数据",
+          "持久",
+          "化"
+        ],
+        "BM25查询词频": {
+          "c++": 2,
+          "har": 1,
+          "harmony": 1,
+          "harmonyos": 2,
+          "os": 1,
+          "preferences": 2,
+          "references": 1,
+          "化": 1,
+          "如何": 1,
+          "实现": 1,
+          "应用": 1,
+          "持久": 1,
+          "接口": 1,
+          "数据": 1,
+          "用户": 1,
+          "用户首选项": 1,
+          "首选项": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 14403,
+          "score": 61.307582,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过用户首选项实现数据持久化 (ArkTS)/data-persistence-by-preferences.md",
+          "标题": [
+            "运作机制"
+          ],
+          "raw_length": 99,
+          "weighted_length": 120
+        },
+        {
+          "rank": 2,
+          "doc_id": 14402,
+          "score": 59.888083,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过用户首选项实现数据持久化 (ArkTS)/data-persistence-by-preferences.md",
+          "标题": [
+            "场景介绍"
+          ],
+          "raw_length": 75,
+          "weighted_length": 96
+        },
+        {
+          "rank": 3,
+          "doc_id": 14417,
+          "score": 59.305318,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过用户首选项实现数据持久化 (CC++)/preferences-guidelines.md",
+          "标题": [
+            "开发步骤"
+          ],
+          "raw_length": 138,
+          "weighted_length": 159
+        },
+        {
+          "rank": 4,
+          "doc_id": 14410,
+          "score": 58.887213,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过用户首选项实现数据持久化 (ArkTS)/data-persistence-by-preferences.md",
+          "标题": [
+            "接口说明"
+          ],
+          "raw_length": 270,
+          "weighted_length": 291
+        },
+        {
+          "rank": 5,
+          "doc_id": 14412,
+          "score": 57.387569,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过用户首选项实现数据持久化 (ArkTS)/data-persistence-by-preferences.md",
+          "标题": [
+            "示例代码"
+          ],
+          "raw_length": 30,
+          "weighted_length": 51
+        },
+        {
+          "rank": 6,
+          "doc_id": 14413,
+          "score": 57.231823,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过用户首选项实现数据持久化 (CC++)/preferences-guidelines.md",
+          "标题": [
+            "场景介绍"
+          ],
+          "raw_length": 60,
+          "weighted_length": 81
+        },
+        {
+          "rank": 7,
+          "doc_id": 14404,
+          "score": 55.189406,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过用户首选项实现数据持久化 (ArkTS)/data-persistence-by-preferences.md",
+          "标题": [
+            "存储模式说明"
+          ],
+          "raw_length": 43,
+          "weighted_length": 64
+        },
+        {
+          "rank": 8,
+          "doc_id": 14407,
+          "score": 55.167488,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过用户首选项实现数据持久化 (ArkTS)/data-persistence-by-preferences.md",
+          "标题": [
+            "约束限制",
+            "首选项通用限制"
+          ],
+          "raw_length": 122,
+          "weighted_length": 146
+        },
+        {
+          "rank": 9,
+          "doc_id": 14416,
+          "score": 53.977718,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过用户首选项实现数据持久化 (CC++)/preferences-guidelines.md",
+          "标题": [
+            "添加动态链接库"
+          ],
+          "raw_length": 34,
+          "weighted_length": 55
+        },
+        {
+          "rank": 10,
+          "doc_id": 14409,
+          "score": 51.686462,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过用户首选项实现数据持久化 (ArkTS)/data-persistence-by-preferences.md",
+          "标题": [
+            "约束限制",
+            "GSKV模式约束限制"
+          ],
+          "raw_length": 50,
+          "weighted_length": 74
+        }
+      ]
+    },
+    {
+      "sample_order": 20,
+      "dataset_row": 2975,
+      "query": "在鸿蒙系统应用开发中，如何使用性能分析套件进行故障检测，包括崩溃、地址越界、应用冻屏、资源泄漏及任务超时等问题的具体检测方法？",
+      "gold_path": "系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/fault-analysis.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统应用开发中，如何使用性能分析套件进行故障检测，包括崩溃、地址越界、应用冻屏、资源泄漏及任务超时等问题的具体检测方法？",
+        "第一类完整词": {
+          "地址越界": 1,
+          "如何使用": 1,
+          "应用冻屏": 1,
+          "应用开发": 1,
+          "性能分析": 1,
+          "故障检测": 1,
+          "资源泄漏": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "应用",
+          "开发",
+          "如何",
+          "使用性能",
+          "分析",
+          "套件",
+          "故障",
+          "检测",
+          "包括",
+          "崩溃",
+          "地址",
+          "越界",
+          "应用",
+          "冻屏",
+          "资源",
+          "泄漏",
+          "任务",
+          "超时",
+          "问题",
+          "具体",
+          "检测",
+          "方法"
+        ],
+        "BM25查询词频": {
+          "任务": 1,
+          "使用性能": 1,
+          "具体": 1,
+          "冻屏": 1,
+          "分析": 1,
+          "包括": 1,
+          "地址": 1,
+          "地址越界": 1,
+          "套件": 1,
+          "如何": 1,
+          "如何使用": 1,
+          "崩溃": 1,
+          "应用": 2,
+          "应用冻屏": 1,
+          "应用开发": 1,
+          "开发": 1,
+          "性能分析": 1,
+          "故障": 1,
+          "故障检测": 1,
+          "方法": 1,
+          "检测": 2,
+          "泄漏": 1,
+          "系统": 1,
+          "资源": 1,
+          "资源泄漏": 1,
+          "超时": 1,
+          "越界": 1,
+          "问题": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": 23300,
+          "score": 102.533675,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/fault-analysis.md",
+          "标题": [
+            "故障检测"
+          ],
+          "raw_length": 49,
+          "weighted_length": 66
+        },
+        {
+          "rank": 2,
+          "doc_id": 23423,
+          "score": 86.150214,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/简介/fault-detection-overview.md",
+          "标题": [
+            "简介"
+          ],
+          "raw_length": 210,
+          "weighted_length": 229
+        },
+        {
+          "rank": 3,
+          "doc_id": 23060,
+          "score": 73.809401,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/Performance Analysis Kit简介/performance-analysis-kit-overview.md",
+          "标题": [
+            "能力范围"
+          ],
+          "raw_length": 206,
+          "weighted_length": 223
+        },
+        {
+          "rank": 4,
+          "doc_id": 23301,
+          "score": 73.016626,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/AddrSanitizer（地址越界）检测/address-sanitizer-guidelines.md",
+          "标题": [
+            "简介"
+          ],
+          "raw_length": 106,
+          "weighted_length": 125
+        },
+        {
+          "rank": 5,
+          "doc_id": 23303,
+          "score": 72.782689,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/AddrSanitizer（地址越界）检测/address-sanitizer-guidelines.md",
+          "标题": [
+            "地址越界检测原理"
+          ],
+          "raw_length": 37,
+          "weighted_length": 56
+        },
+        {
+          "rank": 6,
+          "doc_id": 23381,
+          "score": 70.720043,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/任务超时检测/apptask-timeout-guidelines.md",
+          "标题": [
+            "任务执行超时检测",
+            "日志规格"
+          ],
+          "raw_length": 44,
+          "weighted_length": 66
+        },
+        {
+          "rank": 7,
+          "doc_id": 23302,
+          "score": 67.539297,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/AddrSanitizer（地址越界）检测/address-sanitizer-guidelines.md",
+          "标题": [
+            "常见越界类型与影响"
+          ],
+          "raw_length": 39,
+          "weighted_length": 58
+        },
+        {
+          "rank": 8,
+          "doc_id": 23374,
+          "score": 66.694312,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/任务超时检测/apptask-timeout-guidelines.md",
+          "标题": [
+            "简介"
+          ],
+          "raw_length": 113,
+          "weighted_length": 132
+        },
+        {
+          "rank": 9,
+          "doc_id": 23321,
+          "score": 64.387468,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/AppFreeze（应用冻屏）检测/appfreeze-guidelines.md",
+          "标题": [
+            "检测原理"
+          ],
+          "raw_length": 119,
+          "weighted_length": 138
+        },
+        {
+          "rank": 10,
+          "doc_id": 23354,
+          "score": 63.757515,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/Resource Leak（资源泄漏）检测/resource-leak-guidelines.md",
+          "标题": [
+            "线程泄漏日志规格",
+            "日志头部信息"
+          ],
+          "raw_length": 93,
+          "weighted_length": 115
+        }
+      ]
+    }
+  ]
+}

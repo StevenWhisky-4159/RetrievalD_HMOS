@@ -1,0 +1,3136 @@
+{
+  "summary": {
+    "dataset": "D:\\JobWorkspace\\Projects\\SkillsRetrieval2026\\hos-skills\\hos_skills\\workspace\\data\\dataset.xlsx",
+    "granularity": "document",
+    "aggregation": "max_chunk_score",
+    "sample_size": 20,
+    "seed": 2026,
+    "top_k": 10,
+    "path_prefix": "harmonyos-guides/",
+    "hit_at_1": 0.7,
+    "hit_at_3": 0.95,
+    "hit_at_5": 1.0,
+    "hit_at_10": 1.0,
+    "mrr": 0.835,
+    "exact_term_queries": 18,
+    "elapsed_seconds": 5.154
+  },
+  "cases": [
+    {
+      "sample_order": 1,
+      "dataset_row": 3506,
+      "query": "在鸿蒙系统中，如何根据不同的内容类型（如动画、UI或自绘制内容）来定制和请求可变帧率以优化绘制性能？",
+      "gold_path": "图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/displaysync.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统中，如何根据不同的内容类型（如动画、UI或自绘制内容）来定制和请求可变帧率以优化绘制性能？",
+        "第一类完整词": {
+          "可变帧率": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "如何",
+          "根据",
+          "不同",
+          "内容",
+          "类型",
+          "如",
+          "动画",
+          "ui",
+          "自",
+          "绘制",
+          "内容",
+          "来",
+          "定制",
+          "请求",
+          "可变",
+          "帧",
+          "率",
+          "以",
+          "优化",
+          "绘制",
+          "性能"
+        ],
+        "BM25查询词频": {
+          "ui": 1,
+          "不同": 1,
+          "以": 1,
+          "优化": 1,
+          "内容": 2,
+          "动画": 1,
+          "可变": 1,
+          "可变帧率": 1,
+          "如": 1,
+          "如何": 1,
+          "定制": 1,
+          "帧": 1,
+          "性能": 1,
+          "来": 1,
+          "根据": 1,
+          "率": 1,
+          "类型": 1,
+          "系统": 1,
+          "绘制": 2,
+          "自": 1,
+          "请求": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 87.426781,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/displaysync.md",
+          "best_chunk_id": 8182,
+          "best_chunk_titles": [
+            "使用可变帧率能力定制不同内容的绘制帧率"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 2,
+          "score": 82.044375,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/可变帧率简介/displaysync-overview.md",
+          "best_chunk_id": 8189,
+          "best_chunk_titles": [
+            "使用场景"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 3,
+          "score": 81.479499,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/请求自绘制内容绘制帧率/displaysync-xcomponent.md",
+          "best_chunk_id": 8197,
+          "best_chunk_titles": [
+            "请求自绘制内容绘制帧率"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 4,
+          "score": 78.827757,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/请求UI绘制帧率/displaysync-ui.md",
+          "best_chunk_id": 8192,
+          "best_chunk_titles": [
+            "请求UI绘制帧率"
+          ],
+          "matched_chunk_count": 2
+        },
+        {
+          "rank": 5,
+          "score": 73.672121,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/请求动画绘制帧率/displaysync-animation.md",
+          "best_chunk_id": 8194,
+          "best_chunk_titles": [
+            "请求动画绘制帧率"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 6,
+          "score": 69.702659,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/ArkGraphics 2D简介/arkgraphics2d-introduction.md",
+          "best_chunk_id": 8177,
+          "best_chunk_titles": [
+            "亮点特征"
+          ],
+          "matched_chunk_count": 5
+        },
+        {
+          "rank": 7,
+          "score": 62.780003,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/NativeDisplaySoloist开发指导 (CC++)/displaysoloist-native-guidelines.md",
+          "best_chunk_id": 8183,
+          "best_chunk_titles": [
+            "NativeDisplaySoloist开发指导 (C/C++)"
+          ],
+          "matched_chunk_count": 5
+        },
+        {
+          "rank": 8,
+          "score": 52.089465,
+          "路径": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）/arkgraphics-2d.md",
+          "best_chunk_id": 8173,
+          "best_chunk_titles": [
+            "ArkGraphics 2D（方舟2D图形服务）"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 9,
+          "score": 39.473963,
+          "路径": "harmonyos-guides/媒体/AVCodec Kit（音视频编解码服务）/音视频编解码/视频可变帧率/video-variable-refreshrate.md",
+          "best_chunk_id": 9424,
+          "best_chunk_titles": [
+            "适用场景"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 10,
+          "score": 39.162087,
+          "路径": "harmonyos-guides/应用框架/ArkUI（方舟UI框架）/UI开发 (ArkTS声明式开发范式)/添加组件/自定义渲染 (XComponent)/napi-xcomponent-guidelines.md",
+          "best_chunk_id": 16659,
+          "best_chunk_titles": [
+            "概述"
+          ],
+          "matched_chunk_count": 14
+        }
+      ]
+    },
+    {
+      "sample_order": 2,
+      "dataset_row": 970,
+      "query": "如果用户没有登录华为账号，添加卡券时如何处理？",
+      "gold_path": "应用服务/Wallet Kit（钱包服务）/Wallet Kit常见问题/如果用户没有登录华为账号，添加卡券时如何处理？/wallet-faq-3.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "如果用户没有登录华为账号，添加卡券时如何处理？",
+        "第一类完整词": {
+          "如果用户没有登录华为账号,添加卡券时如何处理?": 1
+        },
+        "预处理tokens": [
+          "用户",
+          "没有",
+          "登录",
+          "华为",
+          "账号",
+          "添加",
+          "卡券时",
+          "如何",
+          "处理"
+        ],
+        "BM25查询词频": {
+          "华为": 1,
+          "卡券时": 1,
+          "处理": 1,
+          "如何": 1,
+          "如果用户没有登录华为账号,添加卡券时如何处理?": 1,
+          "没有": 1,
+          "添加": 1,
+          "用户": 1,
+          "登录": 1,
+          "账号": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 97.129524,
+          "路径": "harmonyos-guides/应用服务/Wallet Kit（钱包服务）/Wallet Kit常见问题/如果用户没有登录华为账号，添加卡券时如何处理？/wallet-faq-3.md",
+          "best_chunk_id": 13588,
+          "best_chunk_titles": [
+            "如果用户没有登录华为账号，添加卡券时如何处理？"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 2,
+          "score": 55.899681,
+          "路径": "harmonyos-guides/应用服务/Wallet Kit（钱包服务）/Wallet Kit常见问题/wallet-kit-faq.md",
+          "best_chunk_id": 13586,
+          "best_chunk_titles": [
+            "Wallet Kit常见问题"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 3,
+          "score": 41.997916,
+          "路径": "harmonyos-guides/应用服务/Wallet Kit（钱包服务）/Wallet Kit常见问题/开发者应用使用Wallet Kit，是否需要集成华为Account Kit？/wallet-faq-2.md",
+          "best_chunk_id": 13589,
+          "best_chunk_titles": [
+            "开发者应用使用Wallet Kit，是否需要集成华为Account Kit？"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 4,
+          "score": 37.906399,
+          "路径": "harmonyos-guides/应用服务/Account Kit（华为账号服务）/Account Kit常见问题/一键登录场景下，应用已展示一键登录页，此时用户退出、切换或注销华为账号应该如何处理/account-faq-17.md",
+          "best_chunk_id": 10865,
+          "best_chunk_titles": [
+            "一键登录场景下，应用已展示一键登录页，此时用户退出、切换或注销华为账号应该如何处理"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 5,
+          "score": 35.516841,
+          "路径": "harmonyos-guides/应用服务/Account Kit（华为账号服务）/Account Kit常见问题/account-faq.md",
+          "best_chunk_id": 10844,
+          "best_chunk_titles": [
+            "Account Kit常见问题"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 6,
+          "score": 32.911284,
+          "路径": "harmonyos-guides/应用服务/Wallet Kit（钱包服务）/Wallet Kit常见问题/添加卡券时商户服务器主要需要执行哪些步骤？/wallet-faq-5.md",
+          "best_chunk_id": 13590,
+          "best_chunk_titles": [
+            "添加卡券时商户服务器主要需要执行哪些步骤？"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 7,
+          "score": 32.287519,
+          "路径": "harmonyos-guides/应用服务/Account Kit（华为账号服务）/登录/华为账号一键登录（获取手机号和UnionIDOpenID）/account-phone-unionid-login.md",
+          "best_chunk_id": 10952,
+          "best_chunk_titles": [
+            "开发后验证",
+            "集成华为账号一键登录能力应用用户体验质量建议"
+          ],
+          "matched_chunk_count": 17
+        },
+        {
+          "rank": 8,
+          "score": 31.951791,
+          "路径": "harmonyos-guides/应用服务/Account Kit（华为账号服务）/登录/华为账号登录（获取UnionIDOpenID）/使用自定义按钮登录/account-unionid-login-api.md",
+          "best_chunk_id": 10967,
+          "best_chunk_titles": [
+            "客户端开发"
+          ],
+          "matched_chunk_count": 7
+        },
+        {
+          "rank": 9,
+          "score": 31.395102,
+          "路径": "harmonyos-guides/应用服务/Game Service Kit（游戏服务）/Game Service Kit常见问题/基础游戏服务/玩家选错登录账号后如何处理/gameservice-faq-4.md",
+          "best_chunk_id": 11790,
+          "best_chunk_titles": [
+            "玩家选错登录账号后如何处理"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 10,
+          "score": 31.293168,
+          "路径": "harmonyos-guides/应用服务/Account Kit（华为账号服务）/登录/华为账号登录（获取UnionIDOpenID）/使用“华为账号登录”按钮登录/account-unionid-login-button.md",
+          "best_chunk_id": 10960,
+          "best_chunk_titles": [
+            "客户端开发"
+          ],
+          "matched_chunk_count": 8
+        }
+      ]
+    },
+    {
+      "sample_order": 3,
+      "dataset_row": 1836,
+      "query": "在鸿蒙系统的应用沙箱机制中，应用文件目录下的不同加密级别（如el1、el2、el3等）分别具有什么特点？",
+      "gold_path": "应用框架/Core File Kit（文件基础服务）/应用文件/应用沙箱目录/app-sandbox-directory.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统的应用沙箱机制中，应用文件目录下的不同加密级别（如el1、el2、el3等）分别具有什么特点？",
+        "第一类完整词": {
+          "应用文件": 1,
+          "应用沙箱": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "应用",
+          "沙箱",
+          "机制",
+          "应用",
+          "文件目录",
+          "不同",
+          "加密",
+          "级别",
+          "如",
+          "el1",
+          "el2",
+          "el3",
+          "分别",
+          "具有",
+          "什么",
+          "特点"
+        ],
+        "BM25查询词频": {
+          "el1": 1,
+          "el2": 1,
+          "el3": 1,
+          "不同": 1,
+          "什么": 1,
+          "具有": 1,
+          "分别": 1,
+          "加密": 1,
+          "如": 1,
+          "应用": 2,
+          "应用文件": 1,
+          "应用沙箱": 1,
+          "文件目录": 1,
+          "机制": 1,
+          "沙箱": 1,
+          "特点": 1,
+          "系统": 1,
+          "级别": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 64.769281,
+          "路径": "harmonyos-guides/应用框架/Core File Kit（文件基础服务）/应用文件/应用沙箱目录/app-sandbox-directory.md",
+          "best_chunk_id": 18086,
+          "best_chunk_titles": [
+            "应用沙箱路径和真实物理路径的对应关系"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 2,
+          "score": 63.25619,
+          "路径": "harmonyos-guides/应用框架/Core File Kit（文件基础服务）/应用文件/应用文件分享/share-app-file.md",
+          "best_chunk_id": 18063,
+          "best_chunk_titles": [
+            "应用可分享目录"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 3,
+          "score": 49.693296,
+          "路径": "harmonyos-guides/系统/安全/程序访问控制/访问控制概述/access-token-overview.md",
+          "best_chunk_id": 22069,
+          "best_chunk_titles": [
+            "应用沙箱"
+          ],
+          "matched_chunk_count": 5
+        },
+        {
+          "rank": 4,
+          "score": 47.219885,
+          "路径": "harmonyos-guides/应用框架/Ability Kit（程序框架服务）/Stage模型开发指导/Stage模型应用组件/应用上下文Context/application-context-stage.md",
+          "best_chunk_id": 13837,
+          "best_chunk_titles": [
+            "Context的典型使用场景",
+            "获取和修改加密分区"
+          ],
+          "matched_chunk_count": 14
+        },
+        {
+          "rank": 5,
+          "score": 46.415244,
+          "路径": "harmonyos-guides/应用框架/Core File Kit（文件基础服务）/应用文件/应用文件访问与管理/应用及文件系统空间统计/app-fs-space-statistics.md",
+          "best_chunk_id": 18068,
+          "best_chunk_titles": [
+            "接口说明"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 6,
+          "score": 44.286352,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/Enterprise Data Guard Kit简介/dataguard-introduction.md",
+          "best_chunk_id": 21239,
+          "best_chunk_titles": [
+            "约束与限制",
+            "访问限制"
+          ],
+          "matched_chunk_count": 6
+        },
+        {
+          "rank": 7,
+          "score": 41.873977,
+          "路径": "harmonyos-guides/应用框架/Core File Kit（文件基础服务）/应用文件/应用文件概述/app-file-overview.md",
+          "best_chunk_id": 18065,
+          "best_chunk_titles": [
+            "应用文件概述"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 8,
+          "score": 41.782413,
+          "路径": "harmonyos-guides/编写与调试应用/应用调试/访问设备文件/ide-device-file-explorer.md",
+          "best_chunk_id": 25539,
+          "best_chunk_titles": [
+            "可访问目录",
+            "应用沙箱目录"
+          ],
+          "matched_chunk_count": 15
+        },
+        {
+          "rank": 9,
+          "score": 36.189362,
+          "路径": "harmonyos-guides/应用框架/Core File Kit（文件基础服务）/应用文件/应用数据备份恢复/设备升级应用数据迁移适配指导/应用数据迁移适配指导/app-data-migration-adaptation.md",
+          "best_chunk_id": 18049,
+          "best_chunk_titles": [
+            "APK应用沙箱目录与备份恢复目录映射关系"
+          ],
+          "matched_chunk_count": 6
+        },
+        {
+          "rank": 10,
+          "score": 35.333004,
+          "路径": "harmonyos-guides/应用框架/Core File Kit（文件基础服务）/应用文件/应用数据备份恢复/设备升级应用数据迁移适配指导/适配流程/adaptation-process.md",
+          "best_chunk_id": 18052,
+          "best_chunk_titles": [
+            "应用适配"
+          ],
+          "matched_chunk_count": 6
+        }
+      ]
+    },
+    {
+      "sample_order": 4,
+      "dataset_row": 124,
+      "query": "鸿蒙系统中，Core Speech Kit（基础语音服务）支持哪些语音AI能力？",
+      "gold_path": "AI/Core Speech Kit（基础语音服务）/Core Speech Kit简介/core-speech-introduction.md",
+      "gold_rank": 2,
+      "query_analysis": {
+        "query": "鸿蒙系统中，Core Speech Kit（基础语音服务）支持哪些语音AI能力？",
+        "第一类完整词": {
+          "core": 1,
+          "core speech kit": 1,
+          "core speech kit(基础语音服务)": 1,
+          "kit": 1,
+          "speech kit": 1,
+          "基础语音服务": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "core",
+          "speech",
+          "kit",
+          "基础",
+          "语音",
+          "服务",
+          "支持",
+          "哪些",
+          "语音",
+          "ai",
+          "能力"
+        ],
+        "BM25查询词频": {
+          "ai": 1,
+          "core": 2,
+          "core speech kit": 1,
+          "core speech kit(基础语音服务)": 1,
+          "kit": 2,
+          "speech": 1,
+          "speech kit": 1,
+          "哪些": 1,
+          "基础": 1,
+          "基础语音服务": 1,
+          "支持": 1,
+          "服务": 1,
+          "系统": 1,
+          "能力": 1,
+          "语音": 2,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 113.245927,
+          "路径": "harmonyos-guides/AI/Core Speech Kit（基础语音服务）/core-speech-kit-guide.md",
+          "best_chunk_id": 6006,
+          "best_chunk_titles": [
+            "Core Speech Kit（基础语音服务）"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 2,
+          "score": 88.651484,
+          "路径": "harmonyos-guides/AI/Core Speech Kit（基础语音服务）/Core Speech Kit简介/core-speech-introduction.md",
+          "best_chunk_id": 6007,
+          "best_chunk_titles": [
+            "Core Speech Kit简介"
+          ],
+          "matched_chunk_count": 6
+        },
+        {
+          "rank": 3,
+          "score": 79.551891,
+          "路径": "harmonyos-guides/AI/Core Speech Kit（基础语音服务）/语音识别/speechrecognizer-guide.md",
+          "best_chunk_id": 6028,
+          "best_chunk_titles": [
+            "约束与限制"
+          ],
+          "matched_chunk_count": 7
+        },
+        {
+          "rank": 4,
+          "score": 79.550956,
+          "路径": "harmonyos-guides/AI/Core Speech Kit（基础语音服务）/文本转语音/texttospeech-guide.md",
+          "best_chunk_id": 6016,
+          "best_chunk_titles": [
+            "文本转语音"
+          ],
+          "matched_chunk_count": 10
+        },
+        {
+          "rank": 5,
+          "score": 68.556091,
+          "路径": "harmonyos-guides/AI/Core Speech Kit（基础语音服务）/个人数据处理说明/corespeechkit-personal-data.md",
+          "best_chunk_id": 6015,
+          "best_chunk_titles": [
+            "指导开发者如何帮助最终用户实现对数据的控制"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 6,
+          "score": 59.071256,
+          "路径": "harmonyos-guides/AI/Speech Kit（场景化语音服务）/speech-kit-guide.md",
+          "best_chunk_id": 6254,
+          "best_chunk_titles": [
+            "Speech Kit（场景化语音服务）"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 7,
+          "score": 58.843829,
+          "路径": "harmonyos-guides/AI/Speech Kit（场景化语音服务）/Speech Kit简介/speech-production.md",
+          "best_chunk_id": 6259,
+          "best_chunk_titles": [
+            "Speech Kit简介"
+          ],
+          "matched_chunk_count": 6
+        },
+        {
+          "rank": 8,
+          "score": 51.964574,
+          "路径": "harmonyos-guides/AI/Speech Kit（场景化语音服务）/AI字幕控件/speech-aicaption-guide.md",
+          "best_chunk_id": 6258,
+          "best_chunk_titles": [
+            "开发实例"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 9,
+          "score": 46.434125,
+          "路径": "harmonyos-guides/AI/Speech Kit（场景化语音服务）/朗读控件/speech-textreader-guide.md",
+          "best_chunk_id": 6265,
+          "best_chunk_titles": [
+            "适用场景"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 10,
+          "score": 32.726568,
+          "路径": "harmonyos-guides/AI/MindSpore Lite Kit（昇思推理框架服务）/使用MindSpore Lite实现语音识别（CC++）/mindspore-asr-based-native.md",
+          "best_chunk_id": 6182,
+          "best_chunk_titles": [
+            "场景说明"
+          ],
+          "matched_chunk_count": 13
+        }
+      ]
+    },
+    {
+      "sample_order": 5,
+      "dataset_row": 1733,
+      "query": "在鸿蒙系统的ArkWeb组件中，如何实现应用侧与前端页面JavaScript的双向调用以及数据通道？",
+      "gold_path": "应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/web-use-frontend-page-js.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统的ArkWeb组件中，如何实现应用侧与前端页面JavaScript的双向调用以及数据通道？",
+        "第一类完整词": {
+          "arkweb": 1,
+          "web": 1,
+          "web组件": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "arkweb",
+          "ark",
+          "web",
+          "组件",
+          "如何",
+          "实现",
+          "应用",
+          "侧",
+          "前端",
+          "页面",
+          "javascript",
+          "java",
+          "script",
+          "双向",
+          "调用",
+          "数据通道"
+        ],
+        "BM25查询词频": {
+          "ark": 1,
+          "arkweb": 2,
+          "java": 1,
+          "javascript": 1,
+          "script": 1,
+          "web": 2,
+          "web组件": 1,
+          "侧": 1,
+          "前端": 1,
+          "双向": 1,
+          "如何": 1,
+          "实现": 1,
+          "应用": 1,
+          "数据通道": 1,
+          "系统": 1,
+          "组件": 1,
+          "调用": 1,
+          "页面": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 95.4325,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/web-use-frontend-page-js.md",
+          "best_chunk_id": 17696,
+          "best_chunk_titles": [
+            "在应用中使用前端页面JavaScript"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 2,
+          "score": 84.404201,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/建立应用侧与前端页面数据通道/web-app-page-data-channel.md",
+          "best_chunk_id": 17725,
+          "best_chunk_titles": [
+            "常见问题",
+            "onControllerAttached与javaScriptOnDocumentStart的执行顺序是什么？"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 3,
+          "score": 83.765237,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/建立应用侧与前端页面数据通道(CC++)/arkweb-ndk-page-data-channel.md",
+          "best_chunk_id": 17726,
+          "best_chunk_titles": [
+            "建立应用侧与前端页面数据通道(C/C++)"
+          ],
+          "matched_chunk_count": 5
+        },
+        {
+          "rank": 4,
+          "score": 83.717242,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/应用侧与前端页面的相互调用(CC++)/arkweb-ndk-jsbridge.md",
+          "best_chunk_id": 17720,
+          "best_chunk_titles": [
+            "使用Native接口实现JSBridge通信",
+            "应用侧调用前端页面函数"
+          ],
+          "matched_chunk_count": 16
+        },
+        {
+          "rank": 5,
+          "score": 80.584326,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/前端页面调用应用侧函数/web-in-page-app-function-invoking.md",
+          "best_chunk_id": 17698,
+          "best_chunk_titles": [
+            "如何建立应用侧与H5侧的交互通道"
+          ],
+          "matched_chunk_count": 9
+        },
+        {
+          "rank": 6,
+          "score": 80.346158,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/应用侧调用前端页面函数/web-in-app-frontend-page-function-invoking.md",
+          "best_chunk_id": 17722,
+          "best_chunk_titles": [
+            "应用侧调用前端页面函数"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 7,
+          "score": 66.14882,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/arkweb.md",
+          "best_chunk_id": 17481,
+          "best_chunk_titles": [
+            "ArkWeb（方舟Web）"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 8,
+          "score": 65.797637,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/设置基本属性和事件/使用运动和方向传感器监测设备状态/web-sensor.md",
+          "best_chunk_id": 17896,
+          "best_chunk_titles": [
+            "开发步骤"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 9,
+          "score": 64.424761,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/ArkWeb术语/arkweb-glossary.md",
+          "best_chunk_id": 17516,
+          "best_chunk_titles": [
+            "J",
+            "JSBridge"
+          ],
+          "matched_chunk_count": 94
+        },
+        {
+          "rank": 10,
+          "score": 63.31687,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/处理网页内容/使用Web组件打印前端页面/web-print.md",
+          "best_chunk_id": 17742,
+          "best_chunk_titles": [
+            "使用W3C标准协议接口拉起打印"
+          ],
+          "matched_chunk_count": 3
+        }
+      ]
+    },
+    {
+      "sample_order": 6,
+      "dataset_row": 2959,
+      "query": "在鸿蒙系统中，HiAppEvent的事件订阅支持哪三种方式？",
+      "gold_path": "系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/事件订阅简介/event-subscription-overview.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统中，HiAppEvent的事件订阅支持哪三种方式？",
+        "第一类完整词": {
+          "app": 1,
+          "event": 1,
+          "hiappevent": 1,
+          "iap": 1,
+          "事件订阅": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "hiappevent",
+          "hi",
+          "app",
+          "event",
+          "事件",
+          "订阅",
+          "支持",
+          "哪",
+          "三种",
+          "方式"
+        ],
+        "BM25查询词频": {
+          "app": 2,
+          "event": 2,
+          "hi": 1,
+          "hiappevent": 2,
+          "iap": 1,
+          "三种": 1,
+          "事件": 1,
+          "事件订阅": 1,
+          "哪": 1,
+          "支持": 1,
+          "方式": 1,
+          "系统": 1,
+          "订阅": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 76.355821,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/事件订阅简介/event-subscription-overview.md",
+          "best_chunk_id": 23095,
+          "best_chunk_titles": [
+            "事件订阅的三种方式"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 2,
+          "score": 74.275784,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/hiappevent.md",
+          "best_chunk_id": 23072,
+          "best_chunk_titles": [
+            "事件订阅"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 3,
+          "score": 71.611891,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/事件订阅（CC++）/hiappevent-watcher-app-events-ndk.md",
+          "best_chunk_id": 23101,
+          "best_chunk_titles": [
+            "接口说明"
+          ],
+          "matched_chunk_count": 7
+        },
+        {
+          "rank": 4,
+          "score": 70.756116,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/事件订阅（ArkTS）/hiappevent-watcher-app-events-arkts.md",
+          "best_chunk_id": 23096,
+          "best_chunk_titles": [
+            "事件订阅（ArkTS）"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 5,
+          "score": 70.642986,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/系统事件/崩溃事件/订阅崩溃事件（CC++）/hiappevent-watcher-crash-events-ndk.md",
+          "best_chunk_id": 23192,
+          "best_chunk_titles": [
+            "接口说明"
+          ],
+          "matched_chunk_count": 5
+        },
+        {
+          "rank": 6,
+          "score": 70.54806,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/系统事件/应用终止事件/订阅应用终止事件（CC++）/hiappevent-watcher-app-killed-events-ndk.md",
+          "best_chunk_id": 23205,
+          "best_chunk_titles": [
+            "接口说明"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 7,
+          "score": 70.20297,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/系统事件/任务执行超时事件/订阅任务执行超时事件（CC++）/hiappevent-watcher-apphicollie-events-ndk.md",
+          "best_chunk_id": 23141,
+          "best_chunk_titles": [
+            "接口说明"
+          ],
+          "matched_chunk_count": 5
+        },
+        {
+          "rank": 8,
+          "score": 69.732896,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/系统事件/资源泄漏事件/订阅资源泄漏事件（CC++）/hiappevent-watcher-resourceleak-events-ndk.md",
+          "best_chunk_id": 23224,
+          "best_chunk_titles": [
+            "接口说明"
+          ],
+          "matched_chunk_count": 5
+        },
+        {
+          "rank": 9,
+          "score": 69.586005,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/系统事件/滑动丢帧事件/滑动丢帧事件介绍/hiappevent-watcher-scroll-jank-event.md",
+          "best_chunk_id": 23208,
+          "best_chunk_titles": [
+            "简介"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 10,
+          "score": 69.485066,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/系统事件/地址越界事件/地址越界事件介绍/hiappevent-watcher-address-sanitizer-events.md",
+          "best_chunk_id": 23147,
+          "best_chunk_titles": [
+            "概述"
+          ],
+          "matched_chunk_count": 7
+        }
+      ]
+    },
+    {
+      "sample_order": 7,
+      "dataset_row": 2680,
+      "query": "在鸿蒙系统中，应用如何向用户动态申请位置权限等user_grant权限？",
+      "gold_path": "系统/安全/程序访问控制/应用权限管控/申请应用权限/向用户申请授权/request-user-authorization.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统中，应用如何向用户动态申请位置权限等user_grant权限？",
+        "第一类完整词": {
+          "user": 1,
+          "申请位置权限": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "应用",
+          "如何",
+          "向",
+          "用户",
+          "动态",
+          "申请",
+          "位置",
+          "权限",
+          "user_grant",
+          "user",
+          "grant",
+          "权限"
+        ],
+        "BM25查询词频": {
+          "grant": 1,
+          "user": 2,
+          "user_grant": 1,
+          "位置": 1,
+          "动态": 1,
+          "向": 1,
+          "如何": 1,
+          "应用": 1,
+          "权限": 2,
+          "用户": 1,
+          "申请": 1,
+          "申请位置权限": 1,
+          "系统": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 71.665291,
+          "路径": "harmonyos-guides/系统/安全/程序访问控制/应用权限管控/申请应用权限/向用户申请授权/request-user-authorization.md",
+          "best_chunk_id": 22048,
+          "best_chunk_titles": [
+            "向用户申请授权"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 2,
+          "score": 67.160251,
+          "路径": "harmonyos-guides/系统/安全/程序访问控制/应用权限管控/申请应用权限/选择申请权限的方式/determine-application-mode.md",
+          "best_chunk_id": 22062,
+          "best_chunk_titles": [
+            "应用申请权限的方式"
+          ],
+          "matched_chunk_count": 2
+        },
+        {
+          "rank": 3,
+          "score": 65.723267,
+          "路径": "harmonyos-guides/系统/安全/程序访问控制/应用权限管控/申请应用权限/声明权限/declare-permissions.md",
+          "best_chunk_id": 22054,
+          "best_chunk_titles": [
+            "权限使用理由的文案内容规范"
+          ],
+          "matched_chunk_count": 6
+        },
+        {
+          "rank": 4,
+          "score": 62.868986,
+          "路径": "harmonyos-guides/系统/安全/程序访问控制/应用权限管控/应用权限列表/开放权限（用户授权）/permissions-for-all-user.md",
+          "best_chunk_id": 21943,
+          "best_chunk_titles": [
+            "申请方式"
+          ],
+          "matched_chunk_count": 21
+        },
+        {
+          "rank": 5,
+          "score": 61.122368,
+          "路径": "harmonyos-guides/媒体/Media Library Kit（媒体文件管理服务）/受限开放能力/开发准备/photoaccesshelper-preparation.md",
+          "best_chunk_id": 10589,
+          "best_chunk_titles": [
+            "申请相册管理模块功能相关权限"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 6,
+          "score": 56.973592,
+          "路径": "harmonyos-guides/系统/安全/程序访问控制/应用权限管控/应用权限管控概述/app-permission-mgmt-overview.md",
+          "best_chunk_id": 22023,
+          "best_chunk_titles": [
+            "授权方式",
+            "user_grant（用户授权）"
+          ],
+          "matched_chunk_count": 8
+        },
+        {
+          "rank": 7,
+          "score": 56.89276,
+          "路径": "harmonyos-guides/系统/网络/Distributed Service Kit（分布式管理服务）/分布式设备管理开发指南/devicemanager-guidelines.md",
+          "best_chunk_id": 22526,
+          "best_chunk_titles": [
+            "申请分布式数据同步权限开发指导",
+            "开发步骤"
+          ],
+          "matched_chunk_count": 18
+        },
+        {
+          "rank": 8,
+          "score": 54.957597,
+          "路径": "harmonyos-guides/系统/安全/程序访问控制/应用权限管控/应用权限列表/仅MDM应用可用权限/permissions-for-mdm-apps.md",
+          "best_chunk_id": 21824,
+          "best_chunk_titles": [
+            "ohos.permission.ENTERPRISE_MANAGE_USER_GRANT_PERMISSION"
+          ],
+          "matched_chunk_count": 50
+        },
+        {
+          "rank": 9,
+          "score": 51.26464,
+          "路径": "harmonyos-guides/应用服务/Ads Kit（广告服务）/开放匿名设备标识服务/oaid-service.md",
+          "best_chunk_id": 11063,
+          "best_chunk_titles": [
+            "获取OAID信息",
+            "开发步骤"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 10,
+          "score": 49.886689,
+          "路径": "harmonyos-guides/应用框架/ArkWeb（方舟Web）/设置基本属性和事件/管理位置权限/web-geolocation-permission.md",
+          "best_chunk_id": 17907,
+          "best_chunk_titles": [
+            "申请位置权限"
+          ],
+          "matched_chunk_count": 4
+        }
+      ]
+    },
+    {
+      "sample_order": 8,
+      "dataset_row": 1910,
+      "query": "如何在Stage模型下开发鸿蒙系统JS卡片，并实现卡片的生命周期管理、数据更新及事件交互？",
+      "gold_path": "应用框架/Form Kit（卡片开发服务）/JS卡片开发/JS卡片开发指导（Stage模型）/js-ui-widget-development.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "如何在Stage模型下开发鸿蒙系统JS卡片，并实现卡片的生命周期管理、数据更新及事件交互？",
+        "第一类完整词": {
+          "stage模型": 1,
+          "tag": 1,
+          "事件交互": 1,
+          "数据更新": 1,
+          "生命周期": 1,
+          "生命周期管理": 1
+        },
+        "预处理tokens": [
+          "如何",
+          "stage",
+          "模型",
+          "开发",
+          "鸿蒙",
+          "系统",
+          "js",
+          "卡片",
+          "并",
+          "实现",
+          "卡片",
+          "生命周期",
+          "管理",
+          "数据",
+          "更新",
+          "事件",
+          "交互"
+        ],
+        "BM25查询词频": {
+          "js": 1,
+          "stage": 1,
+          "stage模型": 1,
+          "tag": 1,
+          "事件": 1,
+          "事件交互": 1,
+          "交互": 1,
+          "卡片": 2,
+          "如何": 1,
+          "实现": 1,
+          "并": 1,
+          "开发": 1,
+          "数据": 1,
+          "数据更新": 1,
+          "更新": 1,
+          "模型": 1,
+          "生命周期": 2,
+          "生命周期管理": 1,
+          "管理": 1,
+          "系统": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 69.310537,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/JS卡片开发/JS卡片开发指导（Stage模型）/js-ui-widget-development.md",
+          "best_chunk_id": 18376,
+          "best_chunk_titles": [
+            "开发步骤"
+          ],
+          "matched_chunk_count": 9
+        },
+        {
+          "rank": 2,
+          "score": 56.269084,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/JS卡片开发/JS卡片开发指导（FA模型）/widget-development-fa.md",
+          "best_chunk_id": 18367,
+          "best_chunk_titles": [
+            "开发步骤"
+          ],
+          "matched_chunk_count": 9
+        },
+        {
+          "rank": 3,
+          "score": 46.031221,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/JS卡片开发/JS卡片概述/js-ui-widget-overview.md",
+          "best_chunk_id": 18384,
+          "best_chunk_titles": [
+            "实现原理"
+          ],
+          "matched_chunk_count": 2
+        },
+        {
+          "rank": 4,
+          "score": 44.74899,
+          "路径": "harmonyos-guides/NDK开发/代码开发/使用Node-API实现ArkTSJS与CC++语言交互/Node-API开发规范/napi-guidelines.md",
+          "best_chunk_id": 7042,
+          "best_chunk_titles": [
+            "生命周期管理"
+          ],
+          "matched_chunk_count": 14
+        },
+        {
+          "rank": 5,
+          "score": 41.526023,
+          "路径": "harmonyos-guides/应用框架/Ability Kit（程序框架服务）/Stage模型开发指导/Stage模型应用组件/ExtensionAbility组件/extensionability-overview.md",
+          "best_chunk_id": 13751,
+          "best_chunk_titles": [
+            "实现指定类型的ExtensionAbility组件"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 6,
+          "score": 39.879802,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/Form Kit简介/formkit-overview.md",
+          "best_chunk_id": 18360,
+          "best_chunk_titles": [
+            "服务卡片架构"
+          ],
+          "matched_chunk_count": 6
+        },
+        {
+          "rank": 7,
+          "score": 39.790741,
+          "路径": "harmonyos-guides/应用框架/ArkUI（方舟UI框架）/窗口管理/管理应用窗口（Stage模型）/application-window-stage.md",
+          "best_chunk_id": 17471,
+          "best_chunk_titles": [
+            "设置应用主窗口"
+          ],
+          "matched_chunk_count": 13
+        },
+        {
+          "rank": 8,
+          "score": 37.942121,
+          "路径": "harmonyos-guides/NDK开发/代码开发/使用JSVM-API实现JS与CC++语言交互/JSVM-API开发规范/JSVM-API使用规范/jsvm-guidelines.md",
+          "best_chunk_id": 6682,
+          "best_chunk_titles": [
+            "生命周期管理"
+          ],
+          "matched_chunk_count": 6
+        },
+        {
+          "rank": 9,
+          "score": 37.762417,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/ArkTS卡片开发（推荐）/管理ArkTS卡片生命周期/arkts-ui-widget-lifecycle.md",
+          "best_chunk_id": 18346,
+          "best_chunk_titles": [
+            "管理ArkTS卡片生命周期"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 10,
+          "score": 36.125892,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/ArkTS卡片开发（推荐）/ArkTS卡片提供方开发指导/ArkTS卡片页面交互/通过router或call事件刷新卡片内容/arkts-ui-widget-event-uiability.md",
+          "best_chunk_id": 18256,
+          "best_chunk_titles": [
+            "通过router事件刷新卡片内容"
+          ],
+          "matched_chunk_count": 3
+        }
+      ]
+    },
+    {
+      "sample_order": 9,
+      "dataset_row": 80,
+      "query": "在开始鸿蒙应用开发前，需要完成哪些准备工作？",
+      "gold_path": "应用开发准备/应用开发准备/application-dev-overview.md",
+      "gold_rank": 5,
+      "query_analysis": {
+        "query": "在开始鸿蒙应用开发前，需要完成哪些准备工作？",
+        "第一类完整词": {
+          "准备工作": 1,
+          "应用开发": 1
+        },
+        "预处理tokens": [
+          "开始",
+          "鸿蒙",
+          "应用",
+          "开发",
+          "完成",
+          "哪些",
+          "准备",
+          "工作"
+        ],
+        "BM25查询词频": {
+          "准备": 1,
+          "准备工作": 1,
+          "哪些": 1,
+          "完成": 1,
+          "工作": 1,
+          "应用": 1,
+          "应用开发": 1,
+          "开发": 1,
+          "开始": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 31.358442,
+          "路径": "harmonyos-guides/开发环境搭建/工程创建/模块管理/ohpm-repo私仓搭建工具/附录/自定义认证插件/自定义认证插件配置/ide-custom-auth-plugin-configuration.md",
+          "best_chunk_id": 19052,
+          "best_chunk_titles": [
+            "准备工作"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 2,
+          "score": 31.358442,
+          "路径": "harmonyos-guides/开发环境搭建/工程创建/模块管理/ohpm-repo私仓搭建工具/附录/自定义存储插件/自定义存储插件配置/ide-ohpm-repo-plugin-configuration.md",
+          "best_chunk_id": 19046,
+          "best_chunk_titles": [
+            "准备工作"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 3,
+          "score": 28.1903,
+          "路径": "harmonyos-guides/开发环境搭建/工程创建/模块管理/ohpm-repo私仓搭建工具/附录/自定义元数据规则校验插件/自定义元数据规则校验插件配置/ide-custom-metadata-rule-validation-config.md",
+          "best_chunk_id": 19037,
+          "best_chunk_titles": [
+            "准备工作"
+          ],
+          "matched_chunk_count": 7
+        },
+        {
+          "rank": 4,
+          "score": 27.105243,
+          "路径": "harmonyos-guides/应用服务/App Linking Kit（应用链接服务）/开发准备/基本准备工作/applinking-basic-preparation.md",
+          "best_chunk_id": 11134,
+          "best_chunk_titles": [
+            "基本准备工作"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 5,
+          "score": 26.612137,
+          "路径": "harmonyos-guides/应用开发准备/应用开发准备/application-dev-overview.md",
+          "best_chunk_id": 10836,
+          "best_chunk_titles": [
+            "应用开发准备"
+          ],
+          "matched_chunk_count": 7
+        },
+        {
+          "rank": 6,
+          "score": 26.211289,
+          "路径": "harmonyos-guides/应用服务/Live View Kit（实况窗服务）/开发准备/基本准备工作/liveview-base.md",
+          "best_chunk_id": 12380,
+          "best_chunk_titles": [
+            "基本准备工作"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 7,
+          "score": 25.158641,
+          "路径": "harmonyos-guides/应用服务/Cloud Foundation Kit（云开发服务）/开发准备/基本准备工作/cloudfoundation-basic-preparation.md",
+          "best_chunk_id": 11609,
+          "best_chunk_titles": [
+            "基本准备工作"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 8,
+          "score": 24.766217,
+          "路径": "harmonyos-guides/应用服务/Payment Kit（鸿蒙支付服务）/开发准备/开通支付服务/payment-config-agc.md",
+          "best_chunk_id": 12897,
+          "best_chunk_titles": [
+            "开通支付服务"
+          ],
+          "matched_chunk_count": 2
+        },
+        {
+          "rank": 9,
+          "score": 23.945067,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/开发准备/基本准备工作/（可选）申请嵌入式收银台开放能力权限/iap-apply-for-open-capabilities.md",
+          "best_chunk_id": 12310,
+          "best_chunk_titles": [
+            "开放能力申请准备"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 10,
+          "score": 22.964612,
+          "路径": "harmonyos-guides/图形/AR Engine（AR引擎服务）/开发准备/arengine-preparations.md",
+          "best_chunk_id": 8065,
+          "best_chunk_titles": [
+            "环境搭建"
+          ],
+          "matched_chunk_count": 4
+        }
+      ]
+    },
+    {
+      "sample_order": 10,
+      "dataset_row": 671,
+      "query": "在鸿蒙系统中，如何将PDF文档的指定页面缩略图转换为JPEG或PNG图片并保存到本地？",
+      "gold_path": "应用服务/PDF Kit（PDF服务）/PdfView预览组件/PDF缩略图转换为图片/pdf-pdfview-page2img.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统中，如何将PDF文档的指定页面缩略图转换为JPEG或PNG图片并保存到本地？",
+        "第一类完整词": {},
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "如何",
+          "将",
+          "pdf",
+          "文档",
+          "指定",
+          "页面",
+          "缩略图",
+          "转换",
+          "jpeg",
+          "png",
+          "图片",
+          "并",
+          "保存",
+          "本地"
+        ],
+        "BM25查询词频": {
+          "jpeg": 1,
+          "pdf": 1,
+          "png": 1,
+          "保存": 1,
+          "图片": 1,
+          "如何": 1,
+          "将": 1,
+          "并": 1,
+          "指定": 1,
+          "文档": 1,
+          "本地": 1,
+          "系统": 1,
+          "缩略图": 1,
+          "转换": 1,
+          "页面": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 43.52677,
+          "路径": "harmonyos-guides/应用服务/PDF Kit（PDF服务）/PdfView预览组件/PDF缩略图转换为图片/pdf-pdfview-page2img.md",
+          "best_chunk_id": 12745,
+          "best_chunk_titles": [
+            "示例代码"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 2,
+          "score": 43.312852,
+          "路径": "harmonyos-guides/应用服务/PDF Kit（PDF服务）/pdfService能力/转换PDF文档为图片/转换指定页面或指定区域为图片/pdf-get-img.md",
+          "best_chunk_id": 12796,
+          "best_chunk_titles": [
+            "示例代码"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 3,
+          "score": 39.93361,
+          "路径": "harmonyos-guides/应用服务/PDF Kit（PDF服务）/PdfView预览组件/pdf-pdfview-implements.md",
+          "best_chunk_id": 12742,
+          "best_chunk_titles": [
+            "PdfView预览组件"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 4,
+          "score": 39.506081,
+          "路径": "harmonyos-guides/应用服务/PDF Kit（PDF服务）/pdfService能力/转换PDF文档为图片/转换整个PDF文档为图片/pdf-convert-img.md",
+          "best_chunk_id": 12797,
+          "best_chunk_titles": [
+            "场景介绍"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 5,
+          "score": 39.045719,
+          "路径": "harmonyos-guides/应用服务/PDF Kit（PDF服务）/pdfService能力/转换PDF文档为图片/pdf-doc-to-imgs.md",
+          "best_chunk_id": 12793,
+          "best_chunk_titles": [
+            "转换PDF文档为图片"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 6,
+          "score": 37.175783,
+          "路径": "harmonyos-guides/应用服务/PDF Kit（PDF服务）/pdfService能力/添加、删除背景/pdf-add-background.md",
+          "best_chunk_id": 12787,
+          "best_chunk_titles": [
+            "添加、删除背景"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 7,
+          "score": 36.309676,
+          "路径": "harmonyos-guides/媒体/Image Kit（图片处理服务）/Image Kit常见问题/如何处理HEIF图片/heif-adapter-faq.md",
+          "best_chunk_id": 10159,
+          "best_chunk_titles": [
+            "常见问题",
+            "担心使用HEIF格式图片存在兼容性问题，需使用JPEG或PNG格式的图片，如何操作"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 8,
+          "score": 35.40704,
+          "路径": "harmonyos-guides/应用服务/PDF Kit（PDF服务）/pdfService能力/pdf-pdfservice-implements.md",
+          "best_chunk_id": 12766,
+          "best_chunk_titles": [
+            "pdfService能力"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 9,
+          "score": 32.221583,
+          "路径": "harmonyos-guides/AI/Vision Kit（场景化视觉服务）/文档扫描/vision-documentscanner.md",
+          "best_chunk_id": 6291,
+          "best_chunk_titles": [
+            "场景介绍"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 10,
+          "score": 31.135139,
+          "路径": "harmonyos-guides/应用服务/PDF Kit（PDF服务）/pdfService能力/添加、删除水印/pdf-add-watermark.md",
+          "best_chunk_id": 12786,
+          "best_chunk_titles": [
+            "示例代码",
+            "添加、删除图片水印"
+          ],
+          "matched_chunk_count": 4
+        }
+      ]
+    },
+    {
+      "sample_order": 11,
+      "dataset_row": 1183,
+      "query": "在鸿蒙系统中，如何通过向量数据库实现数据持久化？",
+      "gold_path": "应用框架/ArkData（方舟数据管理）/应用数据持久化/通过向量数据库实现数据持久化 (ArkTS)/data-persistence-by-vector-store.md",
+      "gold_rank": 2,
+      "query_analysis": {
+        "query": "在鸿蒙系统中，如何通过向量数据库实现数据持久化？",
+        "第一类完整词": {
+          "通过向量数据库实现数据持久化": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "如何",
+          "向量",
+          "数据库",
+          "实现",
+          "数据",
+          "持久",
+          "化"
+        ],
+        "BM25查询词频": {
+          "化": 1,
+          "向量": 1,
+          "如何": 1,
+          "实现": 1,
+          "持久": 1,
+          "数据": 1,
+          "数据库": 1,
+          "系统": 1,
+          "通过向量数据库实现数据持久化": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 55.895935,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过向量数据库实现数据持久化 (CC++)/native-vector-store-guidelines.md",
+          "best_chunk_id": 14396,
+          "best_chunk_titles": [
+            "场景介绍"
+          ],
+          "matched_chunk_count": 6
+        },
+        {
+          "rank": 2,
+          "score": 55.681668,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过向量数据库实现数据持久化 (ArkTS)/data-persistence-by-vector-store.md",
+          "best_chunk_id": 14384,
+          "best_chunk_titles": [
+            "场景介绍"
+          ],
+          "matched_chunk_count": 12
+        },
+        {
+          "rank": 3,
+          "score": 43.329997,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/app-data-persistence.md",
+          "best_chunk_id": 14371,
+          "best_chunk_titles": [
+            "应用数据持久化"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 4,
+          "score": 30.720022,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/应用数据持久化概述/app-data-persistence-overview.md",
+          "best_chunk_id": 14372,
+          "best_chunk_titles": [
+            "应用数据持久化概述"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 5,
+          "score": 29.534993,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过键值型数据库实现数据持久化 (ArkTS)/data-persistence-by-kv-store.md",
+          "best_chunk_id": 14422,
+          "best_chunk_titles": [
+            "示例代码"
+          ],
+          "matched_chunk_count": 5
+        },
+        {
+          "rank": 6,
+          "score": 28.467537,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过关系型数据库实现数据持久化 (ArkTS)/data-persistence-by-rdb-store.md",
+          "best_chunk_id": 14375,
+          "best_chunk_titles": [
+            "运作机制"
+          ],
+          "matched_chunk_count": 6
+        },
+        {
+          "rank": 7,
+          "score": 27.76381,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用跨设备数据同步（分布式）/分布式数据对象跨设备数据同步 (ArkTS)/data-sync-of-distributed-data-object.md",
+          "best_chunk_id": 14338,
+          "best_chunk_titles": [
+            "运作机制",
+            "对象持久化缓存机制"
+          ],
+          "matched_chunk_count": 12
+        },
+        {
+          "rank": 8,
+          "score": 27.33046,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过关系型数据库实现数据持久化 (CC++)/native-relational-store-guidelines.md",
+          "best_chunk_id": 14381,
+          "best_chunk_titles": [
+            "约束限制"
+          ],
+          "matched_chunk_count": 5
+        },
+        {
+          "rank": 9,
+          "score": 27.124575,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过用户首选项实现数据持久化 (CC++)/preferences-guidelines.md",
+          "best_chunk_id": 14413,
+          "best_chunk_titles": [
+            "场景介绍"
+          ],
+          "matched_chunk_count": 5
+        },
+        {
+          "rank": 10,
+          "score": 25.192826,
+          "路径": "harmonyos-guides/应用框架/Data Augmentation Kit（数据增强服务）/Data Augmentation Kit简介/dataaugmentation-introduction.md",
+          "best_chunk_id": 18161,
+          "best_chunk_titles": [
+            "优势/亮点",
+            "智慧化数据检索"
+          ],
+          "matched_chunk_count": 9
+        }
+      ]
+    },
+    {
+      "sample_order": 12,
+      "dataset_row": 847,
+      "query": "在鸿蒙系统中，如何使用Reader Kit获取本地书籍的封面、书名和作者信息并展示？",
+      "gold_path": "应用服务/Reader Kit（阅读服务）/书籍内容解析/获取书籍信息/reader-book-info.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统中，如何使用Reader Kit获取本地书籍的封面、书名和作者信息并展示？",
+        "第一类完整词": {
+          "kit": 1,
+          "read": 1,
+          "reader": 1,
+          "reader kit": 1,
+          "作者信息": 1,
+          "如何使用": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "如何",
+          "reader",
+          "kit",
+          "获取",
+          "本地",
+          "书籍",
+          "封面",
+          "书名",
+          "作者",
+          "信息",
+          "并",
+          "展示"
+        ],
+        "BM25查询词频": {
+          "kit": 2,
+          "read": 1,
+          "reader": 2,
+          "reader kit": 1,
+          "书名": 1,
+          "书籍": 1,
+          "作者": 1,
+          "作者信息": 1,
+          "信息": 1,
+          "如何": 1,
+          "如何使用": 1,
+          "封面": 1,
+          "展示": 1,
+          "并": 1,
+          "本地": 1,
+          "系统": 1,
+          "获取": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 87.658976,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/书籍内容解析/获取书籍信息/reader-book-info.md",
+          "best_chunk_id": 13261,
+          "best_chunk_titles": [
+            "开发步骤"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 2,
+          "score": 78.857242,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/Reader Kit简介/reader-introduction.md",
+          "best_chunk_id": 13218,
+          "best_chunk_titles": [
+            "基本概念"
+          ],
+          "matched_chunk_count": 9
+        },
+        {
+          "rank": 3,
+          "score": 59.805969,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/书籍内容解析/获取目录列表/reader-catalog-list.md",
+          "best_chunk_id": 13264,
+          "best_chunk_titles": [
+            "开发步骤"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 4,
+          "score": 55.024891,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/书籍内容解析/reader-parser.md",
+          "best_chunk_id": 13258,
+          "best_chunk_titles": [
+            "书籍内容解析"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 5,
+          "score": 53.63839,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/书籍内容排版/构建阅读器/reader-read-page.md",
+          "best_chunk_id": 13255,
+          "best_chunk_titles": [
+            "构建阅读器"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 6,
+          "score": 53.391906,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/reader-kit-guide.md",
+          "best_chunk_id": 13214,
+          "best_chunk_titles": [
+            "Reader Kit（阅读服务）"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 7,
+          "score": 49.84913,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/书籍内容交互/阅读进度通知/reader-progress.md",
+          "best_chunk_id": 13229,
+          "best_chunk_titles": [
+            "阅读进度通知"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 8,
+          "score": 47.95202,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/书籍内容排版/reader-content.md",
+          "best_chunk_id": 13233,
+          "best_chunk_titles": [
+            "书籍内容排版"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 9,
+          "score": 47.774476,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/书籍内容交互/reader-interaction.md",
+          "best_chunk_id": 13224,
+          "best_chunk_titles": [
+            "书籍内容交互"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 10,
+          "score": 46.999555,
+          "路径": "harmonyos-guides/应用服务/Reader Kit（阅读服务）/书籍内容交互/手动触发翻页/reader-flip-page.md",
+          "best_chunk_id": 13226,
+          "best_chunk_titles": [
+            "接口说明"
+          ],
+          "matched_chunk_count": 4
+        }
+      ]
+    },
+    {
+      "sample_order": 13,
+      "dataset_row": 2476,
+      "query": "如何解决鸿蒙系统中Enterprise Data Guard Kit权限获取失败的问题？",
+      "gold_path": "系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/Enterprise Data Guard Kit常见问题/dataguard-faq.md",
+      "gold_rank": 2,
+      "query_analysis": {
+        "query": "如何解决鸿蒙系统中Enterprise Data Guard Kit权限获取失败的问题？",
+        "第一类完整词": {
+          "data": 1,
+          "enterprise data guard": 1,
+          "enterprise data guard kit": 1,
+          "enterprise data guard kit权限获取失败": 1,
+          "kit": 1
+        },
+        "预处理tokens": [
+          "如何",
+          "解决",
+          "鸿蒙",
+          "系统",
+          "enterprise",
+          "data",
+          "guard",
+          "kit",
+          "权限",
+          "获取",
+          "失败",
+          "问题"
+        ],
+        "BM25查询词频": {
+          "data": 2,
+          "enterprise": 1,
+          "enterprise data guard": 1,
+          "enterprise data guard kit": 1,
+          "enterprise data guard kit权限获取失败": 1,
+          "guard": 1,
+          "kit": 2,
+          "失败": 1,
+          "如何": 1,
+          "权限": 1,
+          "系统": 1,
+          "获取": 1,
+          "解决": 1,
+          "问题": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 82.491296,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/Enterprise Data Guard Kit常见问题/Enterprise Data Guard Kit权限获取失败/dataguard-faq-1.md",
+          "best_chunk_id": 21236,
+          "best_chunk_titles": [
+            "Enterprise Data Guard Kit权限获取失败"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 2,
+          "score": 50.706323,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/Enterprise Data Guard Kit常见问题/dataguard-faq.md",
+          "best_chunk_id": 21235,
+          "best_chunk_titles": [
+            "Enterprise Data Guard Kit常见问题"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 3,
+          "score": 41.772142,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/data-guard-kit-guide.md",
+          "best_chunk_id": 21234,
+          "best_chunk_titles": [
+            "Enterprise Data Guard Kit（企业数据保护服务）"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 4,
+          "score": 38.708943,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/Enterprise Data Guard Kit简介/dataguard-introduction.md",
+          "best_chunk_id": 21237,
+          "best_chunk_titles": [
+            "Enterprise Data Guard Kit简介"
+          ],
+          "matched_chunk_count": 6
+        },
+        {
+          "rank": 5,
+          "score": 38.317635,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/文件分级管控/获取文件属性标签/fileguard-query-tags.md",
+          "best_chunk_id": 21286,
+          "best_chunk_titles": [
+            "场景介绍"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 6,
+          "score": 38.316267,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/文件分级管控/获取文件URI/fileguard-get-file-url.md",
+          "best_chunk_id": 21283,
+          "best_chunk_titles": [
+            "场景介绍"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 7,
+          "score": 38.272859,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/文件分级管控/启动文件扫描任务/fileguard-start-task.md",
+          "best_chunk_id": 21270,
+          "best_chunk_titles": [
+            "场景介绍"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 8,
+          "score": 38.149093,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/文件分级管控/打开文件/fileguard-openfile.md",
+          "best_chunk_id": 21273,
+          "best_chunk_titles": [
+            "场景介绍"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 9,
+          "score": 36.66482,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/文件分级管控/删除指定路径下的文件/fileguard-delete-file.md",
+          "best_chunk_id": 21267,
+          "best_chunk_titles": [
+            "场景介绍"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 10,
+          "score": 36.091974,
+          "路径": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）/文件分级管控/设置文件属性标签/fileguard-set-tags.md",
+          "best_chunk_id": 21306,
+          "best_chunk_titles": [
+            "场景介绍"
+          ],
+          "matched_chunk_count": 3
+        }
+      ]
+    },
+    {
+      "sample_order": 14,
+      "dataset_row": 1167,
+      "query": "如何在鸿蒙系统中实现同应用端云数据同步（分布式）？",
+      "gold_path": "应用框架/ArkData（方舟数据管理）/同应用端云数据同步（分布式）/distributed-data-cloud-sync.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "如何在鸿蒙系统中实现同应用端云数据同步（分布式）？",
+        "第一类完整词": {
+          "分布式": 1,
+          "同应用端云数据同步": 1,
+          "同应用端云数据同步(分布式)": 1
+        },
+        "预处理tokens": [
+          "如何",
+          "鸿蒙",
+          "系统",
+          "实现",
+          "同",
+          "应用",
+          "端云",
+          "数据",
+          "同步",
+          "分布式"
+        ],
+        "BM25查询词频": {
+          "分布式": 2,
+          "同": 1,
+          "同应用端云数据同步": 1,
+          "同应用端云数据同步(分布式)": 1,
+          "同步": 1,
+          "如何": 1,
+          "实现": 1,
+          "应用": 1,
+          "数据": 1,
+          "端云": 1,
+          "系统": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 88.400907,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用端云数据同步（分布式）/distributed-data-cloud-sync.md",
+          "best_chunk_id": 14292,
+          "best_chunk_titles": [
+            "同应用端云数据同步（分布式）"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 2,
+          "score": 61.874315,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用端云数据同步（分布式）/同应用端云数据同步概述/data-cloud-sync-overview.md",
+          "best_chunk_id": 14293,
+          "best_chunk_titles": [
+            "场景介绍"
+          ],
+          "matched_chunk_count": 6
+        },
+        {
+          "rank": 3,
+          "score": 60.902104,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用端云数据同步（分布式）/端云数据同步云侧环境部署指导/data-sync-with-cloud.md",
+          "best_chunk_id": 14307,
+          "best_chunk_titles": [
+            "个人数据处理说明"
+          ],
+          "matched_chunk_count": 14
+        },
+        {
+          "rank": 4,
+          "score": 60.536731,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用端云数据同步（分布式）/端云数据同步关系型数据库端侧开发指导 (ArkTS)/data-cloud-sync-of-rdb-store.md",
+          "best_chunk_id": 14313,
+          "best_chunk_titles": [
+            "场景介绍"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 5,
+          "score": 39.330248,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用跨设备数据同步（分布式）/distributed-data-sync.md",
+          "best_chunk_id": 14317,
+          "best_chunk_titles": [
+            "同应用跨设备数据同步（分布式）"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 6,
+          "score": 38.805263,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用跨设备数据同步（分布式）/键值型数据库跨设备数据同步 (ArkTS)/data-sync-of-kv-store.md",
+          "best_chunk_id": 14351,
+          "best_chunk_titles": [
+            "端端同步方式"
+          ],
+          "matched_chunk_count": 13
+        },
+        {
+          "rank": 7,
+          "score": 38.155811,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/arkdata.md",
+          "best_chunk_id": 14225,
+          "best_chunk_titles": [
+            "ArkData（方舟数据管理）"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 8,
+          "score": 37.224246,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用跨设备数据同步（分布式）/分布式数据对象跨设备数据同步 (ArkTS)/data-sync-of-distributed-data-object.md",
+          "best_chunk_id": 14339,
+          "best_chunk_titles": [
+            "运作机制",
+            "资产同步机制"
+          ],
+          "matched_chunk_count": 12
+        },
+        {
+          "rank": 9,
+          "score": 36.87007,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用跨设备数据同步（分布式）/同应用跨设备数据同步概述/sync-app-data-across-devices-overview.md",
+          "best_chunk_id": 14344,
+          "best_chunk_titles": [
+            "场景介绍"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 10,
+          "score": 34.987971,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/同应用跨设备数据同步（分布式）/关系型数据库跨设备数据同步 (ArkTS)/data-sync-of-rdb-store.md",
+          "best_chunk_id": 14324,
+          "best_chunk_titles": [
+            "约束限制"
+          ],
+          "matched_chunk_count": 14
+        }
+      ]
+    },
+    {
+      "sample_order": 15,
+      "dataset_row": 509,
+      "query": "在鸿蒙系统的IAP Kit中，非游戏类应用的开发者如何审核和处理用户的退款申请？",
+      "gold_path": "应用服务/IAP Kit（应用内支付服务）/售后/退款/iap-refund.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统的IAP Kit中，非游戏类应用的开发者如何审核和处理用户的退款申请？",
+        "第一类完整词": {
+          "iap": 1,
+          "iap kit": 1,
+          "kit": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "iap",
+          "kit",
+          "游戏类",
+          "应用",
+          "开发者",
+          "如何",
+          "审核",
+          "处理",
+          "用户",
+          "退款",
+          "申请"
+        ],
+        "BM25查询词频": {
+          "iap": 2,
+          "iap kit": 1,
+          "kit": 2,
+          "处理": 1,
+          "如何": 1,
+          "审核": 1,
+          "应用": 1,
+          "开发者": 1,
+          "游戏类": 1,
+          "用户": 1,
+          "申请": 1,
+          "系统": 1,
+          "退款": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 86.18876,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/售后/退款/iap-refund.md",
+          "best_chunk_id": 12248,
+          "best_chunk_titles": [
+            "退款"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 2,
+          "score": 59.090954,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/沙盒测试/iap-sandbox.md",
+          "best_chunk_id": 12334,
+          "best_chunk_titles": [
+            "测试退款请求"
+          ],
+          "matched_chunk_count": 10
+        },
+        {
+          "rank": 3,
+          "score": 45.981532,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/IAP Kit接入规范/iap-access-specifications.md",
+          "best_chunk_id": 12235,
+          "best_chunk_titles": [
+            "IAP Kit接入规范"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 4,
+          "score": 45.78274,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/售后/iap-after-sales.md",
+          "best_chunk_id": 12245,
+          "best_chunk_titles": [
+            "售后"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 5,
+          "score": 44.984741,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/IAP Kit简介/iap-introduction.md",
+          "best_chunk_id": 12238,
+          "best_chunk_titles": [
+            "IAP Kit简介"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 6,
+          "score": 42.473038,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/使用入门/iap-dev-guide.md",
+          "best_chunk_id": 12244,
+          "best_chunk_titles": [
+            "示例代码"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 7,
+          "score": 42.11776,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/售后/开票/iap-invoicing.md",
+          "best_chunk_id": 12247,
+          "best_chunk_titles": [
+            "应用内接入开发票入口"
+          ],
+          "matched_chunk_count": 2
+        },
+        {
+          "rank": 8,
+          "score": 41.455625,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/开发准备/配置商品信息/iap-config-product.md",
+          "best_chunk_id": 12314,
+          "best_chunk_titles": [
+            "配置商品信息"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 9,
+          "score": 41.019576,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/商品购买/非续期订阅商品购买/接入购买/iap-integrate-nonrenewable.md",
+          "best_chunk_id": 12297,
+          "best_chunk_titles": [
+            "业务流程"
+          ],
+          "matched_chunk_count": 7
+        },
+        {
+          "rank": 10,
+          "score": 40.309081,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/商品购买/消耗型非消耗型商品购买/接入购买/iap-integrate-purchase.md",
+          "best_chunk_id": 12257,
+          "best_chunk_titles": [
+            "业务流程"
+          ],
+          "matched_chunk_count": 7
+        }
+      ]
+    },
+    {
+      "sample_order": 16,
+      "dataset_row": 90,
+      "query": "如何在鸿蒙系统中使用Netron工具查看.om模型的拓扑结构和子图信息？",
+      "gold_path": "AI/CANN Kit（CANN异构计算框架服务）/附录/可视化工具/cannkit-visualization-tool-usage.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "如何在鸿蒙系统中使用Netron工具查看.om模型的拓扑结构和子图信息？",
+        "第一类完整词": {},
+        "预处理tokens": [
+          "如何",
+          "鸿蒙",
+          "系统",
+          "netron",
+          "工具",
+          "查看",
+          "om",
+          "模型",
+          "拓扑",
+          "结构",
+          "和子",
+          "图",
+          "信息"
+        ],
+        "BM25查询词频": {
+          "netron": 1,
+          "om": 1,
+          "信息": 1,
+          "和子": 1,
+          "图": 1,
+          "如何": 1,
+          "工具": 1,
+          "拓扑": 1,
+          "查看": 1,
+          "模型": 1,
+          "系统": 1,
+          "结构": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 72.372537,
+          "路径": "harmonyos-guides/AI/CANN Kit（CANN异构计算框架服务）/附录/可视化工具/cannkit-visualization-tool-usage.md",
+          "best_chunk_id": 5999,
+          "best_chunk_titles": [
+            "概述"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 2,
+          "score": 34.231062,
+          "路径": "harmonyos-guides/AI/CANN Kit（CANN异构计算框架服务）/模型优化/Model Zoo/cannkit-model-zoo.md",
+          "best_chunk_id": 5829,
+          "best_chunk_titles": [
+            "Model Zoo模型下载"
+          ],
+          "matched_chunk_count": 9
+        },
+        {
+          "rank": 3,
+          "score": 24.893671,
+          "路径": "harmonyos-guides/AI/CANN Kit（CANN异构计算框架服务）/模型优化/模型轻量化/网络结构搜索训练/cannkit-network-structure-search-training.md",
+          "best_chunk_id": 5923,
+          "best_chunk_titles": [
+            "搜索训练",
+            "搜索结果展示"
+          ],
+          "matched_chunk_count": 16
+        },
+        {
+          "rank": 4,
+          "score": 23.630629,
+          "路径": "harmonyos-guides/AI/CANN Kit（CANN异构计算框架服务）/模型优化/模型轻量化/模型收益/cannkit-model-benefits.md",
+          "best_chunk_id": 5889,
+          "best_chunk_titles": [
+            "Quant_INT8-8量化收益"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 5,
+          "score": 22.230124,
+          "路径": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）/IAP Kit常见问题/如何解决证书链不完整？/iap-faq-14.md",
+          "best_chunk_id": 12228,
+          "best_chunk_titles": [
+            "如何解决证书链不完整？"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 6,
+          "score": 22.188582,
+          "路径": "harmonyos-guides/基础入门/开发基础知识/应用程序包基础知识/应用程序包结构/FA模型应用程序包结构/application-package-structure-fa.md",
+          "best_chunk_id": 9167,
+          "best_chunk_titles": [
+            "FA模型应用程序包结构"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 7,
+          "score": 21.637371,
+          "路径": "harmonyos-guides/AI/CANN Kit（CANN异构计算框架服务）/模型转换/离线模型转换/模型转换示例/cannkit-model-conversion-example.md",
+          "best_chunk_id": 5959,
+          "best_chunk_titles": [
+            "模型转换示例"
+          ],
+          "matched_chunk_count": 8
+        },
+        {
+          "rank": 8,
+          "score": 21.257701,
+          "路径": "harmonyos-guides/系统/调测调优/调试命令/打包拆包工具/拆包工具/unpacking-tool.md",
+          "best_chunk_id": 24337,
+          "best_chunk_titles": [
+            "拆包工具信息字段",
+            "MetaData结构体信息"
+          ],
+          "matched_chunk_count": 46
+        },
+        {
+          "rank": 9,
+          "score": 20.31602,
+          "路径": "harmonyos-guides/图形/AR Engine（AR引擎服务）/人脸识别与跟踪/人脸识别与跟踪介绍/arengine-face-conversion.md",
+          "best_chunk_id": 7973,
+          "best_chunk_titles": [
+            "人脸识别与跟踪介绍"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 10,
+          "score": 19.150778,
+          "路径": "harmonyos-guides/系统/调测调优/调试命令/hiperf/hiperf.md",
+          "best_chunk_id": 23924,
+          "best_chunk_titles": [
+            "hiperf"
+          ],
+          "matched_chunk_count": 11
+        }
+      ]
+    },
+    {
+      "sample_order": 17,
+      "dataset_row": 3133,
+      "query": "在鸿蒙应用中使用AVPlayer播放音频时，如何正确监听并处理音频焦点中断事件（如暂停、停止、音量减弱等）以符合Code Linter代码检查规则的示例代码？",
+      "gold_path": "编写与调试应用/代码编辑/代码检查/Code Linter代码检查规则/正确性规则@correctness/@correctnessaudio-interrupt-check/ide-audio-interrupt-check.md",
+      "gold_rank": 2,
+      "query_analysis": {
+        "query": "在鸿蒙应用中使用AVPlayer播放音频时，如何正确监听并处理音频焦点中断事件（如暂停、停止、音量减弱等）以符合Code Linter代码检查规则的示例代码？",
+        "第一类完整词": {
+          "avplayer": 1,
+          "code": 1,
+          "code linter": 1,
+          "code linter代码检查": 1,
+          "code linter代码检查规则": 1,
+          "play": 1,
+          "代码检查": 1,
+          "使用avplayer播放音频": 1,
+          "示例代码": 1,
+          "音频焦点": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "应用",
+          "avplayer",
+          "av",
+          "player",
+          "播放",
+          "音频",
+          "时",
+          "如何",
+          "正确",
+          "监听",
+          "并",
+          "处理",
+          "音频",
+          "焦点",
+          "中断",
+          "事件",
+          "如",
+          "暂停",
+          "停止",
+          "音量",
+          "减弱",
+          "以",
+          "符合",
+          "code",
+          "linter",
+          "代码",
+          "检查",
+          "规则",
+          "示例",
+          "代码"
+        ],
+        "BM25查询词频": {
+          "av": 1,
+          "avplayer": 2,
+          "code": 2,
+          "code linter": 1,
+          "code linter代码检查": 1,
+          "code linter代码检查规则": 1,
+          "linter": 1,
+          "play": 1,
+          "player": 1,
+          "中断": 1,
+          "事件": 1,
+          "代码": 2,
+          "代码检查": 1,
+          "以": 1,
+          "使用avplayer播放音频": 1,
+          "停止": 1,
+          "减弱": 1,
+          "处理": 1,
+          "如": 1,
+          "如何": 1,
+          "并": 1,
+          "应用": 1,
+          "播放": 1,
+          "时": 1,
+          "暂停": 1,
+          "检查": 1,
+          "正确": 1,
+          "焦点": 1,
+          "监听": 1,
+          "示例": 1,
+          "示例代码": 1,
+          "符合": 1,
+          "规则": 1,
+          "音量": 1,
+          "音频": 2,
+          "音频焦点": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 99.086725,
+          "路径": "harmonyos-guides/媒体/Audio Kit（音频服务）/音频焦点和音频会话管理/音频焦点介绍/audio-playback-concurrency.md",
+          "best_chunk_id": 9830,
+          "best_chunk_titles": [
+            "音频焦点",
+            "处理音频焦点变化"
+          ],
+          "matched_chunk_count": 8
+        },
+        {
+          "rank": 2,
+          "score": 96.735355,
+          "路径": "harmonyos-guides/编写与调试应用/代码编辑/代码检查/Code Linter代码检查规则/正确性规则@correctness/@correctnessaudio-interrupt-check/ide-audio-interrupt-check.md",
+          "best_chunk_id": 24794,
+          "best_chunk_titles": [
+            "@correctness/audio-interrupt-check"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 3,
+          "score": 86.155007,
+          "路径": "harmonyos-guides/编写与调试应用/代码编辑/代码检查/Code Linter代码检查规则/正确性规则@correctness/@correctnessavsession-buttons-check/ide-avsession-buttons-check.md",
+          "best_chunk_id": 24800,
+          "best_chunk_titles": [
+            "@correctness/avsession-buttons-check"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 4,
+          "score": 85.333046,
+          "路径": "harmonyos-guides/媒体/Media Kit（媒体服务）/媒体开发指导(CC++)/播放/使用AVPlayer播放音频(CC++)/using-ndk-avplayer-for-playback.md",
+          "best_chunk_id": 10495,
+          "best_chunk_titles": [
+            "使用AVPlayer播放音频(C/C++)"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 5,
+          "score": 84.358292,
+          "路径": "harmonyos-guides/媒体/Media Kit（媒体服务）/媒体开发指导(ArkTS)/播放/使用AVPlayer播放音频(ArkTS)/using-avplayer-for-playback.md",
+          "best_chunk_id": 10394,
+          "best_chunk_titles": [
+            "使用AVPlayer播放音频(ArkTS)"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 6,
+          "score": 84.051586,
+          "路径": "harmonyos-guides/编写与调试应用/代码编辑/代码检查/Code Linter代码检查规则/性能规则@performance/@performancehp-arkui-suggest-cache-avplayer/ide-hp-arkui-suggest-cache-avplayer.md",
+          "best_chunk_id": 24652,
+          "best_chunk_titles": [
+            "规则集"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 7,
+          "score": 81.326035,
+          "路径": "harmonyos-guides/媒体/AVSession Kit（音视频播控服务）/本地媒体会话/后台播放/avsession-background-scene.md",
+          "best_chunk_id": 9546,
+          "best_chunk_titles": [
+            "开发步骤",
+            "启动播放器"
+          ],
+          "matched_chunk_count": 9
+        },
+        {
+          "rank": 8,
+          "score": 77.525591,
+          "路径": "harmonyos-guides/编写与调试应用/代码编辑/代码检查/Code Linter代码检查/ide-code-linter.md",
+          "best_chunk_id": 24386,
+          "best_chunk_titles": [
+            "实践说明",
+            "示例1：调用类Foo下bar方法时，Code Linter告警"
+          ],
+          "matched_chunk_count": 9
+        },
+        {
+          "rank": 9,
+          "score": 75.911288,
+          "路径": "harmonyos-guides/媒体/Media Kit（媒体服务）/媒体开发指导(ArkTS)/播放/使用AVPlayer播放流媒体(ArkTS)/streaming-media-playback-development-guide.md",
+          "best_chunk_id": 10382,
+          "best_chunk_titles": [
+            "开发步骤"
+          ],
+          "matched_chunk_count": 10
+        },
+        {
+          "rank": 10,
+          "score": 74.144727,
+          "路径": "harmonyos-guides/编写与调试应用/代码编辑/代码检查/Code Linter代码检查规则/正确性规则@correctness/@correctnessaudio-pause-or-mute-check/ide-audio-pause-or-mute-check.md",
+          "best_chunk_id": 24797,
+          "best_chunk_titles": [
+            "@correctness/audio-pause-or-mute-check"
+          ],
+          "matched_chunk_count": 3
+        }
+      ]
+    },
+    {
+      "sample_order": 18,
+      "dataset_row": 3326,
+      "query": "在HarmonyOS应用开发中，如何使用DevEco Studio的Database Inspector工具查看和修改应用数据库？",
+      "gold_path": "编写与调试应用/应用调试/数据库调试/ide-database-inspector.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在HarmonyOS应用开发中，如何使用DevEco Studio的Database Inspector工具查看和修改应用数据库？",
+        "第一类完整词": {
+          "data": 1,
+          "dev": 1,
+          "deveco studio": 1,
+          "har": 1,
+          "harmonyos": 1,
+          "tab": 1,
+          "如何使用": 1,
+          "应用开发": 1
+        },
+        "预处理tokens": [
+          "harmonyos",
+          "harmony",
+          "os",
+          "应用",
+          "开发",
+          "如何",
+          "deveco",
+          "dev",
+          "eco",
+          "studio",
+          "database",
+          "inspector",
+          "工具",
+          "查看",
+          "修改",
+          "应用",
+          "数据库"
+        ],
+        "BM25查询词频": {
+          "data": 1,
+          "database": 1,
+          "dev": 2,
+          "deveco": 1,
+          "deveco studio": 1,
+          "eco": 1,
+          "har": 1,
+          "harmony": 1,
+          "harmonyos": 2,
+          "inspector": 1,
+          "os": 1,
+          "studio": 1,
+          "tab": 1,
+          "修改": 1,
+          "如何": 1,
+          "如何使用": 1,
+          "工具": 1,
+          "应用": 2,
+          "应用开发": 1,
+          "开发": 1,
+          "数据库": 1,
+          "查看": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 76.432877,
+          "路径": "harmonyos-guides/编写与调试应用/应用调试/数据库调试/ide-database-inspector.md",
+          "best_chunk_id": 25521,
+          "best_chunk_titles": [
+            "数据库调试"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 2,
+          "score": 59.11899,
+          "路径": "harmonyos-guides/开发环境搭建/下载与安装DevEco Studio/ide-software-install.md",
+          "best_chunk_id": 18777,
+          "best_chunk_titles": [
+            "macOS环境",
+            "安装DevEco Studio"
+          ],
+          "matched_chunk_count": 7
+        },
+        {
+          "rank": 3,
+          "score": 56.950224,
+          "路径": "harmonyos-guides/基础入门/应用开发导读/application-dev-guide.md",
+          "best_chunk_id": 9085,
+          "best_chunk_titles": [
+            "工具"
+          ],
+          "matched_chunk_count": 5
+        },
+        {
+          "rank": 4,
+          "score": 54.647618,
+          "路径": "harmonyos-guides/使用AI智能辅助编程/智能执行/代码修改/ide-code-modify.md",
+          "best_chunk_id": 7400,
+          "best_chunk_titles": [
+            "代码修改"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 5,
+          "score": 53.762447,
+          "路径": "harmonyos-guides/编写与调试应用/界面预览/使用预览器调试应用/ide-previewer-debug.md",
+          "best_chunk_id": 25885,
+          "best_chunk_titles": [
+            "普通预览与预览调试能力对比"
+          ],
+          "matched_chunk_count": 3
+        },
+        {
+          "rank": 6,
+          "score": 52.847846,
+          "路径": "harmonyos-guides/应用框架/Core File Kit（文件基础服务）/应用文件/应用数据备份恢复/设备升级应用数据迁移适配指导/应用数据迁移适配指导/app-data-migration-adaptation.md",
+          "best_chunk_id": 18044,
+          "best_chunk_titles": [
+            "环境准备"
+          ],
+          "matched_chunk_count": 6
+        },
+        {
+          "rank": 7,
+          "score": 52.575736,
+          "路径": "harmonyos-guides/优化应用性能/DevEco Profiler调优工具简介/ide-profiler.md",
+          "best_chunk_id": 7203,
+          "best_chunk_titles": [
+            "DevEco Profiler调优工具简介"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 8,
+          "score": 51.985507,
+          "路径": "harmonyos-guides/系统/基础功能/Basic Services Kit（基础服务）/电源管理/运行锁使用指南/阻止系统闲时进入睡眠开发指南/runninglock-dev.md",
+          "best_chunk_id": 20237,
+          "best_chunk_titles": [
+            "环境准备",
+            "环境要求"
+          ],
+          "matched_chunk_count": 5
+        },
+        {
+          "rank": 9,
+          "score": 51.682849,
+          "路径": "harmonyos-guides/基础入门/快速入门/开发准备/start-overview.md",
+          "best_chunk_id": 9273,
+          "best_chunk_titles": [
+            "工具准备"
+          ],
+          "matched_chunk_count": 4
+        },
+        {
+          "rank": 10,
+          "score": 51.629259,
+          "路径": "harmonyos-guides/应用框架/ArkUI（方舟UI框架）/UI开发调试调优/UI调优/ui-inspector-profiler.md",
+          "best_chunk_id": 17291,
+          "best_chunk_titles": [
+            "Inspector调试能力"
+          ],
+          "matched_chunk_count": 7
+        }
+      ]
+    },
+    {
+      "sample_order": 19,
+      "dataset_row": 1186,
+      "query": "如何在HarmonyOS应用中通过C/C++接口使用用户首选项（Preferences）实现数据持久化？",
+      "gold_path": "应用框架/ArkData（方舟数据管理）/应用数据持久化/通过用户首选项实现数据持久化 (CC++)/preferences-guidelines.md",
+      "gold_rank": 2,
+      "query_analysis": {
+        "query": "如何在HarmonyOS应用中通过C/C++接口使用用户首选项（Preferences）实现数据持久化？",
+        "第一类完整词": {
+          "c++": 1,
+          "har": 1,
+          "harmonyos": 1,
+          "preferences": 1,
+          "references": 1,
+          "用户首选项": 1
+        },
+        "预处理tokens": [
+          "如何",
+          "harmonyos",
+          "harmony",
+          "os",
+          "应用",
+          "c++",
+          "接口",
+          "用户",
+          "首选项",
+          "preferences",
+          "实现",
+          "数据",
+          "持久",
+          "化"
+        ],
+        "BM25查询词频": {
+          "c++": 2,
+          "har": 1,
+          "harmony": 1,
+          "harmonyos": 2,
+          "os": 1,
+          "preferences": 2,
+          "references": 1,
+          "化": 1,
+          "如何": 1,
+          "实现": 1,
+          "应用": 1,
+          "持久": 1,
+          "接口": 1,
+          "数据": 1,
+          "用户": 1,
+          "用户首选项": 1,
+          "首选项": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 61.307582,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过用户首选项实现数据持久化 (ArkTS)/data-persistence-by-preferences.md",
+          "best_chunk_id": 14403,
+          "best_chunk_titles": [
+            "运作机制"
+          ],
+          "matched_chunk_count": 11
+        },
+        {
+          "rank": 2,
+          "score": 59.305318,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/通过用户首选项实现数据持久化 (CC++)/preferences-guidelines.md",
+          "best_chunk_id": 14417,
+          "best_chunk_titles": [
+            "开发步骤"
+          ],
+          "matched_chunk_count": 5
+        },
+        {
+          "rank": 3,
+          "score": 50.477688,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/app-data-persistence.md",
+          "best_chunk_id": 14371,
+          "best_chunk_titles": [
+            "应用数据持久化"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 4,
+          "score": 46.059791,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/arkdata数据库调试工具/preferences数据库调试工具指导/preferences-debug-tool.md",
+          "best_chunk_id": 14257,
+          "best_chunk_titles": [
+            "preferences数据库调试工具指导"
+          ],
+          "matched_chunk_count": 14
+        },
+        {
+          "rank": 5,
+          "score": 41.24754,
+          "路径": "harmonyos-guides/应用框架/ArkData（方舟数据管理）/应用数据持久化/应用数据持久化概述/app-data-persistence-overview.md",
+          "best_chunk_id": 14372,
+          "best_chunk_titles": [
+            "应用数据持久化概述"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 6,
+          "score": 40.818231,
+          "路径": "harmonyos-guides/编写与调试应用/界面预览/支持使用预览器的API清单/ide-previewer-api-list.md",
+          "best_chunk_id": 25890,
+          "best_chunk_titles": [
+            "接口",
+            "数据管理"
+          ],
+          "matched_chunk_count": 6
+        },
+        {
+          "rank": 7,
+          "score": 34.975955,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/ArkTS卡片开发（推荐）/ArkTS卡片提供方开发指导/ArkTS卡片编辑/ArkTS卡片编辑概述/arkts-widget-event-formedit-overview.md",
+          "best_chunk_id": 18247,
+          "best_chunk_titles": [
+            "全屏卡片编辑",
+            "开发步骤"
+          ],
+          "matched_chunk_count": 6
+        },
+        {
+          "rank": 8,
+          "score": 34.975955,
+          "路径": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）/ArkTS卡片开发（推荐）/ArkTS卡片提供方开发指导/ArkTS卡片编辑/ArkTS卡片编辑概述/-ui-widget-event-formeditextensionability-overview.md",
+          "best_chunk_id": 18241,
+          "best_chunk_titles": [
+            "全屏卡片编辑",
+            "开发步骤"
+          ],
+          "matched_chunk_count": 6
+        },
+        {
+          "rank": 9,
+          "score": 33.251455,
+          "路径": "harmonyos-guides/应用框架/ArkUI（方舟UI框架）/UI开发 (ArkTS声明式开发范式)/学习UI范式状态管理/状态管理（V2）/管理应用拥有的状态/PersistenceV2 持久化存储UI状态/arkts-new-persistencev2.md",
+          "best_chunk_id": 16356,
+          "best_chunk_titles": [
+            "使用限制"
+          ],
+          "matched_chunk_count": 12
+        },
+        {
+          "rank": 10,
+          "score": 31.567129,
+          "路径": "harmonyos-guides/编写与调试应用/附录/pac.json5隐私清单文件/agc-pac.md",
+          "best_chunk_id": 25942,
+          "best_chunk_titles": [
+            "specialAPIs"
+          ],
+          "matched_chunk_count": 7
+        }
+      ]
+    },
+    {
+      "sample_order": 20,
+      "dataset_row": 2975,
+      "query": "在鸿蒙系统应用开发中，如何使用性能分析套件进行故障检测，包括崩溃、地址越界、应用冻屏、资源泄漏及任务超时等问题的具体检测方法？",
+      "gold_path": "系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/fault-analysis.md",
+      "gold_rank": 1,
+      "query_analysis": {
+        "query": "在鸿蒙系统应用开发中，如何使用性能分析套件进行故障检测，包括崩溃、地址越界、应用冻屏、资源泄漏及任务超时等问题的具体检测方法？",
+        "第一类完整词": {
+          "地址越界": 1,
+          "如何使用": 1,
+          "应用冻屏": 1,
+          "应用开发": 1,
+          "性能分析": 1,
+          "故障检测": 1,
+          "资源泄漏": 1
+        },
+        "预处理tokens": [
+          "鸿蒙",
+          "系统",
+          "应用",
+          "开发",
+          "如何",
+          "使用性能",
+          "分析",
+          "套件",
+          "故障",
+          "检测",
+          "包括",
+          "崩溃",
+          "地址",
+          "越界",
+          "应用",
+          "冻屏",
+          "资源",
+          "泄漏",
+          "任务",
+          "超时",
+          "问题",
+          "具体",
+          "检测",
+          "方法"
+        ],
+        "BM25查询词频": {
+          "任务": 1,
+          "使用性能": 1,
+          "具体": 1,
+          "冻屏": 1,
+          "分析": 1,
+          "包括": 1,
+          "地址": 1,
+          "地址越界": 1,
+          "套件": 1,
+          "如何": 1,
+          "如何使用": 1,
+          "崩溃": 1,
+          "应用": 2,
+          "应用冻屏": 1,
+          "应用开发": 1,
+          "开发": 1,
+          "性能分析": 1,
+          "故障": 1,
+          "故障检测": 1,
+          "方法": 1,
+          "检测": 2,
+          "泄漏": 1,
+          "系统": 1,
+          "资源": 1,
+          "资源泄漏": 1,
+          "超时": 1,
+          "越界": 1,
+          "问题": 1,
+          "鸿蒙": 1
+        }
+      },
+      "results": [
+        {
+          "rank": 1,
+          "score": 102.533675,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/fault-analysis.md",
+          "best_chunk_id": 23300,
+          "best_chunk_titles": [
+            "故障检测"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 2,
+          "score": 86.150214,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/简介/fault-detection-overview.md",
+          "best_chunk_id": 23423,
+          "best_chunk_titles": [
+            "简介"
+          ],
+          "matched_chunk_count": 1
+        },
+        {
+          "rank": 3,
+          "score": 73.809401,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/Performance Analysis Kit简介/performance-analysis-kit-overview.md",
+          "best_chunk_id": 23060,
+          "best_chunk_titles": [
+            "能力范围"
+          ],
+          "matched_chunk_count": 5
+        },
+        {
+          "rank": 4,
+          "score": 73.016626,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/AddrSanitizer（地址越界）检测/address-sanitizer-guidelines.md",
+          "best_chunk_id": 23301,
+          "best_chunk_titles": [
+            "简介"
+          ],
+          "matched_chunk_count": 12
+        },
+        {
+          "rank": 5,
+          "score": 70.720043,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/任务超时检测/apptask-timeout-guidelines.md",
+          "best_chunk_id": 23381,
+          "best_chunk_titles": [
+            "任务执行超时检测",
+            "日志规格"
+          ],
+          "matched_chunk_count": 8
+        },
+        {
+          "rank": 6,
+          "score": 64.387468,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/AppFreeze（应用冻屏）检测/appfreeze-guidelines.md",
+          "best_chunk_id": 23321,
+          "best_chunk_titles": [
+            "检测原理"
+          ],
+          "matched_chunk_count": 22
+        },
+        {
+          "rank": 7,
+          "score": 63.757515,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/Resource Leak（资源泄漏）检测/resource-leak-guidelines.md",
+          "best_chunk_id": 23354,
+          "best_chunk_titles": [
+            "线程泄漏日志规格",
+            "日志头部信息"
+          ],
+          "matched_chunk_count": 32
+        },
+        {
+          "rank": 8,
+          "score": 63.287071,
+          "路径": "harmonyos-guides/应用框架/ArkUI（方舟UI框架）/UI开发调试调优/UI稳定性故障调试/UI稳定性故障分析概述/arkts-stability-guide.md",
+          "best_chunk_id": 17282,
+          "best_chunk_titles": [
+            "应用崩溃",
+            "cppcrash"
+          ],
+          "matched_chunk_count": 6
+        },
+        {
+          "rank": 9,
+          "score": 61.869574,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/崩溃检测/Cpp Crash（进程崩溃）检测/cppcrash-guidelines.md",
+          "best_chunk_id": 23383,
+          "best_chunk_titles": [
+            "简介"
+          ],
+          "matched_chunk_count": 28
+        },
+        {
+          "rank": 10,
+          "score": 60.044458,
+          "路径": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/崩溃检测/JS Crash（进程崩溃）检测/jscrash-guidelines.md",
+          "best_chunk_id": 23411,
+          "best_chunk_titles": [
+            "简介"
+          ],
+          "matched_chunk_count": 12
+        }
+      ]
+    }
+  ]
+}

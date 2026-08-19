@@ -1,0 +1,12 @@
+# Source preprocessing
+mistune>=3.3.4
+openpyxl>=3.1
+
+# Tokenization
+jieba>=0.42.1
+
+# Index persistence
+zstandard>=0.22
+
+# Evaluation dataset
+pandas>=2.0

@@ -1,0 +1,2139 @@
+{
+  "routing_kit_count": 103,
+  "lib_guide_kit_count": 103,
+  "lib_skill_kit_count": 103,
+  "lib_api_kit_count": 103,
+  "fully_covered_count": 103,
+  "missing_dir_count": 0,
+  "routing_path_missing_count": 102,
+  "missing_in_library": [],
+  "routing_path_not_found": [
+    {
+      "领域": "AI 领域",
+      "中文": "智能体框架服务",
+      "英文": "Agent Framework Kit",
+      "指南目录": "Agent Framework Kit（智能体框架服务）",
+      "skill目录": "Agent Framework Kit(智能体框架服务)",
+      "API目录": "Agent Framework Kit（智能体框架服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/AI/Agent Framework Kit（智能体框架服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/AI/Agent Framework Kit（智能体框架服务）",
+      "API参考": "harmonyos-references/Agent Framework Kit（智能体框架服务）"
+    },
+    {
+      "领域": "AI 领域",
+      "中文": "CANN异构计算框架服务",
+      "英文": "CANN Kit",
+      "指南目录": "CANN Kit（CANN异构计算框架服务）",
+      "skill目录": "CANN Kit(CANN异构计算框架服务)",
+      "API目录": "CANN Kit（CANN异构计算框架服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/AI/CANN Kit（CANN异构计算框架服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/AI/CANN Kit（CANN异构计算框架服务）",
+      "API参考": "harmonyos-references/CANN Kit（CANN异构计算框架服务）"
+    },
+    {
+      "领域": "AI 领域",
+      "中文": "基础语音服务",
+      "英文": "Core Speech Kit",
+      "指南目录": "Core Speech Kit（基础语音服务）",
+      "skill目录": "Core Speech Kit(基础语音服务)",
+      "API目录": "Core Speech Kit（基础语音服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/AI/Core Speech Kit（基础语音服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/AI/Core Speech Kit（基础语音服务）",
+      "API参考": "harmonyos-references/Core Speech Kit（基础语音服务）"
+    },
+    {
+      "领域": "AI 领域",
+      "中文": "基础视觉服务",
+      "英文": "Core Vision Kit",
+      "指南目录": "Core Vision Kit（基础视觉服务）",
+      "skill目录": "Core Vision Kit(基础视觉服务)",
+      "API目录": "Core Vision Kit（基础视觉服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/AI/Core Vision Kit（基础视觉服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/AI/Core Vision Kit（基础视觉服务）",
+      "API参考": "harmonyos-references/Core Vision Kit（基础视觉服务）"
+    },
+    {
+      "领域": "AI 领域",
+      "中文": "意图框架服务",
+      "英文": "Intents Kit",
+      "指南目录": "Intents Kit（意图框架服务）",
+      "skill目录": "Intents Kit(意图框架服务)",
+      "API目录": "Intents Kit（意图框架服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/AI/Intents Kit（意图框架服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/AI/Intents Kit（意图框架服务）",
+      "API参考": "harmonyos-references/Intents Kit（意图框架服务）"
+    },
+    {
+      "领域": "AI 领域",
+      "中文": "昇思推理框架服务",
+      "英文": "MindSpore Lite Kit",
+      "指南目录": "MindSpore Lite Kit（昇思推理框架服务）",
+      "skill目录": "MindSpore Lite Kit(昇思推理框架服务)",
+      "API目录": "MindSpore Lite Kit（昇思推理框架服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/AI/MindSpore Lite Kit（昇思推理框架服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/AI/MindSpore Lite Kit（昇思推理框架服务）",
+      "API参考": "harmonyos-references/MindSpore Lite Kit（昇思推理框架服务）"
+    },
+    {
+      "领域": "AI 领域",
+      "中文": "自然语言理解服务",
+      "英文": "Natural Language Kit",
+      "指南目录": "Natural Language Kit（自然语言理解服务）",
+      "skill目录": "Natural Language Kit(自然语言理解服务)",
+      "API目录": "Natural Language Kit（自然语言理解服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/AI/Natural Language Kit（自然语言理解服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/AI/Natural Language Kit（自然语言理解服务）",
+      "API参考": "harmonyos-references/Natural Language Kit（自然语言理解服务）"
+    },
+    {
+      "领域": "AI 领域",
+      "中文": "Neural Network运行时服务",
+      "英文": "Neural Network Runtime Kit",
+      "指南目录": "Neural Network Runtime Kit（Neural Network运行时服务）",
+      "skill目录": "Neural Network Runtime Kit(Neural Network运行时服务)",
+      "API目录": "Neural Network Runtime Kit（Neural Network运行时服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/AI/Neural Network Runtime Kit（Neural Network运行时服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/AI/Neural Network Runtime Kit（Neural Network运行时服务）",
+      "API参考": "harmonyos-references/Neural Network Runtime Kit（Neural Network运行时服务）"
+    },
+    {
+      "领域": "AI 领域",
+      "中文": "场景化语音服务",
+      "英文": "Speech Kit",
+      "指南目录": "Speech Kit（场景化语音服务）",
+      "skill目录": "Speech Kit(场景化语音服务)",
+      "API目录": "Speech Kit（场景化语音服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/AI/Speech Kit（场景化语音服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/AI/Speech Kit（场景化语音服务）",
+      "API参考": "harmonyos-references/Speech Kit（场景化语音服务）"
+    },
+    {
+      "领域": "AI 领域",
+      "中文": "场景化视觉服务",
+      "英文": "Vision Kit",
+      "指南目录": "Vision Kit（场景化视觉服务）",
+      "skill目录": "Vision Kit(场景化视觉服务)",
+      "API目录": "Vision Kit（场景化视觉服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/AI/Vision Kit（场景化视觉服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/AI/Vision Kit（场景化视觉服务）",
+      "API参考": "harmonyos-references/Vision Kit（场景化视觉服务）"
+    },
+    {
+      "领域": "图形领域",
+      "中文": "AR引擎服务",
+      "英文": "AR Engine",
+      "指南目录": "AR Engine（AR引擎服务）",
+      "skill目录": "AR Engine(AR引擎服务)",
+      "API目录": "AR Engine（AR引擎服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/图形/AR Engine（AR引擎服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/图形/AR Engine（AR引擎服务）",
+      "API参考": "harmonyos-references/AR Engine（AR引擎服务）"
+    },
+    {
+      "领域": "图形领域",
+      "中文": "方舟2D图形服务",
+      "英文": "ArkGraphics 2D",
+      "指南目录": "ArkGraphics 2D（方舟2D图形服务）",
+      "skill目录": "ArkGraphics 2D(方舟2D图形服务)",
+      "API目录": "ArkGraphics 2D（方舟2D图形服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/图形/ArkGraphics 2D（方舟2D图形服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/图形/ArkGraphics 2D（方舟2D图形服务）",
+      "API参考": "harmonyos-references/ArkGraphics 2D（方舟2D图形服务）"
+    },
+    {
+      "领域": "图形领域",
+      "中文": "方舟3D图形",
+      "英文": "ArkGraphics 3D",
+      "指南目录": "ArkGraphics 3D（方舟3D图形）",
+      "skill目录": "ArkGraphics 3D(方舟3D图形)",
+      "API目录": "ArkGraphics 3D（方舟3D图形）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/图形/ArkGraphics 3D（方舟3D图形）",
+      "basic skill": "harmonyos-sdk-basic-skill/图形/ArkGraphics 3D（方舟3D图形）",
+      "API参考": "harmonyos-references/ArkGraphics 3D（方舟3D图形）"
+    },
+    {
+      "领域": "图形领域",
+      "中文": "图形加速服务",
+      "英文": "Graphics Accelerate Kit",
+      "指南目录": "Graphics Accelerate Kit（图形加速服务）",
+      "skill目录": "Graphics Accelerate Kit(图形加速服务)",
+      "API目录": "Graphics Accelerate Kit（图形加速服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/图形/Graphics Accelerate Kit（图形加速服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/图形/Graphics Accelerate Kit（图形加速服务）",
+      "API参考": "harmonyos-references/Graphics Accelerate Kit（图形加速服务）"
+    },
+    {
+      "领域": "图形领域",
+      "中文": "空间建模服务",
+      "英文": "Spatial Recon Kit",
+      "指南目录": "Spatial Recon Kit（空间建模服务）",
+      "skill目录": "Spatial Recon Kit(空间建模服务)",
+      "API目录": "Spatial Recon Kit（空间建模服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/图形/Spatial Recon Kit（空间建模服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/图形/Spatial Recon Kit（空间建模服务）",
+      "API参考": "harmonyos-references/Spatial Recon Kit（空间建模服务）"
+    },
+    {
+      "领域": "图形领域",
+      "中文": "GPU加速引擎服务",
+      "英文": "XEngine Kit",
+      "指南目录": "XEngine Kit（GPU加速引擎服务）",
+      "skill目录": "XEngine Kit(GPU加速引擎服务)",
+      "API目录": "XEngine Kit（GPU加速引擎服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/图形/XEngine Kit（GPU加速引擎服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/图形/XEngine Kit（GPU加速引擎服务）",
+      "API参考": "harmonyos-references/XEngine Kit（GPU加速引擎服务）"
+    },
+    {
+      "领域": "媒体领域",
+      "中文": "音频服务",
+      "英文": "Audio Kit",
+      "指南目录": "Audio Kit（音频服务）",
+      "skill目录": "Audio Kit(音频服务)",
+      "API目录": "Audio Kit（音频服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/媒体/Audio Kit（音频服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/媒体/Audio Kit（音频服务）",
+      "API参考": "harmonyos-references/Audio Kit（音频服务）"
+    },
+    {
+      "领域": "媒体领域",
+      "中文": "音视频编解码服务",
+      "英文": "AVCodec Kit",
+      "指南目录": "AVCodec Kit（音视频编解码服务）",
+      "skill目录": "AVCodec Kit(音视频编解码服务)",
+      "API目录": "AVCodec Kit（音视频编解码服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/媒体/AVCodec Kit（音视频编解码服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/媒体/AVCodec Kit（音视频编解码服务）",
+      "API参考": "harmonyos-references/AVCodec Kit（音视频编解码服务）"
+    },
+    {
+      "领域": "媒体领域",
+      "中文": "音视频播控服务",
+      "英文": "AVSession Kit",
+      "指南目录": "AVSession Kit（音视频播控服务）",
+      "skill目录": "AVSession Kit(音视频播控服务)",
+      "API目录": "AVSession Kit（音视频播控服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/媒体/AVSession Kit（音视频播控服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/媒体/AVSession Kit（音视频播控服务）",
+      "API参考": "harmonyos-references/AVSession Kit（音视频播控服务）"
+    },
+    {
+      "领域": "媒体领域",
+      "中文": "相机服务",
+      "英文": "Camera Kit",
+      "指南目录": "Camera Kit（相机服务）",
+      "skill目录": "Camera Kit(相机服务)",
+      "API目录": "Camera Kit（相机服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/媒体/Camera Kit（相机服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/媒体/Camera Kit（相机服务）",
+      "API参考": "harmonyos-references/Camera Kit（相机服务）"
+    },
+    {
+      "领域": "媒体领域",
+      "中文": "数字版权保护服务",
+      "英文": "DRM Kit",
+      "指南目录": "DRM Kit（数字版权保护服务）",
+      "skill目录": "DRM Kit(数字版权保护服务)",
+      "API目录": "DRM Kit（数字版权保护服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/媒体/DRM Kit（数字版权保护服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/媒体/DRM Kit（数字版权保护服务）",
+      "API参考": "harmonyos-references/DRM Kit（数字版权保护服务）"
+    },
+    {
+      "领域": "媒体领域",
+      "中文": "图片处理服务",
+      "英文": "Image Kit",
+      "指南目录": "Image Kit（图片处理服务）",
+      "skill目录": "Image Kit(图片处理服务)",
+      "API目录": "Image Kit（图片处理服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/媒体/Image Kit（图片处理服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/媒体/Image Kit（图片处理服务）",
+      "API参考": "harmonyos-references/Image Kit（图片处理服务）"
+    },
+    {
+      "领域": "媒体领域",
+      "中文": "媒体服务",
+      "英文": "Media Kit",
+      "指南目录": "Media Kit（媒体服务）",
+      "skill目录": "Media Kit(媒体服务)",
+      "API目录": "Media Kit（媒体服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/媒体/Media Kit（媒体服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/媒体/Media Kit（媒体服务）",
+      "API参考": "harmonyos-references/Media Kit（媒体服务）"
+    },
+    {
+      "领域": "媒体领域",
+      "中文": "媒体文件管理服务",
+      "英文": "Media Library Kit",
+      "指南目录": "Media Library Kit（媒体文件管理服务）",
+      "skill目录": "Media Library Kit(媒体文件管理服务)",
+      "API目录": "Media Library Kit（媒体文件管理服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/媒体/Media Library Kit（媒体文件管理服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/媒体/Media Library Kit（媒体文件管理服务）",
+      "API参考": "harmonyos-references/Media Library Kit（媒体文件管理服务）"
+    },
+    {
+      "领域": "媒体领域",
+      "中文": "铃声服务",
+      "英文": "Ringtone Kit",
+      "指南目录": "Ringtone Kit（铃声服务）",
+      "skill目录": "Ringtone Kit(铃声服务)",
+      "API目录": "Ringtone Kit（铃声服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/媒体/Ringtone Kit（铃声服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/媒体/Ringtone Kit（铃声服务）",
+      "API参考": "harmonyos-references/Ringtone Kit（铃声服务）"
+    },
+    {
+      "领域": "媒体领域",
+      "中文": "统一扫码服务",
+      "英文": "Scan Kit",
+      "指南目录": "Scan Kit（统一扫码服务）",
+      "skill目录": "Scan Kit(统一扫码服务)",
+      "API目录": "Scan Kit（统一扫码服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/媒体/Scan Kit（统一扫码服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/媒体/Scan Kit（统一扫码服务）",
+      "API参考": "harmonyos-references/Scan Kit（统一扫码服务）"
+    },
+    {
+      "领域": "应用框架领域",
+      "中文": "程序框架服务",
+      "英文": "Ability Kit",
+      "指南目录": "Ability Kit（程序框架服务）",
+      "skill目录": "Ability Kit(程序框架服务)",
+      "API目录": "Ability Kit（程序框架服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用框架/Ability Kit（程序框架服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用框架/Ability Kit（程序框架服务）",
+      "API参考": "harmonyos-references/Ability Kit（程序框架服务）"
+    },
+    {
+      "领域": "应用框架领域",
+      "中文": "方舟数据管理",
+      "英文": "ArkData",
+      "指南目录": "ArkData（方舟数据管理）",
+      "skill目录": "ArkData(方舟数据管理)",
+      "API目录": "ArkData（方舟数据管理）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用框架/ArkData（方舟数据管理）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用框架/ArkData（方舟数据管理）",
+      "API参考": "harmonyos-references/ArkData（方舟数据管理）"
+    },
+    {
+      "领域": "应用框架领域",
+      "中文": "方舟编程语言",
+      "英文": "ArkTS",
+      "指南目录": "ArkTS（方舟编程语言）",
+      "skill目录": "ArkTS(方舟编程语言)",
+      "API目录": "ArkTS（方舟编程语言）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用框架/ArkTS（方舟编程语言）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用框架/ArkTS（方舟编程语言）",
+      "API参考": "harmonyos-references/ArkTS（方舟编程语言）"
+    },
+    {
+      "领域": "应用框架领域",
+      "中文": "方舟UI框架",
+      "英文": "ArkUI",
+      "指南目录": "ArkUI（方舟UI框架）",
+      "skill目录": "ArkUI(方舟UI框架)",
+      "API目录": "ArkUI（方舟UI框架）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用框架/ArkUI（方舟UI框架）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用框架/ArkUI（方舟UI框架）",
+      "API参考": "harmonyos-references/ArkUI（方舟UI框架）"
+    },
+    {
+      "领域": "应用框架领域",
+      "中文": "方舟Web",
+      "英文": "ArkWeb",
+      "指南目录": "ArkWeb（方舟Web）",
+      "skill目录": "ArkWeb(方舟Web)",
+      "API目录": "ArkWeb（方舟Web）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用框架/ArkWeb（方舟Web）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用框架/ArkWeb（方舟Web）",
+      "API参考": "harmonyos-references/ArkWeb（方舟Web）"
+    },
+    {
+      "领域": "应用框架领域",
+      "中文": "后台任务开发服务",
+      "英文": "Background Tasks Kit",
+      "指南目录": "Background Tasks Kit（后台任务开发服务）",
+      "skill目录": "Background Tasks Kit(后台任务开发服务)",
+      "API目录": "Background Tasks Kit（后台任务开发服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用框架/Background Tasks Kit（后台任务开发服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用框架/Background Tasks Kit（后台任务开发服务）",
+      "API参考": "harmonyos-references/Background Tasks Kit（后台任务开发服务）"
+    },
+    {
+      "领域": "应用框架领域",
+      "中文": "内容嵌入服务",
+      "英文": "Content Embed Kit",
+      "指南目录": "Content Embed Kit（内容嵌入服务）",
+      "skill目录": "Content Embed Kit(内容嵌入服务)",
+      "API目录": "Content Embed Kit（内容嵌入服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用框架/Content Embed Kit（内容嵌入服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用框架/Content Embed Kit（内容嵌入服务）",
+      "API参考": "harmonyos-references/Content Embed Kit（内容嵌入服务）"
+    },
+    {
+      "领域": "应用框架领域",
+      "中文": "文件基础服务",
+      "英文": "Core File Kit",
+      "指南目录": "Core File Kit（文件基础服务）",
+      "skill目录": "Core File Kit(文件基础服务)",
+      "API目录": "Core File Kit（文件基础服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用框架/Core File Kit（文件基础服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用框架/Core File Kit（文件基础服务）",
+      "API参考": "harmonyos-references/Core File Kit（文件基础服务）"
+    },
+    {
+      "领域": "应用框架领域",
+      "中文": "数据增强服务",
+      "英文": "Data Augmentation Kit",
+      "指南目录": "Data Augmentation Kit（数据增强服务）",
+      "skill目录": "Data Augmentation Kit(数据增强服务)",
+      "API目录": "Data Augmentation Kit（数据增强服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用框架/Data Augmentation Kit（数据增强服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用框架/Data Augmentation Kit（数据增强服务）",
+      "API参考": "harmonyos-references/Data Augmentation Kit（数据增强服务）"
+    },
+    {
+      "领域": "应用框架领域",
+      "中文": "卡片开发服务",
+      "英文": "Form Kit",
+      "指南目录": "Form Kit（卡片开发服务）",
+      "skill目录": "Form Kit(卡片开发服务)",
+      "API目录": "Form Kit（卡片开发服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用框架/Form Kit（卡片开发服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用框架/Form Kit（卡片开发服务）",
+      "API参考": "harmonyos-references/Form Kit（卡片开发服务）"
+    },
+    {
+      "领域": "应用框架领域",
+      "中文": "输入法开发服务",
+      "英文": "IME Kit",
+      "指南目录": "IME Kit（输入法开发服务）",
+      "skill目录": "IME Kit(输入法开发服务)",
+      "API目录": "IME Kit（输入法开发服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用框架/IME Kit（输入法开发服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用框架/IME Kit（输入法开发服务）",
+      "API参考": "harmonyos-references/IME Kit（输入法开发服务）"
+    },
+    {
+      "领域": "应用框架领域",
+      "中文": "进程间通信服务",
+      "英文": "IPC Kit",
+      "指南目录": "IPC Kit（进程间通信服务）",
+      "skill目录": "IPC Kit(进程间通信服务)",
+      "API目录": "IPC Kit（进程间通信服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用框架/IPC Kit（进程间通信服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用框架/IPC Kit（进程间通信服务）",
+      "API参考": "harmonyos-references/IPC Kit（进程间通信服务）"
+    },
+    {
+      "领域": "应用框架领域",
+      "中文": "本地化开发服务",
+      "英文": "Localization Kit",
+      "指南目录": "Localization Kit（本地化开发服务）",
+      "skill目录": "Localization Kit(本地化开发服务)",
+      "API目录": "Localization Kit（本地化开发服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用框架/Localization Kit（本地化开发服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用框架/Localization Kit（本地化开发服务）",
+      "API参考": "harmonyos-references/Localization Kit（本地化开发服务）"
+    },
+    {
+      "领域": "应用框架领域",
+      "中文": "UI设计套件",
+      "英文": "UI Design Kit",
+      "指南目录": "UI Design Kit（UI设计套件）",
+      "skill目录": "UI Design Kit(UI设计套件)",
+      "API目录": "UI Design Kit（UI设计套件）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用框架/UI Design Kit（UI设计套件）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用框架/UI Design Kit（UI设计套件）",
+      "API参考": "harmonyos-references/UI Design Kit（UI设计套件）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "华为账号服务",
+      "英文": "Account Kit",
+      "指南目录": "Account Kit（华为账号服务）",
+      "skill目录": "Account Kit(华为账号服务)",
+      "API目录": "Account Kit（华为账号服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Account Kit（华为账号服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Account Kit（华为账号服务）",
+      "API参考": "harmonyos-references/Account Kit（华为账号服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "广告服务",
+      "英文": "Ads Kit",
+      "指南目录": "Ads Kit（广告服务）",
+      "skill目录": "Ads Kit(广告服务)",
+      "API目录": "Ads Kit（广告服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Ads Kit（广告服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Ads Kit（广告服务）",
+      "API参考": "harmonyos-references/Ads Kit（广告服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "应用链接服务",
+      "英文": "App Linking Kit",
+      "指南目录": "App Linking Kit（应用链接服务）",
+      "skill目录": "App Linking Kit(应用链接服务)",
+      "API目录": "App Linking Kit（应用链接服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/App Linking Kit（应用链接服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/App Linking Kit（应用链接服务）",
+      "API参考": "harmonyos-references/App Linking Kit（应用链接服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "应用市场服务",
+      "英文": "AppGallery Kit",
+      "指南目录": "AppGallery Kit（应用市场服务）",
+      "skill目录": "AppGallery Kit(应用市场服务)",
+      "API目录": "AppGallery Kit（应用市场服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/AppGallery Kit（应用市场服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/AppGallery Kit（应用市场服务）",
+      "API参考": "harmonyos-references/AppGallery Kit（应用市场服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "日历服务",
+      "英文": "Calendar Kit",
+      "指南目录": "Calendar Kit（日历服务）",
+      "skill目录": "Calendar Kit(日历服务)",
+      "API目录": "Calendar Kit（日历服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Calendar Kit（日历服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Calendar Kit（日历服务）",
+      "API参考": "harmonyos-references/Calendar Kit（日历服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "通话服务",
+      "英文": "Call Service Kit",
+      "指南目录": "Call Service Kit（通话服务）",
+      "skill目录": "Call Service Kit(通话服务)",
+      "API目录": "Call Service Kit（通话服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Call Service Kit（通话服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Call Service Kit（通话服务）",
+      "API参考": "harmonyos-references/Call Service Kit（通话服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "云开发服务",
+      "英文": "Cloud Foundation Kit",
+      "指南目录": "Cloud Foundation Kit（云开发服务）",
+      "skill目录": "Cloud Foundation Kit(云开发服务)",
+      "API目录": "Cloud Foundation Kit（云开发服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Cloud Foundation Kit（云开发服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Cloud Foundation Kit（云开发服务）",
+      "API参考": "harmonyos-references/Cloud Foundation Kit（云开发服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "联系人服务",
+      "英文": "Contacts Kit",
+      "指南目录": "Contacts Kit（联系人服务）",
+      "skill目录": "Contacts Kit(联系人服务)",
+      "API目录": "Contacts Kit（联系人服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Contacts Kit（联系人服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Contacts Kit（联系人服务）",
+      "API参考": "harmonyos-references/Contacts Kit（联系人服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "企业数字空间服务",
+      "英文": "Enterprise Space Kit",
+      "指南目录": "Enterprise Space Kit（企业数字空间服务）",
+      "skill目录": "Enterprise Space Kit(企业数字空间服务)",
+      "API目录": "Enterprise Space Kit（企业数字空间服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Enterprise Space Kit（企业数字空间服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Enterprise Space Kit（企业数字空间服务）",
+      "API参考": "harmonyos-references/Enterprise Space Kit（企业数字空间服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "文件管理服务",
+      "英文": "File Manager Service Kit",
+      "指南目录": "File Manager Service Kit（文件管理服务）",
+      "skill目录": "File Manager Service Kit(文件管理服务)",
+      "API目录": "File Manager Service Kit（文件管理服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/File Manager Service Kit（文件管理服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/File Manager Service Kit（文件管理服务）",
+      "API参考": "harmonyos-references/File Manager Service Kit（文件管理服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "游戏控制器服务",
+      "英文": "Game Controller Kit",
+      "指南目录": "Game Controller Kit（游戏控制器服务）",
+      "skill目录": "Game Controller Kit(游戏控制器服务)",
+      "API目录": "Game Controller Kit（游戏控制器服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Game Controller Kit（游戏控制器服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Game Controller Kit（游戏控制器服务）",
+      "API参考": "harmonyos-references/Game Controller Kit（游戏控制器服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "游戏服务",
+      "英文": "Game Service Kit",
+      "指南目录": "Game Service Kit（游戏服务）",
+      "skill目录": "Game Service Kit(游戏服务)",
+      "API目录": "Game Service Kit（游戏服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Game Service Kit（游戏服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Game Service Kit（游戏服务）",
+      "API参考": "harmonyos-references/Game Service Kit（游戏服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "运动健康服务",
+      "英文": "Health Service Kit",
+      "指南目录": "Health Service Kit（运动健康服务）",
+      "skill目录": "Health Service Kit(运动健康服务)",
+      "API目录": "Health Service Kit（运动健康服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Health Service Kit（运动健康服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Health Service Kit（运动健康服务）",
+      "API参考": "harmonyos-references/Health Service Kit（运动健康服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "应用内支付服务",
+      "英文": "IAP Kit",
+      "指南目录": "IAP Kit（应用内支付服务）",
+      "skill目录": "IAP Kit(应用内支付服务)",
+      "API目录": "IAP Kit（应用内支付服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/IAP Kit（应用内支付服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/IAP Kit（应用内支付服务）",
+      "API参考": "harmonyos-references/IAP Kit（应用内支付服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "实况窗服务",
+      "英文": "Live View Kit",
+      "指南目录": "Live View Kit（实况窗服务）",
+      "skill目录": "Live View Kit(实况窗服务)",
+      "API目录": "Live View Kit（实况窗服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Live View Kit（实况窗服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Live View Kit（实况窗服务）",
+      "API参考": "harmonyos-references/Live View Kit（实况窗服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "位置服务",
+      "英文": "Location Kit",
+      "指南目录": "Location Kit（位置服务）",
+      "skill目录": "Location Kit(位置服务)",
+      "API目录": "Location Kit（位置服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Location Kit（位置服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Location Kit（位置服务）",
+      "API参考": "harmonyos-references/Location Kit（位置服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "地图服务",
+      "英文": "Map Kit",
+      "指南目录": "Map Kit（地图服务）",
+      "skill目录": "Map Kit(地图服务)",
+      "API目录": "Map Kit（地图服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Map Kit（地图服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Map Kit（地图服务）",
+      "API参考": "harmonyos-references/Map Kit（地图服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "用户通知服务",
+      "英文": "Notification Kit",
+      "指南目录": "Notification Kit（用户通知服务）",
+      "skill目录": "Notification Kit(用户通知服务)",
+      "API目录": "Notification Kit（用户通知服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Notification Kit（用户通知服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Notification Kit（用户通知服务）",
+      "API参考": "harmonyos-references/Notification Kit（用户通知服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "PDF服务",
+      "英文": "PDF Kit",
+      "指南目录": "PDF Kit（PDF服务）",
+      "skill目录": "PDF Kit(PDF服务)",
+      "API目录": "PDF Kit（PDF服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/PDF Kit（PDF服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/PDF Kit（PDF服务）",
+      "API参考": "harmonyos-references/PDF Kit（PDF服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "鸿蒙支付服务",
+      "英文": "Payment Kit",
+      "指南目录": "Payment Kit（鸿蒙支付服务）",
+      "skill目录": "Payment Kit(鸿蒙支付服务)",
+      "API目录": "Payment Kit（鸿蒙支付服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Payment Kit（鸿蒙支付服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Payment Kit（鸿蒙支付服务）",
+      "API参考": "harmonyos-references/Payment Kit（鸿蒙支付服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "文件预览服务",
+      "英文": "Preview Kit",
+      "指南目录": "Preview Kit（文件预览服务）",
+      "skill目录": "Preview Kit(文件预览服务)",
+      "API目录": "Preview Kit（文件预览服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Preview Kit（文件预览服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Preview Kit（文件预览服务）",
+      "API参考": "harmonyos-references/Preview Kit（文件预览服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "推送服务",
+      "英文": "Push Kit",
+      "指南目录": "Push Kit（推送服务）",
+      "skill目录": "Push Kit(推送服务)",
+      "API目录": "Push Kit（推送服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Push Kit（推送服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Push Kit（推送服务）",
+      "API参考": "harmonyos-references/Push Kit（推送服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "阅读服务",
+      "英文": "Reader Kit",
+      "指南目录": "Reader Kit（阅读服务）",
+      "skill目录": "Reader Kit(阅读服务)",
+      "API目录": "Reader Kit（阅读服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Reader Kit（阅读服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Reader Kit（阅读服务）",
+      "API参考": "harmonyos-references/Reader Kit（阅读服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "融合场景服务",
+      "英文": "Scenario Fusion Kit",
+      "指南目录": "Scenario Fusion Kit（融合场景服务）",
+      "skill目录": "Scenario Fusion Kit(融合场景服务)",
+      "API目录": "Scenario Fusion Kit（融合场景服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Scenario Fusion Kit（融合场景服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Scenario Fusion Kit（融合场景服务）",
+      "API参考": "harmonyos-references/Scenario Fusion Kit（融合场景服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "屏幕时间守护服务",
+      "英文": "Screen Time Guard Kit",
+      "指南目录": "Screen Time Guard Kit（屏幕时间守护服务）",
+      "skill目录": "Screen Time Guard Kit(屏幕时间守护服务)",
+      "API目录": "Screen Time Guard Kit（屏幕时间守护服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Screen Time Guard Kit（屏幕时间守护服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Screen Time Guard Kit（屏幕时间守护服务）",
+      "API参考": "harmonyos-references/Screen Time Guard Kit（屏幕时间守护服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "分享服务",
+      "英文": "Share Kit",
+      "指南目录": "Share Kit（分享服务）",
+      "skill目录": "Share Kit(分享服务)",
+      "API目录": "Share Kit（分享服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Share Kit（分享服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Share Kit（分享服务）",
+      "API参考": "harmonyos-references/Share Kit（分享服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "钱包服务",
+      "英文": "Wallet Kit",
+      "指南目录": "Wallet Kit（钱包服务）",
+      "skill目录": "Wallet Kit(钱包服务)",
+      "API目录": "Wallet Kit（钱包服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Wallet Kit（钱包服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Wallet Kit（钱包服务）",
+      "API参考": "harmonyos-references/Wallet Kit（钱包服务）"
+    },
+    {
+      "领域": "应用服务领域",
+      "中文": "天气服务",
+      "英文": "Weather Service Kit",
+      "指南目录": "Weather Service Kit（天气服务）",
+      "skill目录": "Weather Service Kit(天气服务)",
+      "API目录": "Weather Service Kit（天气服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": true,
+      "路径不存在": [
+        "basic skill"
+      ],
+      "对应指南": "harmonyos-guides/应用服务/Weather Service Kit（天气服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/应用服务/Weather Service Kit（天气服务）",
+      "API参考": "harmonyos-references/Weather Service Kit（天气服务）"
+    },
+    {
+      "领域": "系统 - 基础功能",
+      "中文": "基础服务",
+      "英文": "Basic Services Kit",
+      "指南目录": "Basic Services Kit（基础服务）",
+      "skill目录": "Basic Services Kit(基础服务)",
+      "API目录": "Basic Services Kit（基础服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/基础功能/Basic Services Kit（基础服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/基础功能/Basic Services Kit（基础服务）",
+      "API参考": "harmonyos-references/基础功能/Basic Services Kit（基础服务）"
+    },
+    {
+      "领域": "系统 - 基础功能",
+      "中文": "桌面拓展服务",
+      "英文": "Desktop Extension Kit",
+      "指南目录": "Desktop Extension Kit（桌面拓展服务）",
+      "skill目录": "Desktop Extension Kit(桌面拓展服务)",
+      "API目录": "Desktop Extension Kit（桌面拓展服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/基础功能/Desktop Extension Kit（桌面拓展服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/基础功能/Desktop Extension Kit（桌面拓展服务）",
+      "API参考": "harmonyos-references/基础功能/Desktop Extension Kit（桌面拓展服务）"
+    },
+    {
+      "领域": "系统 - 基础功能",
+      "中文": "算法加速服务",
+      "英文": "FAST Kit",
+      "指南目录": "FAST Kit（算法加速服务）",
+      "skill目录": "FAST Kit(算法加速服务)",
+      "API目录": "FAST Kit（算法加速服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/基础功能/FAST Kit（算法加速服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/基础功能/FAST Kit（算法加速服务）",
+      "API参考": "harmonyos-references/基础功能/FAST Kit（算法加速服务）"
+    },
+    {
+      "领域": "系统 - 基础功能",
+      "中文": "任务并发调度服务",
+      "英文": "Function Flow Runtime Kit",
+      "指南目录": "Function Flow Runtime Kit（任务并发调度服务）",
+      "skill目录": "Function Flow Runtime Kit(任务并发调度服务)",
+      "API目录": "Function Flow Runtime Kit",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/基础功能/Function Flow Runtime Kit（任务并发调度服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/基础功能/Function Flow Runtime Kit（任务并发调度服务）",
+      "API参考": "harmonyos-references/基础功能/Function Flow Runtime Kit（任务并发调度服务）"
+    },
+    {
+      "领域": "系统 - 基础功能",
+      "中文": "多模输入服务",
+      "英文": "Input Kit",
+      "指南目录": "Input Kit（多模输入服务）",
+      "skill目录": "Input Kit(多模输入服务)",
+      "API目录": "Input Kit（多模输入服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/基础功能/Input Kit（多模输入服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/基础功能/Input Kit（多模输入服务）",
+      "API参考": "harmonyos-references/基础功能/Input Kit（多模输入服务）"
+    },
+    {
+      "领域": "系统 - 基础功能",
+      "中文": "内核增强能力",
+      "英文": "Kernel Enhance Kit",
+      "指南目录": "Kernel Enhance Kit（内核增强能力）",
+      "skill目录": "Kernel Enhance Kit(内核增强能力)",
+      "API目录": "Kernel Enhance Kit（内核增强能力）",
+      "路由指南路径存在": null,
+      "路由skill路径存在": null,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "API参考"
+      ],
+      "对应指南": "无独立目录",
+      "basic skill": "无独立目录",
+      "API参考": "harmonyos-references/基础功能/Kernel Enhance Kit（内核增强能力）"
+    },
+    {
+      "领域": "系统 - 基础功能",
+      "中文": "企业设备管理服务",
+      "英文": "MDM Kit",
+      "指南目录": "MDM Kit（企业设备管理服务）",
+      "skill目录": "MDM Kit(企业设备管理服务)",
+      "API目录": "MDM Kit（企业设备管理服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/基础功能/MDM Kit（企业设备管理服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/基础功能/MDM Kit（企业设备管理服务）",
+      "API参考": "harmonyos-references/基础功能/MDM Kit（企业设备管理服务）"
+    },
+    {
+      "领域": "系统 - 安全",
+      "中文": "关键资产存储服务",
+      "英文": "Asset Store Kit",
+      "指南目录": "Asset Store Kit（关键资产存储服务）",
+      "skill目录": "Asset Store Kit(关键资产存储服务)",
+      "API目录": "Asset Store Kit（关键资产存储服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/安全/Asset Store Kit（关键资产存储服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/安全/Asset Store Kit（关键资产存储服务）",
+      "API参考": "harmonyos-references/安全/Asset Store Kit（关键资产存储服务）"
+    },
+    {
+      "领域": "系统 - 安全",
+      "中文": "加解密算法框架服务",
+      "英文": "Crypto Architecture Kit",
+      "指南目录": "Crypto Architecture Kit（加解密算法框架服务）",
+      "skill目录": "Crypto Architecture Kit(加解密算法框架服务)",
+      "API目录": "Crypto Architecture Kit（加解密算法框架服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/安全/Crypto Architecture Kit（加解密算法框架服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/安全/Crypto Architecture Kit（加解密算法框架服务）",
+      "API参考": "harmonyos-references/安全/Crypto Architecture Kit（加解密算法框架服务）"
+    },
+    {
+      "领域": "系统 - 安全",
+      "中文": "数据保护服务",
+      "英文": "Data Protection Kit",
+      "指南目录": "Data Protection Kit（数据保护服务）",
+      "skill目录": "Data Protection Kit(数据保护服务)",
+      "API目录": "Data Protection Kit（数据保护服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/安全/Data Protection Kit（数据保护服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/安全/Data Protection Kit（数据保护服务）",
+      "API参考": "harmonyos-references/安全/Data Protection Kit（数据保护服务）"
+    },
+    {
+      "领域": "系统 - 安全",
+      "中文": "设备证书服务",
+      "英文": "Device Certificate Kit",
+      "指南目录": "Device Certificate Kit（设备证书服务）",
+      "skill目录": "Device Certificate Kit(设备证书服务)",
+      "API目录": "Device Certificate Kit（设备证书服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/安全/Device Certificate Kit（设备证书服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/安全/Device Certificate Kit（设备证书服务）",
+      "API参考": "harmonyos-references/安全/Device Certificate Kit（设备证书服务）"
+    },
+    {
+      "领域": "系统 - 安全",
+      "中文": "设备安全服务",
+      "英文": "Device Security Kit",
+      "指南目录": "Device Security Kit（设备安全服务）",
+      "skill目录": "Device Security Kit(设备安全服务)",
+      "API目录": "Device Security Kit（设备安全服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/安全/Device Security Kit（设备安全服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/安全/Device Security Kit（设备安全服务）",
+      "API参考": "harmonyos-references/安全/Device Security Kit（设备安全服务）"
+    },
+    {
+      "领域": "系统 - 安全",
+      "中文": "企业数据保护服务",
+      "英文": "Enterprise Data Guard Kit",
+      "指南目录": "Enterprise Data Guard Kit（企业数据保护服务）",
+      "skill目录": "Enterprise Data Guard Kit(企业数据保护服务)",
+      "API目录": "Enterprise Data Guard Kit（企业数据保护服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/安全/Enterprise Data Guard Kit（企业数据保护服务）",
+      "API参考": "harmonyos-references/安全/Enterprise Data Guard Kit（企业数据保护服务）"
+    },
+    {
+      "领域": "系统 - 安全",
+      "中文": "企业威胁防护服务",
+      "英文": "Enterprise Threat Protection Kit",
+      "指南目录": "Enterprise Threat Protection Kit（企业威胁防护服务）",
+      "skill目录": "Enterprise Threat Protection Kit(企业威胁防护服务)",
+      "API目录": "Enterprise Threat Protection Kit（企业威胁防护服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/安全/Enterprise Threat Protection Kit（企业威胁防护服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/安全/Enterprise Threat Protection Kit（企业威胁防护服务）",
+      "API参考": "harmonyos-references/安全/Enterprise Threat Protection Kit（企业威胁防护服务）"
+    },
+    {
+      "领域": "系统 - 安全",
+      "中文": "在线认证服务",
+      "英文": "Online Authentication Kit",
+      "指南目录": "Online Authentication Kit（在线认证服务）",
+      "skill目录": "Online Authentication Kit(在线认证服务)",
+      "API目录": "Online Authentication Kit（在线认证服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/安全/Online Authentication Kit（在线认证服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/安全/Online Authentication Kit（在线认证服务）",
+      "API参考": "harmonyos-references/安全/Online Authentication Kit（在线认证服务）"
+    },
+    {
+      "领域": "系统 - 安全",
+      "中文": "密钥管理服务",
+      "英文": "Universal Keystore Kit",
+      "指南目录": "Universal Keystore Kit（密钥管理服务）",
+      "skill目录": "Universal Keystore Kit(密钥管理服务)",
+      "API目录": "Universal Keystore Kit（密钥管理服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/安全/Universal Keystore Kit（密钥管理服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/安全/Universal Keystore Kit（密钥管理服务）",
+      "API参考": "harmonyos-references/安全/Universal Keystore Kit（密钥管理服务）"
+    },
+    {
+      "领域": "系统 - 安全",
+      "中文": "用户认证服务",
+      "英文": "User Authentication Kit",
+      "指南目录": "User Authentication Kit（用户认证服务）",
+      "skill目录": "User Authentication Kit(用户认证服务)",
+      "API目录": "User Authentication Kit（用户认证服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/安全/User Authentication Kit（用户认证服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/安全/User Authentication Kit（用户认证服务）",
+      "API参考": "harmonyos-references/安全/User Authentication Kit（用户认证服务）"
+    },
+    {
+      "领域": "系统 - 硬件",
+      "中文": "车服务",
+      "英文": "Car Kit",
+      "指南目录": "Car Kit（车服务）",
+      "skill目录": "Car Kit(车服务)",
+      "API目录": "Car Kit（车服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/硬件/Car Kit（车服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/硬件/Car Kit（车服务）",
+      "API参考": "harmonyos-references/硬件/Car Kit（车服务）"
+    },
+    {
+      "领域": "系统 - 硬件",
+      "中文": "驱动开发服务",
+      "英文": "Driver Development Kit",
+      "指南目录": "Driver Development Kit（驱动开发服务）",
+      "skill目录": "Driver Development Kit(驱动开发服务)",
+      "API目录": "Driver Development Kit（驱动开发服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/硬件/Driver Development Kit（驱动开发服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/硬件/Driver Development Kit（驱动开发服务）",
+      "API参考": "harmonyos-references/硬件/Driver Development Kit（驱动开发服务）"
+    },
+    {
+      "领域": "系统 - 硬件",
+      "中文": "机械设备管理服务",
+      "英文": "Mechanic Kit",
+      "指南目录": "Mechanic Kit（机械设备管理服务）",
+      "skill目录": "Mechanic Kit(机械设备管理服务)",
+      "API目录": "Mechanic Kit（机械设备管理服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/硬件/Mechanic Kit（机械设备管理服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/硬件/Mechanic Kit（机械设备管理服务）",
+      "API参考": "harmonyos-references/硬件/Mechanic Kit（机械设备管理服务）"
+    },
+    {
+      "领域": "系统 - 硬件",
+      "中文": "多模态融合感知服务",
+      "英文": "Multimodal Awareness Kit",
+      "指南目录": "Multimodal Awareness Kit（多模态融合感知服务）",
+      "skill目录": "Multimodal Awareness Kit(多模态融合感知服务)",
+      "API目录": "Multimodal Awareness Kit（多模态融合感知服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/硬件/Multimodal Awareness Kit（多模态融合感知服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/硬件/Multimodal Awareness Kit（多模态融合感知服务）",
+      "API参考": "harmonyos-references/硬件/Multimodal Awareness Kit（多模态融合感知服务）"
+    },
+    {
+      "领域": "系统 - 硬件",
+      "中文": "手写笔服务",
+      "英文": "Pen Kit",
+      "指南目录": "Pen Kit（手写笔服务）",
+      "skill目录": "Pen Kit(手写笔服务)",
+      "API目录": "Pen Kit（手写笔服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/硬件/Pen Kit（手写笔服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/硬件/Pen Kit（手写笔服务）",
+      "API参考": "harmonyos-references/硬件/Pen Kit（手写笔服务）"
+    },
+    {
+      "领域": "系统 - 硬件",
+      "中文": "传感器服务",
+      "英文": "Sensor Service Kit",
+      "指南目录": "Sensor Service Kit（传感器服务）",
+      "skill目录": "Sensor Service Kit(传感器服务)",
+      "API目录": "Sensor Service Kit（传感器服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/硬件/Sensor Service Kit（传感器服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/硬件/Sensor Service Kit（传感器服务）",
+      "API参考": "harmonyos-references/硬件/Sensor Service Kit（传感器服务）"
+    },
+    {
+      "领域": "系统 - 硬件",
+      "中文": "穿戴服务",
+      "英文": "Wear Engine Kit",
+      "指南目录": "Wear Engine Kit（穿戴服务）",
+      "skill目录": "Wear Engine Kit(穿戴服务)",
+      "API目录": "Wear Engine Kit（穿戴服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/硬件/Wear Engine Kit（穿戴服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/硬件/Wear Engine Kit（穿戴服务）",
+      "API参考": "harmonyos-references/硬件/Wear Engine Kit（穿戴服务）"
+    },
+    {
+      "领域": "系统 - 网络",
+      "中文": "短距通信服务",
+      "英文": "Connectivity Kit",
+      "指南目录": "Connectivity Kit（短距通信服务）",
+      "skill目录": "Connectivity Kit(短距通信服务)",
+      "API目录": "Connectivity Kit（短距通信服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/网络/Connectivity Kit（短距通信服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/网络/Connectivity Kit（短距通信服务）",
+      "API参考": "harmonyos-references/网络/Connectivity Kit（短距通信服务）"
+    },
+    {
+      "领域": "系统 - 网络",
+      "中文": "分布式管理服务",
+      "英文": "Distributed Service Kit",
+      "指南目录": "Distributed Service Kit（分布式管理服务）",
+      "skill目录": "Distributed Service Kit(分布式管理服务)",
+      "API目录": "Distributed Service Kit（分布式管理服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/网络/Distributed Service Kit（分布式管理服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/网络/Distributed Service Kit（分布式管理服务）",
+      "API参考": "harmonyos-references/网络/Distributed Service Kit（分布式管理服务）"
+    },
+    {
+      "领域": "系统 - 网络",
+      "中文": "星闪服务",
+      "英文": "NearLink Kit",
+      "指南目录": "NearLink Kit（星闪服务）",
+      "skill目录": "NearLink Kit(星闪服务)",
+      "API目录": "NearLink Kit（星闪服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/网络/NearLink Kit（星闪服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/网络/NearLink Kit（星闪服务）",
+      "API参考": "harmonyos-references/网络/NearLink Kit（星闪服务）"
+    },
+    {
+      "领域": "系统 - 网络",
+      "中文": "网络加速服务",
+      "英文": "Network Boost Kit",
+      "指南目录": "Network Boost Kit（网络加速服务）",
+      "skill目录": "Network Boost Kit(网络加速服务)",
+      "API目录": "Network Boost Kit（网络加速服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/网络/Network Boost Kit（网络加速服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/网络/Network Boost Kit（网络加速服务）",
+      "API参考": "harmonyos-references/网络/Network Boost Kit（网络加速服务）"
+    },
+    {
+      "领域": "系统 - 网络",
+      "中文": "网络服务",
+      "英文": "Network Kit",
+      "指南目录": "Network Kit（网络服务）",
+      "skill目录": "Network Kit(网络服务)",
+      "API目录": "Network Kit（网络服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/网络/Network Kit（网络服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/网络/Network Kit（网络服务）",
+      "API参考": "harmonyos-references/网络/Network Kit（网络服务）"
+    },
+    {
+      "领域": "系统 - 网络",
+      "中文": "远场通信服务",
+      "英文": "Remote Communication Kit",
+      "指南目录": "Remote Communication Kit（远场通信服务）",
+      "skill目录": "Remote Communication Kit(远场通信服务)",
+      "API目录": "Remote Communication Kit（远场通信服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/网络/Remote Communication Kit（远场通信服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/网络/Remote Communication Kit（远场通信服务）",
+      "API参考": "harmonyos-references/网络/Remote Communication Kit（远场通信服务）"
+    },
+    {
+      "领域": "系统 - 网络",
+      "中文": "协同服务",
+      "英文": "Service Collaboration Kit",
+      "指南目录": "Service Collaboration Kit（协同服务）",
+      "skill目录": "Service Collaboration Kit(协同服务)",
+      "API目录": "Service Collaboration Kit（协同服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/网络/Service Collaboration Kit（协同服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/网络/Service Collaboration Kit（协同服务）",
+      "API参考": "harmonyos-references/网络/Service Collaboration Kit（协同服务）"
+    },
+    {
+      "领域": "系统 - 网络",
+      "中文": "蜂窝通信服务",
+      "英文": "Telephony Kit",
+      "指南目录": "Telephony Kit（蜂窝通信服务）",
+      "skill目录": "Telephony Kit(蜂窝通信服务)",
+      "API目录": "Telephony Kit（蜂窝通信服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/网络/Telephony Kit（蜂窝通信服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/网络/Telephony Kit（蜂窝通信服务）",
+      "API参考": "harmonyos-references/网络/Telephony Kit（蜂窝通信服务）"
+    },
+    {
+      "领域": "系统 - 调测调优",
+      "中文": "性能分析服务",
+      "英文": "Performance Analysis Kit",
+      "指南目录": "Performance Analysis Kit（性能分析服务）",
+      "skill目录": "Performance Analysis Kit(性能分析服务)",
+      "API目录": "Performance Analysis Kit（性能分析服务）",
+      "路由指南路径存在": true,
+      "路由skill路径存在": false,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "basic skill",
+        "API参考"
+      ],
+      "对应指南": "harmonyos-guides/系统/调测调优/Performance Analysis Kit（性能分析服务）",
+      "basic skill": "harmonyos-sdk-basic-skill/系统/调测调优/Performance Analysis Kit（性能分析服务）",
+      "API参考": "harmonyos-references/调测调优/Performance Analysis Kit（性能分析服务）"
+    },
+    {
+      "领域": "系统 - 调测调优",
+      "中文": "应用测试服务",
+      "英文": "Test Kit",
+      "指南目录": "Test Kit（应用测试服务）",
+      "skill目录": "",
+      "API目录": "Test Kit（应用测试服务）",
+      "路由指南路径存在": null,
+      "路由skill路径存在": null,
+      "路由API路径存在": false,
+      "路径不存在": [
+        "API参考"
+      ],
+      "对应指南": "无独立目录（指南在\"应用测试\"目录下）",
+      "basic skill": "无独立目录（指南在\"应用测试\"目录下）",
+      "API参考": "harmonyos-references/调测调优/Test Kit（应用测试服务）"
+    }
+  ],
+  "library_kits_not_in_routing": {
+    "指南": [],
+    "basic skill": [
+      "Accessory Kit(配件接入服务)"
+    ],
+    "API参考": []
+  },
+  "non_kit_top_dirs": {
+    "指南": [
+      "NDK开发",
+      "一次开发，多端部署",
+      "优化应用性能",
+      "使用AI智能辅助编程",
+      "发布应用",
+      "命令行工具",
+      "基础入门",
+      "应用体验建议",
+      "应用开发准备",
+      "应用测试",
+      "开发环境搭建",
+      "构建应用",
+      "编写与调试应用",
+      "自由流转"
+    ],
+    "basic skill": [],
+    "API参考非Kit": [
+      "ArkTS API",
+      "C API",
+      "EGL",
+      "HiTSS",
+      "ICU4C",
+      "Node-API",
+      "OpenGL",
+      "OpenGL ES",
+      "OpenSL ES",
+      "Vulkan",
+      "c++标准库",
+      "libc标准库",
+      "libuv",
+      "zlib",
+      "开发说明",
+      "系统能力SystemCapability使用指南",
+      "通用错误码",
+      "附录"
+    ]
+  },
+  "lib_guide_kits": [
+    "AR Engine（AR引擎服务）",
+    "AVCodec Kit（音视频编解码服务）",
+    "AVSession Kit（音视频播控服务）",
+    "Ability Kit（程序框架服务）",
+    "Accessibility Kit（无障碍服务）",
+    "Account Kit（华为账号服务）",
+    "Ads Kit（广告服务）",
+    "Agent Framework Kit（智能体框架服务）",
+    "App Linking Kit（应用链接服务）",
+    "AppGallery Kit（应用市场服务）",
+    "ArkData（方舟数据管理）",
+    "ArkGraphics 2D（方舟2D图形服务）",
+    "ArkGraphics 3D（方舟3D图形）",
+    "ArkTS（方舟编程语言）",
+    "ArkUI（方舟UI框架）",
+    "ArkWeb（方舟Web）",
+    "Asset Store Kit（关键资产存储服务）",
+    "Audio Kit（音频服务）",
+    "Background Tasks Kit（后台任务开发服务）",
+    "Basic Services Kit（基础服务）",
+    "CANN Kit（CANN异构计算框架服务）",
+    "Calendar Kit（日历服务）",
+    "Call Service Kit（通话服务）",
+    "Camera Kit（相机服务）",
+    "Car Kit（车服务）",
+    "Cloud Foundation Kit（云开发服务）",
+    "Connectivity Kit（短距通信服务）",
+    "Contacts Kit（联系人服务）",
+    "Content Embed Kit（内容嵌入服务）",
+    "Core File Kit（文件基础服务）",
+    "Core Speech Kit（基础语音服务）",
+    "Core Vision Kit（基础视觉服务）",
+    "Crypto Architecture Kit（加解密算法框架服务）",
+    "DRM Kit（数字版权保护服务）",
+    "Data Augmentation Kit（数据增强服务）",
+    "Data Protection Kit（数据保护服务）",
+    "Desktop Extension Kit（桌面拓展服务）",
+    "Device Certificate Kit（设备证书服务）",
+    "Device Security Kit（设备安全服务）",
+    "Distributed Service Kit（分布式管理服务）",
+    "Driver Development Kit（驱动开发服务）",
+    "Enterprise Data Guard Kit（企业数据保护服务）",
+    "Enterprise Space Kit（企业数字空间服务）",
+    "Enterprise Threat Protection Kit（企业威胁防护服务）",
+    "FAST Kit（算法加速服务）",
+    "File Manager Service Kit（文件管理服务）",
+    "Form Kit（卡片开发服务）",
+    "Function Flow Runtime Kit（任务并发调度服务）",
+    "Game Controller Kit（游戏控制器服务）",
+    "Game Service Kit（游戏服务）",
+    "Graphics Accelerate Kit（图形加速服务）",
+    "Health Service Kit（运动健康服务）",
+    "IAP Kit（应用内支付服务）",
+    "IME Kit（输入法开发服务）",
+    "IPC Kit（进程间通信服务）",
+    "Image Kit（图片处理服务）",
+    "Input Kit（多模输入服务）",
+    "Intents Kit（意图框架服务）",
+    "Kernel Enhance Kit（内核增强能力）",
+    "Live View Kit（实况窗服务）",
+    "Localization Kit（本地化开发服务）",
+    "Location Kit（位置服务）",
+    "MDM Kit（企业设备管理服务）",
+    "Map Kit（地图服务）",
+    "Mechanic Kit（机械设备管理服务）",
+    "Media Kit（媒体服务）",
+    "Media Library Kit（媒体文件管理服务）",
+    "MindSpore Lite Kit（昇思推理框架服务）",
+    "Multimodal Awareness Kit（多模态融合感知服务）",
+    "Natural Language Kit（自然语言理解服务）",
+    "NearLink Kit（星闪服务）",
+    "Network Boost Kit（网络加速服务）",
+    "Network Kit（网络服务）",
+    "Neural Network Runtime Kit（Neural Network运行时服务）",
+    "Notification Kit（用户通知服务）",
+    "Online Authentication Kit（在线认证服务）",
+    "PDF Kit（PDF服务）",
+    "Payment Kit（鸿蒙支付服务）",
+    "Pen Kit（手写笔服务）",
+    "Performance Analysis Kit（性能分析服务）",
+    "Preview Kit（文件预览服务）",
+    "Push Kit（推送服务）",
+    "Reader Kit（阅读服务）",
+    "Remote Communication Kit（远场通信服务）",
+    "Ringtone Kit（铃声服务）",
+    "Scan Kit（统一扫码服务）",
+    "Scenario Fusion Kit（融合场景服务）",
+    "Screen Time Guard Kit（屏幕时间守护服务）",
+    "Sensor Service Kit（传感器服务）",
+    "Service Collaboration Kit（协同服务）",
+    "Share Kit（分享服务）",
+    "Spatial Recon Kit（空间建模服务）",
+    "Speech Kit（场景化语音服务）",
+    "Telephony Kit（蜂窝通信服务）",
+    "Test Kit（应用测试服务）",
+    "UI Design Kit（UI设计套件）",
+    "Universal Keystore Kit（密钥管理服务）",
+    "User Authentication Kit（用户认证服务）",
+    "Vision Kit（场景化视觉服务）",
+    "Wallet Kit（钱包服务）",
+    "Wear Engine Kit（穿戴服务）",
+    "Weather Service Kit（天气服务）",
+    "XEngine Kit（GPU加速引擎服务）"
+  ],
+  "lib_skill_kits": [
+    "AR Engine(AR引擎服务)",
+    "AVCodec Kit(音视频编解码服务)",
+    "AVSession Kit(音视频播控服务)",
+    "Ability Kit(程序框架服务)",
+    "Accessibility Kit(无障碍服务)",
+    "Accessory Kit(配件接入服务)",
+    "Account Kit(华为账号服务)",
+    "Ads Kit(广告服务)",
+    "Agent Framework Kit(智能体框架服务)",
+    "App Linking Kit(应用链接服务)",
+    "AppGallery Kit(应用市场服务)",
+    "ArkData(方舟数据管理)",
+    "ArkGraphics 2D(方舟2D图形服务)",
+    "ArkGraphics 3D(方舟3D图形)",
+    "ArkTS(方舟编程语言)",
+    "ArkUI(方舟UI框架)",
+    "ArkWeb(方舟Web)",
+    "Asset Store Kit(关键资产存储服务)",
+    "Audio Kit(音频服务)",
+    "Background Tasks Kit(后台任务开发服务)",
+    "Basic Services Kit(基础服务)",
+    "CANN Kit(CANN异构计算框架服务)",
+    "Calendar Kit(日历服务)",
+    "Call Service Kit(通话服务)",
+    "Camera Kit(相机服务)",
+    "Car Kit(车服务)",
+    "Cloud Foundation Kit(云开发服务)",
+    "Connectivity Kit(短距通信服务)",
+    "Contacts Kit(联系人服务)",
+    "Content Embed Kit(内容嵌入服务)",
+    "Core File Kit(文件基础服务)",
+    "Core Speech Kit(基础语音服务)",
+    "Core Vision Kit(基础视觉服务)",
+    "Crypto Architecture Kit(加解密算法框架服务)",
+    "DRM Kit(数字版权保护服务)",
+    "Data Augmentation Kit(数据增强服务)",
+    "Data Protection Kit(数据保护服务)",
+    "Desktop Extension Kit(桌面拓展服务)",
+    "Device Certificate Kit(设备证书服务)",
+    "Device Security Kit(设备安全服务)",
+    "Distributed Service Kit(分布式管理服务)",
+    "Driver Development Kit(驱动开发服务)",
+    "Enterprise Data Guard Kit(企业数据保护服务)",
+    "Enterprise Space Kit(企业数字空间服务)",
+    "Enterprise Threat Protection Kit(企业威胁防护服务)",
+    "FAST Kit(算法加速服务)",
+    "File Manager Service Kit(文件管理服务)",
+    "Form Kit(卡片开发服务)",
+    "Function Flow Runtime Kit(任务并发调度服务)",
+    "Game Controller Kit(游戏控制器服务)",
+    "Game Service Kit(游戏服务)",
+    "Graphics Accelerate Kit(图形加速服务)",
+    "Health Service Kit(运动健康服务)",
+    "IAP Kit(应用内支付服务)",
+    "IME Kit(输入法开发服务)",
+    "IPC Kit(进程间通信服务)",
+    "Image Kit(图片处理服务)",
+    "Input Kit(多模输入服务)",
+    "Intents Kit(意图框架服务)",
+    "Kernel Enhance Kit(内核增强能力)",
+    "Live View Kit(实况窗服务)",
+    "Localization Kit(本地化开发服务)",
+    "Location Kit(位置服务)",
+    "MDM Kit(企业设备管理服务)",
+    "Map Kit(地图服务)",
+    "Mechanic Kit(机械设备管理服务)",
+    "Media Kit(媒体服务)",
+    "Media Library Kit(媒体文件管理服务)",
+    "MindSpore Lite Kit(昇思推理框架服务)",
+    "Multimodal Awareness Kit(多模态融合感知服务)",
+    "Natural Language Kit(自然语言理解服务)",
+    "NearLink Kit(星闪服务)",
+    "Network Boost Kit(网络加速服务)",
+    "Network Kit(网络服务)",
+    "Neural Network Runtime Kit(Neural Network运行时服务)",
+    "Notification Kit(用户通知服务)",
+    "Online Authentication Kit(在线认证服务)",
+    "PDF Kit(PDF服务)",
+    "Payment Kit(鸿蒙支付服务)",
+    "Pen Kit(手写笔服务)",
+    "Performance Analysis Kit(性能分析服务)",
+    "Preview Kit(文件预览服务)",
+    "Push Kit(推送服务)",
+    "Reader Kit(阅读服务)",
+    "Remote Communication Kit(远场通信服务)",
+    "Ringtone Kit(铃声服务)",
+    "Scan Kit(统一扫码服务)",
+    "Scenario Fusion Kit(融合场景服务)",
+    "Screen Time Guard Kit(屏幕时间守护服务)",
+    "Sensor Service Kit(传感器服务)",
+    "Service Collaboration Kit(协同服务)",
+    "Share Kit(分享服务)",
+    "Spatial Recon Kit(空间建模服务)",
+    "Speech Kit(场景化语音服务)",
+    "Telephony Kit(蜂窝通信服务)",
+    "UI Design Kit(UI设计套件)",
+    "Universal Keystore Kit(密钥管理服务)",
+    "User Authentication Kit(用户认证服务)",
+    "Vision Kit(场景化视觉服务)",
+    "Wallet Kit(钱包服务)",
+    "Wear Engine Kit(穿戴服务)",
+    "Weather Service Kit(天气服务)",
+    "XEngine Kit(GPU加速引擎服务)"
+  ],
+  "lib_api_kits": [
+    "AR Engine（AR引擎服务）",
+    "AVCodec Kit（音视频编解码服务）",
+    "AVSession Kit（音视频播控服务）",
+    "Ability Kit（程序框架服务）",
+    "Accessibility Kit（无障碍服务）",
+    "Account Kit（华为账号服务）",
+    "Ads Kit（广告服务）",
+    "Agent Framework Kit（智能体框架服务）",
+    "App Linking Kit（应用链接服务）",
+    "AppGallery Kit（应用市场服务）",
+    "ArkData（方舟数据管理）",
+    "ArkGraphics 2D（方舟2D图形服务）",
+    "ArkGraphics 3D（方舟3D图形）",
+    "ArkTS（方舟编程语言）",
+    "ArkUI（方舟UI框架）",
+    "ArkWeb（方舟Web）",
+    "Asset Store Kit（关键资产存储服务）",
+    "Audio Kit（音频服务）",
+    "Background Tasks Kit（后台任务开发服务）",
+    "Basic Services Kit（基础服务）",
+    "CANN Kit（CANN异构计算框架服务）",
+    "Calendar Kit（日历服务）",
+    "Call Service Kit（通话服务）",
+    "Camera Kit（相机服务）",
+    "Car Kit（车服务）",
+    "Cloud Foundation Kit（云开发服务）",
+    "Connectivity Kit（短距通信服务）",
+    "Contacts Kit（联系人服务）",
+    "Content Embed Kit（内容嵌入服务）",
+    "Core File Kit（文件基础服务）",
+    "Core Speech Kit（基础语音服务）",
+    "Core Vision Kit（基础视觉服务）",
+    "Crypto Architecture Kit（加解密算法框架服务）",
+    "DRM Kit（数字版权保护服务）",
+    "Data Augmentation Kit（数据增强服务）",
+    "Data Protection Kit（数据保护服务）",
+    "Desktop Extension Kit（桌面拓展服务）",
+    "Device Certificate Kit（设备证书服务）",
+    "Device Security Kit（设备安全服务）",
+    "Distributed Service Kit（分布式管理服务）",
+    "Driver Development Kit（驱动开发服务）",
+    "Enterprise Data Guard Kit（企业数据保护服务）",
+    "Enterprise Space Kit（企业数字空间服务）",
+    "Enterprise Threat Protection Kit（企业威胁防护服务）",
+    "FAST Kit（算法加速服务）",
+    "File Manager Service Kit（文件管理服务）",
+    "Form Kit（卡片开发服务）",
+    "Function Flow Runtime Kit",
+    "Game Controller Kit（游戏控制器服务）",
+    "Game Service Kit（游戏服务）",
+    "Graphics Accelerate Kit（图形加速服务）",
+    "Health Service Kit（运动健康服务）",
+    "IAP Kit（应用内支付服务）",
+    "IME Kit（输入法开发服务）",
+    "IPC Kit（进程间通信服务）",
+    "Image Kit（图片处理服务）",
+    "Input Kit（多模输入服务）",
+    "Intents Kit（意图框架服务）",
+    "Kernel Enhance Kit（内核增强能力）",
+    "Live View Kit（实况窗服务）",
+    "Localization Kit（本地化开发服务）",
+    "Location Kit（位置服务）",
+    "MDM Kit（企业设备管理服务）",
+    "Map Kit（地图服务）",
+    "Mechanic Kit（机械设备管理服务）",
+    "Media Kit（媒体服务）",
+    "Media Library Kit（媒体文件管理服务）",
+    "MindSpore Lite Kit（昇思推理框架服务）",
+    "Multimodal Awareness Kit（多模态融合感知服务）",
+    "Natural Language Kit（自然语言理解服务）",
+    "NearLink Kit（星闪服务）",
+    "Network Boost Kit（网络加速服务）",
+    "Network Kit（网络服务）",
+    "Neural Network Runtime Kit（Neural Network运行时服务）",
+    "Notification Kit（用户通知服务）",
+    "Online Authentication Kit（在线认证服务）",
+    "PDF Kit（PDF服务）",
+    "Payment Kit（鸿蒙支付服务）",
+    "Pen Kit（手写笔服务）",
+    "Performance Analysis Kit（性能分析服务）",
+    "Preview Kit（文件预览服务）",
+    "Push Kit（推送服务）",
+    "Reader Kit（阅读服务）",
+    "Remote Communication Kit（远场通信服务）",
+    "Ringtone Kit（铃声服务）",
+    "Scan Kit（统一扫码服务）",
+    "Scenario Fusion Kit（融合场景服务）",
+    "Screen Time Guard Kit（屏幕时间守护服务）",
+    "Sensor Service Kit（传感器服务）",
+    "Service Collaboration Kit（协同服务）",
+    "Share Kit（分享服务）",
+    "Spatial Recon Kit（空间建模服务）",
+    "Speech Kit（场景化语音服务）",
+    "Telephony Kit（蜂窝通信服务）",
+    "Test Kit（应用测试服务）",
+    "UI Design Kit（UI设计套件）",
+    "Universal Keystore Kit（密钥管理服务）",
+    "User Authentication Kit（用户认证服务）",
+    "Vision Kit（场景化视觉服务）",
+    "Wallet Kit（钱包服务）",
+    "Wear Engine Kit（穿戴服务）",
+    "Weather Service Kit（天气服务）",
+    "XEngine Kit（GPU加速引擎服务）"
+  ]
+}

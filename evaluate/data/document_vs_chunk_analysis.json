@@ -1,0 +1,471 @@
+{
+  "chunk_summary": {
+    "dataset": "D:\\JobWorkspace\\Projects\\SkillsRetrieval2026\\hos-skills\\hos_skills\\workspace\\data\\dataset.xlsx",
+    "sample_size": 4057,
+    "seed": 2026,
+    "top_k": 10,
+    "path_prefix": "harmonyos-guides/",
+    "hit_at_1": 0.6778407690411634,
+    "hit_at_3": 0.8526004436775942,
+    "hit_at_5": 0.9009120039438009,
+    "hit_at_10": 0.9418289376386493,
+    "mrr": 0.7738530503812733,
+    "exact_term_queries": 3815,
+    "elapsed_seconds": 1042.301
+  },
+  "document_summary": {
+    "dataset": "D:\\JobWorkspace\\Projects\\SkillsRetrieval2026\\hos-skills\\hos_skills\\workspace\\data\\dataset.xlsx",
+    "granularity": "document",
+    "aggregation": "max_chunk_score",
+    "sample_size": 4057,
+    "seed": 2026,
+    "top_k": 10,
+    "path_prefix": "harmonyos-guides/",
+    "hit_at_1": 0.6773477939364062,
+    "hit_at_3": 0.8871087010105989,
+    "hit_at_5": 0.9327088982006408,
+    "hit_at_10": 0.9635198422479665,
+    "mrr": 0.7881079537229402,
+    "exact_term_queries": 3815,
+    "elapsed_seconds": 1071.066
+  },
+  "metric_delta": {
+    "hit_at_1": -0.0004929751047572095,
+    "hit_at_3": 0.034508257333004666,
+    "hit_at_5": 0.03179689425683996,
+    "hit_at_10": 0.02169090460931722,
+    "mrr": 0.014254903341666902
+  },
+  "rank_changes": {
+    "improved": 379,
+    "worsened": 5,
+    "same": 3673,
+    "recovered_from_miss": 88,
+    "lost_to_miss": 0
+  },
+  "rank_distribution": {
+    "chunk": {
+      "0": 236,
+      "1": 2750,
+      "2": 510,
+      "3": 199,
+      "4": 124,
+      "5": 72,
+      "6": 49,
+      "7": 44,
+      "8": 33,
+      "9": 19,
+      "10": 21
+    },
+    "document": {
+      "0": 148,
+      "1": 2748,
+      "2": 628,
+      "3": 223,
+      "4": 128,
+      "5": 57,
+      "6": 44,
+      "7": 36,
+      "8": 20,
+      "9": 13,
+      "10": 12
+    }
+  },
+  "chunk_top10_unique_documents": {
+    "average": 6.133596253389204,
+    "min": 1,
+    "max": 10,
+    "distribution": {
+      "1": 71,
+      "2": 149,
+      "3": 265,
+      "4": 504,
+      "5": 594,
+      "6": 665,
+      "7": 642,
+      "8": 540,
+      "9": 340,
+      "10": 287
+    }
+  },
+  "subgroups": {
+    "with_exact_terms": {
+      "count": 3815,
+      "chunk_hit10": 0.945740498034076,
+      "document_hit10": 0.9680209698558322,
+      "chunk_mrr": 0.7764326280971104,
+      "document_mrr": 0.7909571657409141
+    },
+    "without_exact_terms": {
+      "count": 242,
+      "chunk_hit10": 0.8801652892561983,
+      "document_hit10": 0.8925619834710744,
+      "chunk_mrr": 0.7331873934146662,
+      "document_mrr": 0.7431916568280205
+    }
+  },
+  "largest_improvements": [
+    {
+      "dataset_row": 3415,
+      "query": "ohpm config 命令出现错误码 00602001 时，应该如何解决？",
+      "gold_path": "命令行工具/三方依赖管理工具（ohpm）/错误码/ohpm config错误码/ide-ohpm-config-errorcode.md",
+      "chunk_rank": 0,
+      "document_rank": 2,
+      "delta": 9,
+      "exact": true
+    },
+    {
+      "dataset_row": 3428,
+      "query": "ohpm update命令执行时报错“Has Version”是什么原因，该如何处理？",
+      "gold_path": "命令行工具/三方依赖管理工具（ohpm）/错误码/ohpm update错误码/ide-ohpm-update-errorcode.md",
+      "chunk_rank": 0,
+      "document_rank": 2,
+      "delta": 9,
+      "exact": true
+    },
+    {
+      "dataset_row": 1631,
+      "query": "在鸿蒙系统的ArkUI框架中，如何使用image组件并正确设置图片路径（如'/common/ice.png'）来添加和显示图片？",
+      "gold_path": "应用框架/ArkUI（方舟UI框架）/UI开发 (兼容JS的类Web开发范式)/构建用户界面/构建布局/添加图片区域/ui-js-building-ui-layout-image.md",
+      "chunk_rank": 0,
+      "document_rank": 2,
+      "delta": 9,
+      "exact": true
+    },
+    {
+      "dataset_row": 3420,
+      "query": "ohpm install安装依赖时提示错误码00604001“无匹配版本”，该如何排查和解决？",
+      "gold_path": "命令行工具/三方依赖管理工具（ohpm）/错误码/ohpm install错误码/ide-ohpm-install-errorcode.md",
+      "chunk_rank": 0,
+      "document_rank": 2,
+      "delta": 9,
+      "exact": true
+    },
+    {
+      "dataset_row": 1328,
+      "query": "在鸿蒙系统开发中，ArkTS运行时的GC垃圾回收机制是如何工作的？",
+      "gold_path": "应用框架/ArkTS（方舟编程语言）/ArkTS运行时/arkts-runtime.md",
+      "chunk_rank": 0,
+      "document_rank": 2,
+      "delta": 9,
+      "exact": true
+    },
+    {
+      "dataset_row": 2177,
+      "query": "如何在鸿蒙系统手机应用程序中管理应用账号？",
+      "gold_path": "系统/基础功能/Basic Services Kit（基础服务）/账号管理/应用账号/application-account.md",
+      "chunk_rank": 0,
+      "document_rank": 2,
+      "delta": 9,
+      "exact": true
+    },
+    {
+      "dataset_row": 1488,
+      "query": "在API version 19及之后，状态管理V1和V2混用时有哪些指导原则和注意事项？",
+      "gold_path": "应用框架/ArkUI（方舟UI框架）/UI开发 (ArkTS声明式开发范式)/学习UI范式状态管理/状态管理V1-V2迁移指导/状态管理V1和V2混用场景/v1v2-mixing.md",
+      "chunk_rank": 0,
+      "document_rank": 2,
+      "delta": 9,
+      "exact": true
+    },
+    {
+      "dataset_row": 3417,
+      "query": "ohpm dependency-check命令报错00680001，提示“更新信息查询失败”，可能的原因是什么？",
+      "gold_path": "命令行工具/三方依赖管理工具（ohpm）/错误码/ohpm dependency-check错误码/ide-ohpm-dependency-check-errorcode.md",
+      "chunk_rank": 10,
+      "document_rank": 2,
+      "delta": 8,
+      "exact": true
+    },
+    {
+      "dataset_row": 420,
+      "query": "如何在鸿蒙系统中接入小游戏服务，并完成小游戏登录功能？",
+      "gold_path": "应用服务/Game Service Kit（游戏服务）/基础游戏服务（必选）/小游戏/gameservice-gameplayer-minigame.md",
+      "chunk_rank": 10,
+      "document_rank": 2,
+      "delta": 8,
+      "exact": true
+    },
+    {
+      "dataset_row": 260,
+      "query": "在鸿蒙系统中，如何配置沙盒测试账号来测试应用内购买（IAP）功能，并验证购买流程是否正常工作？",
+      "gold_path": "应用服务/AppGallery Kit（应用市场服务）/数字商品服务/测试数字商品服务/store-iap-sandbox.md",
+      "chunk_rank": 0,
+      "document_rank": 3,
+      "delta": 8,
+      "exact": true
+    },
+    {
+      "dataset_row": 1708,
+      "query": "在ArkWeb（方舟Web）中，什么是“同层渲染”以及“同层标签”？",
+      "gold_path": "应用框架/ArkWeb（方舟Web）/ArkWeb术语/arkweb-glossary.md",
+      "chunk_rank": 0,
+      "document_rank": 3,
+      "delta": 8,
+      "exact": true
+    },
+    {
+      "dataset_row": 940,
+      "query": "如何实现手机与PC/2in1设备之间的碰一碰内容分享？",
+      "gold_path": "应用服务/Share Kit（分享服务）/碰一碰分享/手机与PC2in1碰一碰分享/手机与PC2in1间相互分享/knock-share-pc-phones-mutually.md",
+      "chunk_rank": 0,
+      "document_rank": 3,
+      "delta": 8,
+      "exact": true
+    },
+    {
+      "dataset_row": 2138,
+      "query": "如何在鸿蒙系统中通过配置多目标产物，实现一个应用同时构建出不同功能与设备适配的多个版本？",
+      "gold_path": "构建应用/配置构建流程/配置多目标产物/实践说明/ide-customized-multi-targets-and-products-sample.md",
+      "chunk_rank": 0,
+      "document_rank": 3,
+      "delta": 8,
+      "exact": true
+    },
+    {
+      "dataset_row": 2885,
+      "query": "如何在鸿蒙系统中使用HTTP模块发起网络数据请求？",
+      "gold_path": "系统/网络/Network Kit（网络服务）/访问网络/使用HTTP访问网络/http-request.md",
+      "chunk_rank": 0,
+      "document_rank": 3,
+      "delta": 8,
+      "exact": true
+    },
+    {
+      "dataset_row": 1876,
+      "query": "如何实现鸿蒙系统ArkTS卡片的编辑功能？",
+      "gold_path": "应用框架/Form Kit（卡片开发服务）/ArkTS卡片开发（推荐）/ArkTS卡片提供方开发指导/ArkTS卡片编辑/arkts-ui-widget-edit.md",
+      "chunk_rank": 0,
+      "document_rank": 3,
+      "delta": 8,
+      "exact": true
+    },
+    {
+      "dataset_row": 2105,
+      "query": "鸿蒙系统应用编译构建过程中，遇到“依赖错误码”或“ArkTS编译错误码”时，应如何根据官方指南进行排查与解决？",
+      "gold_path": "构建应用/构建报错排查/编译构建错误码/ide-hvigor-errorcode.md",
+      "chunk_rank": 0,
+      "document_rank": 3,
+      "delta": 8,
+      "exact": true
+    },
+    {
+      "dataset_row": 1004,
+      "query": "鸿蒙系统Stage模型中，UIAbility的冷启动和热启动分别对应哪些生命周期回调顺序？",
+      "gold_path": "应用框架/Ability Kit（程序框架服务）/Ability Kit术语/ability-terminology.md",
+      "chunk_rank": 0,
+      "document_rank": 3,
+      "delta": 8,
+      "exact": true
+    },
+    {
+      "dataset_row": 1392,
+      "query": "在鸿蒙OS中，如何实现和自定义气泡提示（Popup）？",
+      "gold_path": "应用框架/ArkUI（方舟UI框架）/UI开发 (ArkTS声明式开发范式)/使用弹窗/气泡提示/arkts-use-popup.md",
+      "chunk_rank": 9,
+      "document_rank": 2,
+      "delta": 7,
+      "exact": true
+    },
+    {
+      "dataset_row": 3429,
+      "query": "ohpm version命令报错00607001参数无效时，可能的原因和解决方法是什么？",
+      "gold_path": "命令行工具/三方依赖管理工具（ohpm）/错误码/ohpm version错误码/ide-ohpm-version-errorcode.md",
+      "chunk_rank": 9,
+      "document_rank": 2,
+      "delta": 7,
+      "exact": true
+    },
+    {
+      "dataset_row": 2090,
+      "query": "在鸿蒙系统手机应用开发中，如何通过扩展构建API（如基础构建能力、插件上下文及API使用示例）来自定义或增强应用的构建流程？",
+      "gold_path": "构建应用/扩展构建能力/扩展构建API/ide-hvigor-apis.md",
+      "chunk_rank": 0,
+      "document_rank": 4,
+      "delta": 7,
+      "exact": true
+    }
+  ],
+  "largest_regressions": [
+    {
+      "dataset_row": 2508,
+      "query": "在鸿蒙系统中，如何对应用程序目录下的文件执行病毒扫描、打开、隔离、恢复、删除及隔离查询等安全处置操作？",
+      "gold_path": "系统/安全/Enterprise Threat Protection Kit（企业威胁防护服务）/文件访问与处置/etp-virusremediation-content.md",
+      "chunk_rank": 1,
+      "document_rank": 2,
+      "delta": -1,
+      "exact": true
+    },
+    {
+      "dataset_row": 2533,
+      "query": "在鸿蒙系统中，如何通过ArkTS接口注册和注销外部密钥管理Provider？",
+      "gold_path": "系统/安全/Universal Keystore Kit（密钥管理服务）/外部密钥管理扩展/Provider管理/注册注销Provider(ArkTS)/huks-ext-reg-unreg-arkts.md",
+      "chunk_rank": 1,
+      "document_rank": 2,
+      "delta": -1,
+      "exact": true
+    },
+    {
+      "dataset_row": 2504,
+      "query": "在鸿蒙系统中，调用Enterprise Threat Protection Kit时出现“install failed due to grant request permissions failed”错误，应如何排查和解决？",
+      "gold_path": "系统/安全/Enterprise Threat Protection Kit（企业威胁防护服务）/Enterprise Threat Protection Kit常见问题/etp-virusremediation-question.md",
+      "chunk_rank": 1,
+      "document_rank": 2,
+      "delta": -1,
+      "exact": true
+    },
+    {
+      "dataset_row": 2439,
+      "query": "如何在鸿蒙系统中查询应用进程信息？",
+      "gold_path": "系统/安全/Device Security Kit（设备安全服务）/安全审计/进程信息查询场景/devicesecurity-audit-queryproc-arkts.md",
+      "chunk_rank": 2,
+      "document_rank": 3,
+      "delta": -1,
+      "exact": false
+    },
+    {
+      "dataset_row": 2389,
+      "query": "在鸿蒙系统中，如何使用ArkTS API创建CMS封装数据对象？",
+      "gold_path": "系统/安全/Device Certificate Kit（设备证书服务）/证书算法库框架/证书CMS封装/create-cms-enveloped-object.md",
+      "chunk_rank": 3,
+      "document_rank": 4,
+      "delta": -1,
+      "exact": true
+    },
+    {
+      "dataset_row": 3506,
+      "query": "在鸿蒙系统中，如何根据不同的内容类型（如动画、UI或自绘制内容）来定制和请求可变帧率以优化绘制性能？",
+      "gold_path": "图形/ArkGraphics 2D（方舟2D图形服务）/使用可变帧率能力定制不同内容的绘制帧率/displaysync.md",
+      "chunk_rank": 1,
+      "document_rank": 1,
+      "delta": 0,
+      "exact": true
+    },
+    {
+      "dataset_row": 970,
+      "query": "如果用户没有登录华为账号，添加卡券时如何处理？",
+      "gold_path": "应用服务/Wallet Kit（钱包服务）/Wallet Kit常见问题/如果用户没有登录华为账号，添加卡券时如何处理？/wallet-faq-3.md",
+      "chunk_rank": 1,
+      "document_rank": 1,
+      "delta": 0,
+      "exact": true
+    },
+    {
+      "dataset_row": 1836,
+      "query": "在鸿蒙系统的应用沙箱机制中，应用文件目录下的不同加密级别（如el1、el2、el3等）分别具有什么特点？",
+      "gold_path": "应用框架/Core File Kit（文件基础服务）/应用文件/应用沙箱目录/app-sandbox-directory.md",
+      "chunk_rank": 1,
+      "document_rank": 1,
+      "delta": 0,
+      "exact": true
+    },
+    {
+      "dataset_row": 1733,
+      "query": "在鸿蒙系统的ArkWeb组件中，如何实现应用侧与前端页面JavaScript的双向调用以及数据通道？",
+      "gold_path": "应用框架/ArkWeb（方舟Web）/在应用中使用前端页面JavaScript/web-use-frontend-page-js.md",
+      "chunk_rank": 1,
+      "document_rank": 1,
+      "delta": 0,
+      "exact": true
+    },
+    {
+      "dataset_row": 2959,
+      "query": "在鸿蒙系统中，HiAppEvent的事件订阅支持哪三种方式？",
+      "gold_path": "系统/调测调优/Performance Analysis Kit（性能分析服务）/事件订阅/使用HiAppEvent订阅事件/事件订阅简介/event-subscription-overview.md",
+      "chunk_rank": 1,
+      "document_rank": 1,
+      "delta": 0,
+      "exact": true
+    },
+    {
+      "dataset_row": 2680,
+      "query": "在鸿蒙系统中，应用如何向用户动态申请位置权限等user_grant权限？",
+      "gold_path": "系统/安全/程序访问控制/应用权限管控/申请应用权限/向用户申请授权/request-user-authorization.md",
+      "chunk_rank": 1,
+      "document_rank": 1,
+      "delta": 0,
+      "exact": true
+    },
+    {
+      "dataset_row": 1910,
+      "query": "如何在Stage模型下开发鸿蒙系统JS卡片，并实现卡片的生命周期管理、数据更新及事件交互？",
+      "gold_path": "应用框架/Form Kit（卡片开发服务）/JS卡片开发/JS卡片开发指导（Stage模型）/js-ui-widget-development.md",
+      "chunk_rank": 1,
+      "document_rank": 1,
+      "delta": 0,
+      "exact": true
+    },
+    {
+      "dataset_row": 671,
+      "query": "在鸿蒙系统中，如何将PDF文档的指定页面缩略图转换为JPEG或PNG图片并保存到本地？",
+      "gold_path": "应用服务/PDF Kit（PDF服务）/PdfView预览组件/PDF缩略图转换为图片/pdf-pdfview-page2img.md",
+      "chunk_rank": 1,
+      "document_rank": 1,
+      "delta": 0,
+      "exact": false
+    },
+    {
+      "dataset_row": 847,
+      "query": "在鸿蒙系统中，如何使用Reader Kit获取本地书籍的封面、书名和作者信息并展示？",
+      "gold_path": "应用服务/Reader Kit（阅读服务）/书籍内容解析/获取书籍信息/reader-book-info.md",
+      "chunk_rank": 1,
+      "document_rank": 1,
+      "delta": 0,
+      "exact": true
+    },
+    {
+      "dataset_row": 1167,
+      "query": "如何在鸿蒙系统中实现同应用端云数据同步（分布式）？",
+      "gold_path": "应用框架/ArkData（方舟数据管理）/同应用端云数据同步（分布式）/distributed-data-cloud-sync.md",
+      "chunk_rank": 1,
+      "document_rank": 1,
+      "delta": 0,
+      "exact": true
+    },
+    {
+      "dataset_row": 509,
+      "query": "在鸿蒙系统的IAP Kit中，非游戏类应用的开发者如何审核和处理用户的退款申请？",
+      "gold_path": "应用服务/IAP Kit（应用内支付服务）/售后/退款/iap-refund.md",
+      "chunk_rank": 1,
+      "document_rank": 1,
+      "delta": 0,
+      "exact": true
+    },
+    {
+      "dataset_row": 90,
+      "query": "如何在鸿蒙系统中使用Netron工具查看.om模型的拓扑结构和子图信息？",
+      "gold_path": "AI/CANN Kit（CANN异构计算框架服务）/附录/可视化工具/cannkit-visualization-tool-usage.md",
+      "chunk_rank": 1,
+      "document_rank": 1,
+      "delta": 0,
+      "exact": false
+    },
+    {
+      "dataset_row": 3326,
+      "query": "在HarmonyOS应用开发中，如何使用DevEco Studio的Database Inspector工具查看和修改应用数据库？",
+      "gold_path": "编写与调试应用/应用调试/数据库调试/ide-database-inspector.md",
+      "chunk_rank": 1,
+      "document_rank": 1,
+      "delta": 0,
+      "exact": true
+    },
+    {
+      "dataset_row": 2975,
+      "query": "在鸿蒙系统应用开发中，如何使用性能分析套件进行故障检测，包括崩溃、地址越界、应用冻屏、资源泄漏及任务超时等问题的具体检测方法？",
+      "gold_path": "系统/调测调优/Performance Analysis Kit（性能分析服务）/故障检测/fault-analysis.md",
+      "chunk_rank": 1,
+      "document_rank": 1,
+      "delta": 0,
+      "exact": true
+    },
+    {
+      "dataset_row": 1632,
+      "query": "在鸿蒙系统的ArkUI（方舟UI框架）中，当页面结构较复杂时，为避免使用div循环渲染出现卡顿，推荐使用哪个容器组件来实现长列表布局？",
+      "gold_path": "应用框架/ArkUI（方舟UI框架）/UI开发 (兼容JS的类Web开发范式)/构建用户界面/构建布局/添加容器/ui-js-building-ui-layout-external-container.md",
+      "chunk_rank": 1,
+      "document_rank": 1,
+      "delta": 0,
+      "exact": true
+    }
+  ]
+}

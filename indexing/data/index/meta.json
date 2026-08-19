@@ -1,0 +1,33 @@
+{
+  "documents": 264947,
+  "terms": 261507,
+  "postings": 19437172,
+  "body_exact_term_matches": 337724,
+  "body_exact_matching_scope": "current_chunk_exact_terms_only",
+  "body_exact_min_term_length": 2,
+  "average_raw_length": 119.2466,
+  "average_weighted_length": 143.6123,
+  "bm25": {
+    "k1": 1.5,
+    "b": 0.75,
+    "document_length": "raw_length",
+    "term_frequency": "weighted_tf",
+    "idf_formula": "log(1 + (N - df + 0.5) / (df + 0.5))"
+  },
+  "reusable_data": {
+    "documents": "documents.jsonl.zst",
+    "doc_lengths": "doc_lengths.pkl.zst",
+    "term_stats": "term_stats.pkl.zst",
+    "term_stats_value": "(df, idf)"
+  },
+  "posting_format": "array('I') interleaved [doc_id, weighted_tf, ...]",
+  "weights": {
+    "child_directory_chinese": 4,
+    "child_directory_english": 4,
+    "markdown_heading": 3,
+    "ancestor_directory_each_level": 2,
+    "body_exact_term_occurrence": 1,
+    "preprocessed_token": 1
+  },
+  "elapsed_seconds": 25.73
+}

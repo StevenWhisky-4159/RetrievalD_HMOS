@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.tmp
+
+# Rebuild-only artifacts exceeding the preferred 50 MB Git threshold.
+indexing/data/markdown_paragraph_corpus.jsonl
+indexing/data/chunk_term_frequencies.jsonl
+indexing/data/index/documents.jsonl
