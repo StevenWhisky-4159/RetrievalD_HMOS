@@ -79,17 +79,16 @@ Kit 路由、目录 Excel 和覆盖报告是独立的源数据检查产物，默
 
 ## 安装依赖
 
-首次使用先在仓库根目录创建虚拟环境：
+项目使用 [uv](https://docs.astral.sh/uv/) 创建虚拟环境并安装依赖。
+在仓库根目录执行：
 
 ```powershell
-python -m venv .venv
+uv venv
+uv pip install -r requirements.txt
 ```
 
-然后安装依赖：
-
-```powershell
-.venv\Scripts\python.exe -m pip install -r requirements.txt
-```
+`uv venv` 默认创建 `.venv`，后续命令继续使用
+`.venv\Scripts\python.exe`，确保索引构建、检索和评测使用同一个环境。
 
 ## 完整索引构建命令
 
