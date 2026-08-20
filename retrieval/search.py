@@ -30,6 +30,18 @@ def parse_args() -> argparse.Namespace:
         default="chunk",
         help="返回分片级或文档级结果",
     )
+    parser.add_argument(
+        "--document-score-mode",
+        choices=("max", "weighted", "max_plus_sum"),
+        default="max",
+        help="文档级评分使用最高分、加权分或最高分加分片总分平均",
+    )
+    parser.add_argument(
+        "--max-score-weight",
+        type=float,
+        default=0.5,
+        help="weighted 模式下最高分片权重，平均分权重为 1 减去该值",
+    )
     scope_group = parser.add_mutually_exclusive_group()
     scope_group.add_argument(
         "--scope",
@@ -58,19 +70,31 @@ def main() -> int:
         if args.granularity == "document"
         else engine.search
     )
-    analysis, results = search_method(
-        args.query,
-        top_k=args.top_k,
-        scope=args.scope,
-        path_prefix=args.path_prefix,
-        code_patterns=args.code_pattern,
-    )
+    search_kwargs = {
+        "top_k": args.top_k,
+        "scope": args.scope,
+        "path_prefix": args.path_prefix,
+        "code_patterns": args.code_pattern,
+    }
+    if args.granularity == "document":
+        search_kwargs.update(
+            {
+                "document_score_mode": args.document_score_mode,
+                "max_score_weight": args.max_score_weight,
+            }
+        )
+    analysis, results = search_method(args.query, **search_kwargs)
     print(
         json.dumps(
             {
                 "query_analysis": analysis.to_dict(),
                 "granularity": args.granularity,
                 "scope": args.scope or args.path_prefix or "all",
+                "document_score_mode": (
+                    args.document_score_mode
+                    if args.granularity == "document"
+                    else None
+                ),
                 "results": [result.to_dict() for result in results],
             },
             ensure_ascii=False,

@@ -42,6 +42,8 @@ def evaluate(
     sample_size: int = 20,
     seed: int = 2026,
     top_k: int = 10,
+    document_score_mode: str = "max",
+    max_score_weight: float = 0.5,
     index_dir: Path = DEFAULT_INDEX_DIR,
 ) -> dict[str, object]:
     dataframe = pd.read_excel(dataset_path)
@@ -68,6 +70,8 @@ def evaluate(
             query,
             top_k=top_k,
             path_prefix=DEFAULT_PATH_PREFIX,
+            document_score_mode=document_score_mode,
+            max_score_weight=max_score_weight,
         )
         rank = gold_rank(gold, results)
         ranks.append(rank)
@@ -92,7 +96,21 @@ def evaluate(
     summary = {
         "dataset": str(dataset_path),
         "granularity": "document",
-        "aggregation": "max_chunk_score",
+        "aggregation": (
+            "max_chunk_score"
+            if document_score_mode == "max"
+            else (
+                "weighted_max_and_all_chunk_average"
+                if document_score_mode == "weighted"
+                else "max_plus_chunk_score_sum_over_chunk_count_plus_one"
+            )
+        ),
+        "document_score_mode": document_score_mode,
+        "max_score_weight": (
+            max_score_weight
+            if document_score_mode == "weighted"
+            else None
+        ),
         "sample_size": total,
         "seed": seed,
         "top_k": top_k,
@@ -128,6 +146,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--sample-size", type=int, default=20)
     parser.add_argument("--seed", type=int, default=2026)
     parser.add_argument("--top-k", type=int, default=10)
+    parser.add_argument(
+        "--document-score-mode",
+        choices=("max", "weighted", "max_plus_sum"),
+        default="max",
+    )
+    parser.add_argument("--max-score-weight", type=float, default=0.5)
     parser.add_argument("--index-dir", type=Path, default=DEFAULT_INDEX_DIR)
     return parser.parse_args()
 
@@ -143,6 +167,8 @@ def main() -> int:
         sample_size=max(args.sample_size, 0),
         seed=args.seed,
         top_k=max(args.top_k, 0),
+        document_score_mode=args.document_score_mode,
+        max_score_weight=args.max_score_weight,
         index_dir=args.index_dir.resolve(),
     )
     print(json.dumps(report["summary"], ensure_ascii=False, indent=2))

@@ -14,6 +14,42 @@ BM25 检索入口，复用 `tokenizer/` 的 query 预处理和 `indexing/data/in
 7. 使用 Posting 中的加权 TF、`raw_length`、预计算 IDF 执行 BM25。
 8. 文档级检索通过分片到文档映射聚合同一 Markdown 文档的命中分片。
 
+## 文档评分模式
+
+文档级检索支持三种模式：
+
+- `max`：文档得分等于最高分片得分，保持原有行为。
+- `weighted`：最高分片得分与文档全部分片平均分加权；未命中分片按 `0` 分
+  计入平均值。
+- `max_plus_sum`：最高分片得分加上全部分片得分和，再除以分片数加 `1`。
+
+```text
+document_score =
+  max_score_weight × max_chunk_score
+  + (1 - max_score_weight) × all_chunk_average_score
+
+max_plus_sum_score =
+  (max_chunk_score + sum(all_chunk_scores))
+  / (document_chunk_count + 1)
+```
+
+第三种模式：
+
+```powershell
+.venv\Scripts\python.exe scripts/retrieval_engine/retrieval/search.py "如何使用UIAbility" `
+  --granularity document `
+  --document-score-mode max_plus_sum
+```
+
+默认最高分权重为 `0.5`：
+
+```powershell
+.venv\Scripts\python.exe scripts/retrieval_engine/retrieval/search.py "如何使用UIAbility" `
+  --granularity document `
+  --document-score-mode weighted `
+  --max-score-weight 0.5
+```
+
 BM25：
 
 ```text

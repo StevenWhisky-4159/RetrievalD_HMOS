@@ -48,13 +48,18 @@ scripts/retrieval_engine/
 │  └─ search.py
 └─ evaluate/
    ├─ dataset/
-   │  └─ dataset.xlsx
+   │  ├─ dataset.xlsx
+   │  └─ sample_400.xlsx
    ├─ evaluate_random.py
    ├─ evaluate_document.py
    ├─ evaluate_query_code.py
+   ├─ document_scoring_sample_400_analysis.md
    └─ data/
       ├─ random_20_results.json
       ├─ document_random_20_results.json
+      ├─ document_sample_400_max.json
+      ├─ document_sample_400_weighted.json
+      ├─ document_sample_400_max_plus_sum.json
       ├─ full_results.json
       ├─ document_full_results.json
       └─ document_vs_chunk_analysis.json
@@ -146,6 +151,27 @@ uv pip install -r requirements.txt
   --granularity document
 ```
 
+文档得分默认取最高分片。使用最高分片和全部分片平均分各占 `0.5` 的加权模式：
+
+```powershell
+.venv\Scripts\python.exe retrieval/search.py `
+  "如何使用UIAbility开发应用" `
+  --scope guides `
+  --granularity document `
+  --document-score-mode weighted `
+  --max-score-weight 0.5
+```
+
+使用“最高分片 + 全部分片得分和，再除以分片数 + 1”的模式：
+
+```powershell
+.venv\Scripts\python.exe retrieval/search.py `
+  "如何使用UIAbility开发应用" `
+  --scope guides `
+  --granularity document `
+  --document-score-mode max_plus_sum
+```
+
 使用代码正则动态增加命中分片的中文目录 term TF：
 
 ```powershell
@@ -162,6 +188,19 @@ uv pip install -r requirements.txt
 ## Evaluation 示例
 
 评测集位于 `evaluate/dataset/dataset.xlsx`，结果写入 `evaluate/data/`。
+
+### 文档评分 Sample 400
+
+`evaluate/dataset/sample_400.xlsx` 使用随机种子 2026 从 4057 条数据中抽取。
+三种模式的结果和分析位于：
+
+- `evaluate/data/document_sample_400_max.json`
+- `evaluate/data/document_sample_400_weighted.json`
+- `evaluate/data/document_sample_400_max_plus_sum.json`
+- [`evaluate/document_scoring_sample_400_analysis.md`](evaluate/document_scoring_sample_400_analysis.md)
+
+当前样本中 `weighted(0.5/0.5)` 指标最好，但包含平均分的模式会产生文档长度
+偏置；切换默认模式前建议运行全量数据或多个随机种子。
 
 ### Query + code patterns 样例
 

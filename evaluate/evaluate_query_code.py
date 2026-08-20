@@ -66,6 +66,8 @@ def evaluate(
     sheet_name: str = "Sheet1",
     top_k: int = 10,
     granularity: str = "document",
+    document_score_mode: str = "max",
+    max_score_weight: float = 0.5,
     scope: str | None = None,
     path_prefix: str | None = None,
     index_dir: Path = DEFAULT_INDEX_DIR,
@@ -100,13 +102,20 @@ def evaluate(
             row_number=excel_row,
         )
         try:
-            analysis, results = search_method(
-                query,
-                top_k=max(top_k, 0),
-                scope=scope,
-                path_prefix=path_prefix,
-                code_patterns=code_patterns,
-            )
+            search_kwargs = {
+                "top_k": max(top_k, 0),
+                "scope": scope,
+                "path_prefix": path_prefix,
+                "code_patterns": code_patterns,
+            }
+            if granularity == "document":
+                search_kwargs.update(
+                    {
+                        "document_score_mode": document_score_mode,
+                        "max_score_weight": max_score_weight,
+                    }
+                )
+            analysis, results = search_method(query, **search_kwargs)
         except ValueError as error:
             raise ValueError(f"Excel 第 {excel_row} 行检索失败: {error}") from error
 
@@ -132,6 +141,15 @@ def evaluate(
         "rows": len(cases),
         "top_k": max(top_k, 0),
         "granularity": granularity,
+        "document_score_mode": (
+            document_score_mode if granularity == "document" else None
+        ),
+        "max_score_weight": (
+            max_score_weight
+            if granularity == "document"
+            and document_score_mode == "weighted"
+            else None
+        ),
         "scope": scope or path_prefix or "all",
         "rows_with_code_matches": sum(
             case["query_analysis"]["代码pattern命中分片数"] > 0
@@ -168,6 +186,12 @@ def parse_args() -> argparse.Namespace:
         default="document",
         help="检索粒度，默认按 Markdown 文档聚合",
     )
+    parser.add_argument(
+        "--document-score-mode",
+        choices=("max", "weighted", "max_plus_sum"),
+        default="max",
+    )
+    parser.add_argument("--max-score-weight", type=float, default=0.5)
     parser.add_argument("--index-dir", type=Path, default=DEFAULT_INDEX_DIR)
     scope_group = parser.add_mutually_exclusive_group()
     scope_group.add_argument(
@@ -192,6 +216,8 @@ def main() -> int:
         sheet_name=args.sheet,
         top_k=args.top_k,
         granularity=args.granularity,
+        document_score_mode=args.document_score_mode,
+        max_score_weight=args.max_score_weight,
         scope=args.scope,
         path_prefix=args.path_prefix,
         index_dir=args.index_dir.resolve(),

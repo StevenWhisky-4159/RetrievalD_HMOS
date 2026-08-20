@@ -66,19 +66,29 @@ class SearchResult:
 class DocumentSearchResult:
     rank: int
     score: float
+    max_chunk_score: float
+    average_chunk_score: float
     path: str
     best_chunk_id: int
     best_chunk_titles: tuple[str, ...]
     matched_chunk_count: int
+    document_chunk_count: int
+    score_mode: str
+    max_score_weight: float | None
 
     def to_dict(self) -> dict[str, object]:
         return {
             "rank": self.rank,
             "score": round(self.score, 6),
+            "max_chunk_score": round(self.max_chunk_score, 6),
+            "average_chunk_score": round(self.average_chunk_score, 6),
             "路径": self.path,
             "best_chunk_id": self.best_chunk_id,
             "best_chunk_titles": list(self.best_chunk_titles),
             "matched_chunk_count": self.matched_chunk_count,
+            "document_chunk_count": self.document_chunk_count,
+            "score_mode": self.score_mode,
+            "max_score_weight": self.max_score_weight,
         }
 
 
@@ -365,8 +375,16 @@ class BM25Engine:
         scope: str | None = None,
         path_prefix: str | None = None,
         code_patterns: Sequence[str] = (),
+        document_score_mode: str = "max",
+        max_score_weight: float = 0.5,
     ) -> tuple[QueryAnalysis, list[DocumentSearchResult]]:
-        """通过分片映射聚合 Markdown 文档，文档分数取最高分片分数。"""
+        """通过分片映射聚合文档，支持最高分片或最高分与平均分加权。"""
+        if document_score_mode not in {"max", "weighted", "max_plus_sum"}:
+            raise ValueError(
+                f"不支持的 document_score_mode: {document_score_mode}"
+            )
+        if not 0.0 <= max_score_weight <= 1.0:
+            raise ValueError("max_score_weight 必须在 0 到 1 之间")
         candidate_chunk_ids = self.board_mapper.resolve(
             scope=scope,
             path_prefix=path_prefix,
@@ -376,15 +394,16 @@ class BM25Engine:
             candidate_chunk_ids=candidate_chunk_ids,
             code_patterns=code_patterns,
         )
-        # document_id -> [best_score, best_chunk_id, matched_chunk_count]
+        # document_id -> [best_score, best_chunk_id, matched_count, score_sum]
         aggregated: dict[int, list[int | float]] = {}
         for chunk_id, score in chunk_scores.items():
             document_id = self.chunk_document_mapper.document_id_for_chunk(chunk_id)
             current = aggregated.get(document_id)
             if current is None:
-                aggregated[document_id] = [score, chunk_id, 1]
+                aggregated[document_id] = [score, chunk_id, 1, score]
             else:
                 current[2] = int(current[2]) + 1
+                current[3] = float(current[3]) + score
                 if score > float(current[0]) or (
                     score == float(current[0])
                     and chunk_id < int(current[1])
@@ -392,16 +411,56 @@ class BM25Engine:
                     current[0] = score
                     current[1] = chunk_id
 
+        scored_documents: list[
+            tuple[int, float, float, int, list[int | float]]
+        ] = []
+        for document_id, values in aggregated.items():
+            document_chunk_count = len(
+                self.chunk_document_mapper.chunks_for_document(document_id)
+            )
+            average_score = (
+                float(values[3]) / document_chunk_count
+                if document_chunk_count
+                else 0.0
+            )
+            max_score = float(values[0])
+            if document_score_mode == "max":
+                final_score = max_score
+            elif document_score_mode == "weighted":
+                final_score = (
+                    max_score_weight * max_score
+                    + (1.0 - max_score_weight) * average_score
+                )
+            else:
+                final_score = (
+                    max_score + float(values[3])
+                ) / (document_chunk_count + 1)
+            scored_documents.append(
+                (
+                    document_id,
+                    final_score,
+                    average_score,
+                    document_chunk_count,
+                    values,
+                )
+            )
+
         top_documents = heapq.nlargest(
             max(top_k, 0),
-            aggregated.items(),
+            scored_documents,
             key=lambda item: (
-                float(item[1][0]),
+                item[1],
                 self.chunk_document_mapper.path_for_document(item[0]),
             ),
         )
         results: list[DocumentSearchResult] = []
-        for rank, (document_id, values) in enumerate(top_documents, start=1):
+        for rank, (
+            document_id,
+            final_score,
+            average_score,
+            document_chunk_count,
+            values,
+        ) in enumerate(top_documents, start=1):
             best_score = float(values[0])
             best_chunk_id = int(values[1])
             matched_chunk_count = int(values[2])
@@ -410,11 +469,24 @@ class BM25Engine:
             results.append(
                 DocumentSearchResult(
                     rank=rank,
-                    score=best_score,
+                    score=final_score,
+                    max_chunk_score=best_score,
+                    average_chunk_score=average_score,
                     path=path,
                     best_chunk_id=best_chunk_id,
                     best_chunk_titles=tuple(best_chunk.get("标题", [])),
                     matched_chunk_count=matched_chunk_count,
+                    document_chunk_count=document_chunk_count,
+                    score_mode=document_score_mode,
+                    max_score_weight=(
+                        max_score_weight
+                        if document_score_mode == "weighted"
+                        else (
+                            1.0
+                            if document_score_mode == "max"
+                            else None
+                        )
+                    ),
                 )
             )
         return analysis, results
