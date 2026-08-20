@@ -10,7 +10,7 @@
 - `build_kit_excel.py`：由 `kit-routing.md` 生成 Kit 路由表。
 - `build_folder_excel.py`：由实际目录生成完整目录对照表。
 - `check_kit_coverage.py`：检查路由与文档目录覆盖情况。
-- `build_markdown_corpus.py`：将 Markdown 按章节转换为索引语料。
+- `build_markdown_corpus.py`：将 Markdown 按章节转换为一一对应的文本语料和代码语料。
 - `requirements.txt`：源数据解析与 Excel 写出的运行依赖。
 - `data/`：保存覆盖报告和 Excel 等预处理产物；索引语料除外。
 
@@ -29,3 +29,10 @@
 - `data/folder_mapping.xlsx`
 - `data/kit_coverage_report.json`
 - `../indexing/data/markdown_paragraph_corpus.jsonl`
+- `../indexing/data/markdown_code_corpus.jsonl`
+
+文本语料使用连续的 `chunk_id`，代码语料使用独立的 `code_chunk_id`，并通过
+可为空的 `text_chunk_id` 关联同章节文本分片。`block_code` 保存
+fenced/indented 代码及其 `style`、`info`，`inline_code` 保存行内代码。
+块级代码不会写入文本正文，也不会参与文本分词与索引；行内代码保留在正文中
+参与普通分词，同时在代码语料中保留原始内容。纯块级代码章节只存在于代码语料中。

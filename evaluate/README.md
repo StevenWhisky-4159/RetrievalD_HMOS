@@ -1,11 +1,32 @@
 # Evaluate
 
-本目录提供仅针对 `harmonyos-guides/` 文档的离线检索评测。默认读取
-`dataset/dataset.xlsx`，并使用 `../indexing/data/index/` 中已有索引。评测数据集与
-结果报告分开存放；结果仍写入 `data/`。
+本目录提供离线检索评测，使用 `../indexing/data/index/` 中已有索引。评测数据集与
+结果报告分开存放；结果写入 `data/`。
 
 - `evaluate_random.py`：分片级排名。
 - `evaluate_document.py`：按 Markdown 路径聚合，文档得分取最高分片得分。
+- `evaluate_query_code.py`：读取 `user_prompt + markers`，批量执行 query +
+  code patterns 检索。
+
+## Query + code patterns
+
+默认读取 `scripts/code_tests/query_code_example.xlsx` 的 `Sheet1`。`markers`
+必须是由正则字符串组成的 JSON 数组：
+
+```powershell
+.venv\Scripts\python.exe scripts/retrieval_engine/evaluate/evaluate_query_code.py `
+  --top-k 10
+```
+
+默认执行全量文档级检索，结果写入 `data/query_code_example_results.json`。
+检索范围参数为：
+
+- `--scope all`：全量检索，也是省略参数时的默认行为。
+- `--scope basic-skills`（或 `basic-skill`）：只检索 basic skill。
+- `--scope guides`：只检索 guides。
+
+传入 `--granularity chunk` 可改为分片级结果。该样例没有金标路径，因此报告
+记录检索结果和代码命中统计，不计算 Hit 或 MRR。
 
 ## 随机 20 条评测
 

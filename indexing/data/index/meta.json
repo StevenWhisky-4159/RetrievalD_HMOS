@@ -1,5 +1,20 @@
 {
   "documents": 264947,
+  "source_documents": 20701,
+  "boards": {
+    "best-practices": 3993,
+    "harmonyos-faqs": 1652,
+    "harmonyos-guides": 20314,
+    "harmonyos-references": 51746,
+    "harmonyos-releases": 2234,
+    "harmonyos-sdk-basic-skill": 185008
+  },
+  "code_pattern_matching": {
+    "source": "markdown_code_corpus.jsonl",
+    "chunks": 34390,
+    "blocks": 50881,
+    "inline_codes": 6337
+  },
   "terms": 261507,
   "postings": 19437172,
   "body_exact_term_matches": 337724,
@@ -18,7 +33,8 @@
     "documents": "documents.jsonl.zst",
     "doc_lengths": "doc_lengths.pkl.zst",
     "term_stats": "term_stats.pkl.zst",
-    "term_stats_value": "(df, idf)"
+    "term_stats_value": "(df, idf)",
+    "chunk_mappings": "chunk_mappings.pkl.zst"
   },
   "posting_format": "array('I') interleaved [doc_id, weighted_tf, ...]",
   "weights": {
@@ -29,5 +45,5 @@
     "body_exact_term_occurrence": 1,
     "preprocessed_token": 1
   },
-  "elapsed_seconds": 25.73
+  "elapsed_seconds": 30.69
 }

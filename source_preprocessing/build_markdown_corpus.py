@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-使用 mistune AST 将 Markdown 按标题章节转换为纯文本 JSONL 语料。
+使用 mistune AST 将 Markdown 按标题章节转换为纯文本和代码 JSONL 语料。
 
 处理规则：
 - 标题保存完整层级列表，并移除 **、`code` 等 Markdown 标记。
 - 正文转换为纯文本，保留段落、列表和表格的文本结构。
-- 删除 fenced/indented 代码块、图片、HTML；链接仅保留可见文本，不保留 URL。
+- fenced/indented 代码块不进入正文，改为写入独立代码语料。
+- 行内代码保留在正文中参与普通分词，同时原样写入独立代码语料。
+- 删除图片和 HTML；链接仅保留可见文本，不保留 URL。
 - 文件开头由三条或更多横线包围的 metadata/frontmatter 会先移除，
   不会被 mistune 当作 Setext 标题。
 - 首个标题前的正文使用 frontmatter.title、首个标题或文件名作为标题。
@@ -42,6 +44,7 @@ except ImportError:
 _REPO = _HERE.parents[2]
 DEFAULT_REFERENCES = _REPO / "harmonyos-sdk-coding-basic-skill" / "references"
 DEFAULT_OUTPUT = _HERE.parent / "indexing" / "data" / "markdown_paragraph_corpus.jsonl"
+DEFAULT_CODE_OUTPUT = _HERE.parent / "indexing" / "data" / "markdown_code_corpus.jsonl"
 
 EXCLUDE_FILES = {"INDEX.md", "kit-routing.md", "feature-routing.md"}
 MARKDOWN_SUFFIXES = {".md", ".markdown"}
@@ -69,20 +72,53 @@ SKIP_TOKEN_TYPES = {
 
 
 @dataclass(frozen=True)
+class CodeBlock:
+    code: str
+    style: str
+    info: str
+
+    def to_dict(self) -> dict[str, str]:
+        return {
+            "code": self.code,
+            "style": self.style,
+            "info": self.info,
+        }
+
+
+@dataclass(frozen=True)
 class SectionChunk:
     directory_chinese: str
     directory_english: str
     path: str
     titles: tuple[str, ...]
     original: str
+    block_code: tuple[CodeBlock, ...]
+    inline_code: tuple[str, ...]
 
-    def to_dict(self) -> dict[str, str | list[str]]:
+    def to_dict(self, chunk_id: int) -> dict[str, int | str | list[str]]:
         return {
+            "chunk_id": chunk_id,
             "所属子目录中文": self.directory_chinese,
             "所属子目录英文": self.directory_english,
             "路径": self.path,
             "标题": list(self.titles),
             "原文": self.original,
+        }
+
+    def code_to_dict(
+        self,
+        code_chunk_id: int,
+        text_chunk_id: int | None,
+    ) -> dict[str, int | None | str | list[str] | list[dict[str, str]]]:
+        return {
+            "code_chunk_id": code_chunk_id,
+            "text_chunk_id": text_chunk_id,
+            "所属子目录中文": self.directory_chinese,
+            "所属子目录英文": self.directory_english,
+            "路径": self.path,
+            "标题": list(self.titles),
+            "block_code": [block.to_dict() for block in self.block_code],
+            "inline_code": list(self.inline_code),
         }
 
 
@@ -239,6 +275,39 @@ def block_text(token: dict) -> str:
     return _clean_lines(token_text(token))
 
 
+def collect_code(
+    token: dict,
+    block_codes: list[CodeBlock],
+    inline_codes: list[str],
+) -> None:
+    """递归收集块级代码和行内代码，并保留块级代码元数据。"""
+    token_type = token.get("type", "")
+    if token_type == "block_code":
+        raw = token.get("raw", "")
+        attrs = token.get("attrs", {})
+        block_codes.append(
+            CodeBlock(
+                code=str(raw),
+                style=str(token.get("style", "")),
+                info=(
+                    str(attrs.get("info", ""))
+                    if isinstance(attrs, dict)
+                    else ""
+                ),
+            )
+        )
+        return
+    if token_type == "codespan":
+        inline_codes.append(str(token.get("raw", "")))
+        return
+
+    children = token.get("children")
+    if isinstance(children, list):
+        for child in children:
+            if isinstance(child, dict):
+                collect_code(child, block_codes, inline_codes)
+
+
 def clean_inline_markdown(value: str) -> str:
     """使用同一 mistune 解析器清理 frontmatter 中可能存在的 Markdown 样式。"""
     ast = MARKDOWN(f"# {value}")
@@ -270,18 +339,34 @@ def document_title(markdown_path: Path, metadata: dict[str, str], ast: list[dict
 def split_markdown_sections(
     ast: list[dict],
     fallback_title: str,
-) -> Iterator[tuple[tuple[str, ...], str]]:
-    """按 AST heading 边界返回 (标题层级, 纯文本章节正文)。"""
+) -> Iterator[
+    tuple[tuple[str, ...], str, tuple[CodeBlock, ...], tuple[str, ...]]
+]:
+    """按 AST heading 边界返回标题、正文、块级代码和行内代码。"""
     current_titles = (fallback_title,)
     heading_stack: dict[int, str] = {}
     blocks: list[str] = []
+    block_codes: list[CodeBlock] = []
+    inline_codes: list[str] = []
 
-    def flush() -> tuple[tuple[str, ...], str] | None:
+    def flush() -> (
+        tuple[tuple[str, ...], str, tuple[CodeBlock, ...], tuple[str, ...]]
+        | None
+    ):
         original = _clean_lines("\n\n".join(blocks))
         blocks.clear()
-        if not original:
+        current_block_codes = tuple(block_codes)
+        current_inline_codes = tuple(inline_codes)
+        block_codes.clear()
+        inline_codes.clear()
+        if not original and not current_block_codes and not current_inline_codes:
             return None
-        return current_titles, original
+        return (
+            current_titles,
+            original,
+            current_block_codes,
+            current_inline_codes,
+        )
 
     for token in ast:
         if token.get("type") == "heading":
@@ -300,8 +385,10 @@ def split_markdown_sections(
                     heading_stack[active_level]
                     for active_level in sorted(heading_stack)
                 )
+            collect_code(token, block_codes, inline_codes)
             continue
 
+        collect_code(token, block_codes, inline_codes)
         text = block_text(token)
         if text:
             blocks.append(text)
@@ -354,50 +441,89 @@ def iter_file_chunks(markdown_path: Path, references: Path) -> Iterator[SectionC
     directory_english, directory_chinese = parse_folder_name(markdown_path.parent.name)
     relative_path = markdown_path.relative_to(references).as_posix()
 
-    for headings, original in split_markdown_sections(ast, title):
+    for headings, original, block_code, inline_code in split_markdown_sections(
+        ast,
+        title,
+    ):
         yield SectionChunk(
             directory_chinese=directory_chinese,
             directory_english=directory_english,
             path=relative_path,
             titles=headings or (title,),
             original=original,
+            block_code=block_code,
+            inline_code=inline_code,
         )
 
 
 def write_corpus(
     references: Path,
     output_path: Path,
+    code_output_path: Path | None = None,
     *,
     sub_skill_only: bool = False,
 ) -> tuple[int, int, int]:
+    if code_output_path is None:
+        code_output_path = output_path.with_name(DEFAULT_CODE_OUTPUT.name)
     output_path.parent.mkdir(parents=True, exist_ok=True)
+    code_output_path.parent.mkdir(parents=True, exist_ok=True)
     temporary_path = output_path.with_suffix(output_path.suffix + ".tmp")
+    code_temporary_path = code_output_path.with_suffix(code_output_path.suffix + ".tmp")
     file_count = 0
     files_with_chunks = 0
     chunk_count = 0
+    code_chunk_count = 0
 
-    with temporary_path.open("w", encoding="utf-8", newline="\n") as output:
+    with (
+        temporary_path.open("w", encoding="utf-8", newline="\n") as output,
+        code_temporary_path.open("w", encoding="utf-8", newline="\n") as code_output,
+    ):
         for markdown_path in iter_markdown_files(references, sub_skill_only=sub_skill_only):
             file_count += 1
             current_file_chunks = 0
             for chunk in iter_file_chunks(markdown_path, references):
-                output.write(json.dumps(chunk.to_dict(), ensure_ascii=False, separators=(",", ":")))
-                output.write("\n")
-                chunk_count += 1
-                current_file_chunks += 1
+                text_chunk_id: int | None = None
+                if chunk.original:
+                    text_chunk_id = chunk_count
+                    output.write(
+                        json.dumps(
+                            chunk.to_dict(chunk_count),
+                            ensure_ascii=False,
+                            separators=(",", ":"),
+                        )
+                    )
+                    output.write("\n")
+                    chunk_count += 1
+                    current_file_chunks += 1
+                code_output.write(
+                    json.dumps(
+                        chunk.code_to_dict(code_chunk_count, text_chunk_id),
+                        ensure_ascii=False,
+                        separators=(",", ":"),
+                    )
+                )
+                code_output.write("\n")
+                code_chunk_count += 1
             if current_file_chunks:
                 files_with_chunks += 1
             if file_count % 1000 == 0:
                 print(f"[info] Markdown {file_count}，分片 {chunk_count}", flush=True)
 
     temporary_path.replace(output_path)
+    code_temporary_path.replace(code_output_path)
     return file_count, files_with_chunks, chunk_count
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="使用 mistune 构建纯文本章节 JSONL 语料")
+    parser = argparse.ArgumentParser(description="使用 mistune 构建纯文本与代码章节 JSONL 语料")
     parser.add_argument("--references", type=Path, default=DEFAULT_REFERENCES, help="references 根目录")
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT, help="输出 JSONL 路径")
+    parser.add_argument(
+        "--code-output",
+        type=Path,
+        default=DEFAULT_CODE_OUTPUT,
+        help="代码 JSONL 输出路径",
+    )
     parser.add_argument(
         "--basic-skill-sub-skill-only",
         action="store_true",
@@ -414,6 +540,7 @@ def main() -> int:
     args = parse_args()
     references = _resolve_path(args.references)
     output_path = _resolve_path(args.output)
+    code_output_path = _resolve_path(args.code_output)
     if not references.is_dir():
         print(f"[error] references 不存在: {references}", file=sys.stderr)
         return 1
@@ -422,12 +549,17 @@ def main() -> int:
     files, files_with_chunks, chunks = write_corpus(
         references,
         output_path,
+        code_output_path,
         sub_skill_only=args.basic_skill_sub_skill_only,
     )
     print(f"[ok] Markdown 文件: {files}")
     print(f"[ok] 有效文件: {files_with_chunks}")
     print(f"[ok] 章节分片: {chunks}")
     print(f"[ok] JSONL: {output_path} ({output_path.stat().st_size / 1024 / 1024:.2f} MB)")
+    print(
+        f"[ok] 代码 JSONL: {code_output_path} "
+        f"({code_output_path.stat().st_size / 1024 / 1024:.2f} MB)"
+    )
     print(f"[ok] 耗时: {time.time() - started:.1f}s")
     return 0
 

@@ -25,9 +25,27 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--top-k", type=int, default=10)
     parser.add_argument("--index-dir", type=Path, default=DEFAULT_INDEX_DIR)
     parser.add_argument(
+        "--granularity",
+        choices=("chunk", "document"),
+        default="chunk",
+        help="返回分片级或文档级结果",
+    )
+    scope_group = parser.add_mutually_exclusive_group()
+    scope_group.add_argument(
+        "--scope",
+        default=None,
+        help="检索板块，如 guides、basic-skills 或 all",
+    )
+    scope_group.add_argument(
         "--path-prefix",
         default=None,
-        help="仅返回指定路径前缀下的文档，如 harmonyos-guides/",
+        help="兼容入口：仅检索指定路径前缀，如 harmonyos-guides/",
+    )
+    parser.add_argument(
+        "--code-pattern",
+        action="append",
+        default=[],
+        help="块级代码正则表达式，可重复传入",
     )
     return parser.parse_args()
 
@@ -35,15 +53,24 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     engine = BM25Engine(args.index_dir)
-    analysis, results = engine.search(
+    search_method = (
+        engine.search_documents
+        if args.granularity == "document"
+        else engine.search
+    )
+    analysis, results = search_method(
         args.query,
         top_k=args.top_k,
+        scope=args.scope,
         path_prefix=args.path_prefix,
+        code_patterns=args.code_pattern,
     )
     print(
         json.dumps(
             {
                 "query_analysis": analysis.to_dict(),
+                "granularity": args.granularity,
+                "scope": args.scope or args.path_prefix or "all",
                 "results": [result.to_dict() for result in results],
             },
             ensure_ascii=False,

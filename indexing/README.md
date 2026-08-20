@@ -13,12 +13,14 @@ indexing/
 │  └─ compare_article_exact_matching.py
 └─ data/
    ├─ markdown_paragraph_corpus.jsonl
+   ├─ markdown_code_corpus.jsonl
    ├─ terms_vocab.json
    ├─ chunk_term_frequencies.jsonl
    └─ index/
       ├─ inverted.pkl.zst
       ├─ doc_lengths.pkl.zst
       ├─ term_stats.pkl.zst
+      ├─ chunk_mappings.pkl.zst
       ├─ documents.jsonl
       ├─ documents.jsonl.zst
       ├─ exact_terms.json
@@ -37,6 +39,11 @@ indexing/
 ```
 
 索引和检索统一复用 `../tokenizer/text_preprocessor.py`。
+
+文本语料使用 `chunk_id`，代码语料使用独立的 `code_chunk_id` 和可为空的
+`text_chunk_id`。当前 BM25 文本索引只消费前者。块级代码不会进入文本分词与
+索引；行内代码保留原版行为，作为普通正文分词，同时也保存在代码语料中供代码
+检索模块使用。
 
 ## 精确 term 权重
 
@@ -58,6 +65,8 @@ indexing/
   - `weighted`：应用权重后的 term 总数。
 - `term_stats.pkl.zst`：`term -> (df, idf)`。
 - `documents.jsonl.zst`：在线检索优先读取的压缩分片元数据。
+- `chunk_mappings.pkl.zst`：板块到分片、分片到文档、文档到分片，以及用于动态
+  正则匹配的块级/行内代码单元和中文目录 term 映射。
 - `meta.json`：保存 `N`、平均原始/加权长度、`k1`、`b` 和 IDF 公式。
 
 默认 BM25 使用 Posting 中的加权 TF，但长度归一化使用 `raw_length`：

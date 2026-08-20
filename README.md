@@ -30,17 +30,20 @@ scripts/retrieval_engine/
 │  ├─ build_inverted_index.py
 │  └─ data/
 │     ├─ markdown_paragraph_corpus.jsonl
+│     ├─ markdown_code_corpus.jsonl
 │     ├─ chunk_term_frequencies.jsonl
 │     ├─ terms_vocab.json
 │     └─ index/
 │        ├─ inverted.pkl.zst
 │        ├─ doc_lengths.pkl.zst
 │        ├─ term_stats.pkl.zst
+│        ├─ chunk_mappings.pkl.zst
 │        ├─ documents.jsonl.zst
 │        ├─ exact_terms.json
 │        └─ meta.json
 ├─ retrieval/
 │  ├─ exact_query_matcher.py
+│  ├─ mappers.py
 │  ├─ bm25_engine.py
 │  └─ search.py
 └─ evaluate/
@@ -48,6 +51,7 @@ scripts/retrieval_engine/
    │  └─ dataset.xlsx
    ├─ evaluate_random.py
    ├─ evaluate_document.py
+   ├─ evaluate_query_code.py
    └─ data/
       ├─ random_20_results.json
       ├─ document_random_20_results.json
@@ -69,6 +73,7 @@ scripts/retrieval_engine/
 references Markdown
   → source_preprocessing/build_markdown_corpus.py
   → indexing/data/markdown_paragraph_corpus.jsonl
+    + indexing/data/markdown_code_corpus.jsonl（独立代码分片）
   → indexing/build_chunk_frequencies.py
   → indexing/data/chunk_term_frequencies.jsonl + terms_vocab.json
   → indexing/build_inverted_index.py
@@ -76,6 +81,9 @@ references Markdown
 ```
 
 Kit 路由、目录 Excel 和覆盖报告是独立的源数据检查产物，默认写入 `source_preprocessing/data/`。
+代码语料通过可为空的 `text_chunk_id` 关联文本分片。块级代码不进入文本分词与
+BM25 索引；行内代码保留在正文中参与普通分词，同时也写入代码语料供独立代码
+检索使用。
 
 ## 安装依赖
 
@@ -112,26 +120,61 @@ uv pip install -r requirements.txt
 
 仓库已包含运行检索所需的压缩索引，无需先重新构建语料。
 
-仅检索 `harmonyos-guides/`：
+仅检索 guides 板块：
 
 ```powershell
 .venv\Scripts\python.exe retrieval/search.py `
   "如何使用UIAbility开发应用" `
   --top-k 10 `
-  --path-prefix "harmonyos-guides/"
+  --scope guides
 ```
 
 输出包含 query 分析、第一类完整词、预处理 token、BM25 分数、路径和命中标题。
 
-如需检索索引中的全部文档，省略 `--path-prefix`：
+如需检索索引中的全部文档，省略 `--scope` 和 `--path-prefix`：
 
 ```powershell
 .venv\Scripts\python.exe retrieval/search.py "如何使用Network Kit发起HTTP请求"
 ```
 
+返回按 Markdown 路径聚合的文档级结果：
+
+```powershell
+.venv\Scripts\python.exe retrieval/search.py `
+  "如何使用UIAbility开发应用" `
+  --scope guides `
+  --granularity document
+```
+
+使用代码正则动态增加命中分片的中文目录 term TF：
+
+```powershell
+.venv\Scripts\python.exe retrieval/search.py `
+  "基于RAG框架实现邮件智能问答" `
+  --scope best-practices `
+  --code-pattern "createRagSession"
+```
+
+`--code-pattern` 可以重复传入，并匹配块级和行内代码。每个 pattern 按命中的
+代码单元数量累加 TF；query 不含中文目录 term 时，只为代码实际命中的分片
+注入该 term，TF 等于命中数。预计算 IDF 和 `raw_length` 保持不变。
+
 ## Evaluation 示例
 
 评测集位于 `evaluate/dataset/dataset.xlsx`，结果写入 `evaluate/data/`。
+
+### Query + code patterns 样例
+
+读取 `scripts/code_tests/query_code_example.xlsx`：
+
+```powershell
+.venv\Scripts\python.exe evaluate/evaluate_query_code.py --top-k 10
+```
+
+默认按 Markdown 文档聚合，结果写入
+`evaluate/data/query_code_example_results.json`。传入
+`--granularity chunk` 可切换为分片级检索。检索范围通过
+`--scope all|basic-skills|guides` 选择，默认 `all`。
 
 ### 分片级随机 20 条
 

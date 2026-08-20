@@ -75,6 +75,11 @@ def build_chunk_frequencies(
     temporary_path = output_path.with_suffix(output_path.suffix + ".tmp")
     with temporary_path.open("w", encoding="utf-8", newline="\n") as output:
         for chunk_id, row in enumerate(iter_jsonl(corpus_path)):
+            source_chunk_id = row.get("chunk_id", chunk_id)
+            if source_chunk_id != chunk_id:
+                raise ValueError(
+                    f"语料 chunk_id 不连续: 期望 {chunk_id}，实际 {source_chunk_id}"
+                )
             records += 1
             frequencies = Counter(preprocessor.tokenize(compose_chunk_text(row)))
             vocabulary.update(frequencies)

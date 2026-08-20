@@ -9,7 +9,8 @@ import json
 import pickle
 import sys
 from collections import Counter, defaultdict
-from dataclasses import dataclass
+from collections.abc import Sequence
+from dataclasses import dataclass, replace
 from pathlib import Path
 
 import zstandard as zstd
@@ -20,8 +21,13 @@ if str(_RETRIEVAL_ENGINE) not in sys.path:
     sys.path.insert(0, str(_RETRIEVAL_ENGINE))
 
 from retrieval.exact_query_matcher import (  # noqa: E402
-    MIN_QUERY_EXACT_TERM_LENGTH,
     ExactQueryMatcher,
+)
+from retrieval.mappers import (  # noqa: E402
+    BoardMapper,
+    ChunkDocumentMapper,
+    CodePatternMatcher,
+    normalize_path,
 )
 from tokenizer.text_preprocessor import TextPreprocessor  # noqa: E402
 
@@ -82,6 +88,10 @@ class QueryAnalysis:
     exact_terms: Counter[str]
     preprocessed_tokens: tuple[str, ...]
     combined_terms: Counter[str]
+    code_patterns: tuple[str, ...] = ()
+    code_pattern_matched_chunks: int = 0
+    code_pattern_tf_increments: int = 0
+    code_pattern_terms: tuple[str, ...] = ()
 
     def to_dict(self) -> dict[str, object]:
         return {
@@ -89,6 +99,10 @@ class QueryAnalysis:
             "第一类完整词": dict(sorted(self.exact_terms.items())),
             "预处理tokens": list(self.preprocessed_tokens),
             "BM25查询词频": dict(sorted(self.combined_terms.items())),
+            "代码patterns": list(self.code_patterns),
+            "代码pattern命中分片数": self.code_pattern_matched_chunks,
+            "代码pattern词频增量": self.code_pattern_tf_increments,
+            "代码pattern中文terms": list(self.code_pattern_terms),
         }
 
 
@@ -107,6 +121,11 @@ class BM25Engine:
         self.exact_matcher = ExactQueryMatcher(exact_terms)
         self.preprocessor = TextPreprocessor()
         self.documents = self._load_documents()
+        (
+            self.board_mapper,
+            self.chunk_document_mapper,
+            self.code_pattern_matcher,
+        ) = self._load_mappers()
 
         bm25 = self.meta["bm25"]
         self.k1 = float(bm25["k1"])
@@ -141,6 +160,62 @@ class BM25Engine:
             )
         return documents
 
+    def _load_mappers(
+        self,
+    ) -> tuple[BoardMapper, ChunkDocumentMapper, CodePatternMatcher]:
+        mappings_path = self.index_dir / "chunk_mappings.pkl.zst"
+        if mappings_path.is_file():
+            mappings = load_zstd_pickle(mappings_path)
+        else:
+            mappings = self._derive_mappings()
+
+        chunk_to_document = mappings["chunk_to_document"]
+        if len(chunk_to_document) != len(self.documents):
+            raise ValueError(
+                "chunk_to_document 数量不一致: "
+                f"{len(chunk_to_document)} != {len(self.documents)}"
+            )
+        board_mapper = BoardMapper(
+            mappings["board_chunks"],
+            [str(document.get("路径", "")) for document in self.documents],
+        )
+        chunk_document_mapper = ChunkDocumentMapper(
+            chunk_to_document,
+            mappings["document_paths"],
+            mappings["document_to_chunks"],
+        )
+        code_pattern_matcher = CodePatternMatcher(
+            mappings.get("code_units", mappings.get("code_blocks", {}))
+        )
+        return board_mapper, chunk_document_mapper, code_pattern_matcher
+
+    def _derive_mappings(self) -> dict[str, object]:
+        board_chunks: defaultdict[str, list[int]] = defaultdict(list)
+        chunk_to_document: list[int] = []
+        document_id_by_path: dict[str, int] = {}
+        document_paths: list[str] = []
+        document_to_chunks: list[list[int]] = []
+        for chunk_id, document in enumerate(self.documents):
+            path = str(document.get("路径", ""))
+            normalized = normalize_path(path)
+            board, _separator, _remainder = normalized.partition("/")
+            if board:
+                board_chunks[board].append(chunk_id)
+            document_id = document_id_by_path.get(path)
+            if document_id is None:
+                document_id = len(document_paths)
+                document_id_by_path[path] = document_id
+                document_paths.append(path)
+                document_to_chunks.append([])
+            chunk_to_document.append(document_id)
+            document_to_chunks[document_id].append(chunk_id)
+        return {
+            "board_chunks": dict(board_chunks),
+            "chunk_to_document": chunk_to_document,
+            "document_paths": document_paths,
+            "document_to_chunks": document_to_chunks,
+        }
+
     def analyze_query(self, query: str) -> QueryAnalysis:
         exact_terms = self.exact_matcher.match(query)
         preprocessed_tokens = tuple(self.preprocessor.tokenize(query))
@@ -156,8 +231,26 @@ class BM25Engine:
     def score_chunks(
         self,
         query: str,
+        *,
+        candidate_chunk_ids: frozenset[int] | None = None,
+        code_patterns: Sequence[str] = (),
     ) -> tuple[QueryAnalysis, dict[int, float]]:
         analysis = self.analyze_query(query)
+        code_matches = self.code_pattern_matcher.match(
+            code_patterns,
+            candidate_chunk_ids=candidate_chunk_ids,
+        )
+        analysis = replace(
+            analysis,
+            code_patterns=tuple(code_patterns),
+            code_pattern_matched_chunks=len(code_matches),
+            code_pattern_tf_increments=sum(
+                increment for _term, increment in code_matches.values()
+            ),
+            code_pattern_terms=tuple(
+                sorted({term for term, _increment in code_matches.values()})
+            ),
+        )
         scores: defaultdict[int, float] = defaultdict(float)
 
         for term, query_frequency in analysis.combined_terms.items():
@@ -168,51 +261,82 @@ class BM25Engine:
             _df, idf = stats
             for index in range(0, len(posting), 2):
                 doc_id = posting[index]
+                if (
+                    candidate_chunk_ids is not None
+                    and doc_id not in candidate_chunk_ids
+                ):
+                    continue
                 term_frequency = posting[index + 1]
-                document_length = self.raw_lengths[doc_id]
-                normalization = self.k1 * (
-                    1.0
-                    - self.b
-                    + self.b * document_length / self.avgdl
+                code_match = code_matches.get(doc_id)
+                if code_match is not None and code_match[0] == term:
+                    term_frequency += code_match[1]
+                scores[doc_id] += self._bm25_term_score(
+                    doc_id,
+                    term_frequency,
+                    float(idf),
+                    query_frequency,
                 )
-                score = (
-                    idf
-                    * (
-                        term_frequency
-                        * (self.k1 + 1.0)
-                        / (term_frequency + normalization)
-                    )
-                    * query_frequency
-                )
-                scores[doc_id] += score
+
+        query_terms = analysis.combined_terms.keys()
+        for doc_id, (chinese_term, term_frequency) in code_matches.items():
+            if chinese_term in query_terms:
+                continue
+            stats = self.term_stats.get(chinese_term)
+            if stats is None:
+                continue
+            _df, idf = stats
+            scores[doc_id] += self._bm25_term_score(
+                doc_id,
+                term_frequency,
+                float(idf),
+                1,
+            )
         return analysis, dict(scores)
+
+    def _bm25_term_score(
+        self,
+        doc_id: int,
+        term_frequency: int,
+        idf: float,
+        query_frequency: int,
+    ) -> float:
+        document_length = self.raw_lengths[doc_id]
+        normalization = self.k1 * (
+            1.0
+            - self.b
+            + self.b * document_length / self.avgdl
+        )
+        return (
+            idf
+            * (
+                term_frequency
+                * (self.k1 + 1.0)
+                / (term_frequency + normalization)
+            )
+            * query_frequency
+        )
 
     def search(
         self,
         query: str,
         *,
         top_k: int = 10,
+        scope: str | None = None,
         path_prefix: str | None = None,
+        code_patterns: Sequence[str] = (),
     ) -> tuple[QueryAnalysis, list[SearchResult]]:
-        analysis, scores = self.score_chunks(query)
-
-        normalized_prefix = (
-            path_prefix.replace("\\", "/").casefold()
-            if path_prefix
-            else ""
+        candidate_chunk_ids = self.board_mapper.resolve(
+            scope=scope,
+            path_prefix=path_prefix,
         )
-        candidates = (
-            (doc_id, score)
-            for doc_id, score in scores.items()
-            if not normalized_prefix
-            or str(self.documents[doc_id].get("路径", ""))
-            .replace("\\", "/")
-            .casefold()
-            .startswith(normalized_prefix)
+        analysis, scores = self.score_chunks(
+            query,
+            candidate_chunk_ids=candidate_chunk_ids,
+            code_patterns=code_patterns,
         )
         top = heapq.nlargest(
             max(top_k, 0),
-            candidates,
+            scores.items(),
             key=lambda item: (item[1], -item[0]),
         )
         results: list[SearchResult] = []
@@ -238,30 +362,27 @@ class BM25Engine:
         query: str,
         *,
         top_k: int = 10,
+        scope: str | None = None,
         path_prefix: str | None = None,
+        code_patterns: Sequence[str] = (),
     ) -> tuple[QueryAnalysis, list[DocumentSearchResult]]:
-        """按路径聚合全部分片，文档分数取最高分片分数。"""
-        analysis, chunk_scores = self.score_chunks(query)
-        normalized_prefix = (
-            path_prefix.replace("\\", "/").casefold()
-            if path_prefix
-            else ""
+        """通过分片映射聚合 Markdown 文档，文档分数取最高分片分数。"""
+        candidate_chunk_ids = self.board_mapper.resolve(
+            scope=scope,
+            path_prefix=path_prefix,
         )
-        # path -> [best_score, best_chunk_id, matched_chunk_count]
-        aggregated: dict[str, list[int | float]] = {}
+        analysis, chunk_scores = self.score_chunks(
+            query,
+            candidate_chunk_ids=candidate_chunk_ids,
+            code_patterns=code_patterns,
+        )
+        # document_id -> [best_score, best_chunk_id, matched_chunk_count]
+        aggregated: dict[int, list[int | float]] = {}
         for chunk_id, score in chunk_scores.items():
-            document = self.documents[chunk_id]
-            path = str(document.get("路径", ""))
-            if (
-                normalized_prefix
-                and not path.replace("\\", "/")
-                .casefold()
-                .startswith(normalized_prefix)
-            ):
-                continue
-            current = aggregated.get(path)
+            document_id = self.chunk_document_mapper.document_id_for_chunk(chunk_id)
+            current = aggregated.get(document_id)
             if current is None:
-                aggregated[path] = [score, chunk_id, 1]
+                aggregated[document_id] = [score, chunk_id, 1]
             else:
                 current[2] = int(current[2]) + 1
                 if score > float(current[0]) or (
@@ -274,14 +395,18 @@ class BM25Engine:
         top_documents = heapq.nlargest(
             max(top_k, 0),
             aggregated.items(),
-            key=lambda item: (float(item[1][0]), item[0]),
+            key=lambda item: (
+                float(item[1][0]),
+                self.chunk_document_mapper.path_for_document(item[0]),
+            ),
         )
         results: list[DocumentSearchResult] = []
-        for rank, (path, values) in enumerate(top_documents, start=1):
+        for rank, (document_id, values) in enumerate(top_documents, start=1):
             best_score = float(values[0])
             best_chunk_id = int(values[1])
             matched_chunk_count = int(values[2])
             best_chunk = self.documents[best_chunk_id]
+            path = self.chunk_document_mapper.path_for_document(document_id)
             results.append(
                 DocumentSearchResult(
                     rank=rank,
